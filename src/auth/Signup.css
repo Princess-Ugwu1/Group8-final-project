@@ -1,0 +1,662 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.signupCon{
+    width: 100%;
+    height: 100vh;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.signupholder{
+    width: 100%;
+    height: 100%;
+    background: purple;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.signupleft{
+    width: 30%;
+    height: 100%;
+    background-color: #DFFFC0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 25px;
+}
+
+.signupright{
+    width: 70%;
+    height: 100%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.signupleftinner{
+    width: 90%;
+    height: 90%;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.logo{
+    width: 60%;
+    height: 10%;
+    /* background-color: yellow; */
+}
+
+.description{
+    width: 100%;
+    height: 75%;
+    /* background-color: grey; */
+}
+.groceria{
+font-family: Montserrat;
+font-size: 24px;
+font-weight: 500;
+color: #000000;
+}
+.desc{
+font-family: Montserrat;
+font-size: 13px;
+font-weight: 400;
+color: #000000A8;
+;
+/* line-height: 18.29px; */
+/* text-align: left; */
+}
+.signuprightinner{
+    width: 100%;
+    height: 79%;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.signupInputHolder{
+    width: 90%;
+    height: 82%;
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; 
+}
+.createbox{
+    width: 100%;
+    height: 20%;
+    /* background-color:rgb(90, 89, 82); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.inputholder{
+    width: 100%;
+    height: 70%;
+    /* background-color: pink; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+.create{
+    width: 50%;
+    height: 50%;
+    /* background-color: aqua; */
+    font-family: Montserrat;
+    font-size: 40px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #1E1E1E;
+}
+.already{
+    width: 70%;
+    height: 50%;
+    /* background-color: peru; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 400;
+    color: #000000;
+    
+    
+}
+.login{
+    color: #F27318;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+}
+.inputholderInner{
+    width: 100%;
+    height: 85%;
+    /* background-color: aqua; */
+    display: flex;
+}
+.signupBtn{
+    width: 85%;
+    height: 15%;
+    background-color: #02B928;
+    border-radius: 10px;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 250;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+.signLeft{
+    width: 50%;
+    height: 100%;
+    /* background-color: purple; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.signRight{
+    width: 50%;
+    height: 100%;
+    /* background-color: rgb(222, 18, 52); */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.passwordHolder{
+    width: 60%;
+    height: 40%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: #F27318; */
+    align-items: center;
+    border-radius: 8px;
+    border: 0.6px 0px 0px 0px;
+    opacity: 0px;
+        /* border: none; */
+    outline: none;
+    border: solid 0.1px #000000A3
+    
+}
+
+.signInput{
+    width: 100%;
+    height: 40%;
+    /* background-color: red; */
+    font-family: Montserrat;
+    font-size: 25px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: #000000;
+}
+.inputt{
+    border: none;
+    outline: none;
+}
+.input-one{
+    
+        width: 70%;
+        height:40%;
+        gap: 10px;
+        border-radius: 8px;
+        border: 0.6px 0px 0px 0px;
+        opacity: 0px;
+        /* border: none; */
+        outline: none;
+        border: solid 0.1px #000000A3
+}
+.input-two{
+    
+        width: 70%;
+        height:40%;
+        gap: 10px;
+        border-radius: 8px;
+        border: 0.6px 0px 0px 0px;
+        opacity: 0px;
+        /* border: none; */
+        outline: none;
+        border: solid 0.1px #000000A3
+}
+.input-three{
+    
+        width: 70%;
+        height:40%;
+        gap: 10px;
+        border-radius: 8px;
+        border: 0.6px 0px 0px 0px;
+        opacity: 0px;
+        /* border: none; */
+        outline: none;
+        border: solid 0.1px #000000A3
+}
+.input-four{
+    border: none;
+    outline: none;
+    
+    
+}
+
+@media only screen and (max-width: 320px) {
+    .signupCon {
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 10px;
+        background-color: blue;
+    }
+
+    .signupholder {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        justify-content: flex-start;
+    }
+
+    .signupleft {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .signupright {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .signupleftinner,
+    .signuprightinner {
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo img {
+        width: 100px;
+        height: auto;
+    }
+    
+
+    .description {
+        text-align: center;
+    }
+
+    .groceria {
+        font-size: 20px;
+    }
+
+    .desc {
+        font-size: 12px;
+    }
+
+    .signupInputHolder {
+        width: 100%;
+        height: auto;
+    }
+
+    .inputholderInner {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .signLeft, 
+    .signRight {
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .signInput {
+        width: 100%;
+    }
+
+    .input-one,
+    .input-two,
+    .input-three,
+    .input-four {
+        width: 100%;
+        height: 35px;
+        /* margin-bottom: 10px; */
+    }
+    input{
+        width: 100%;
+    }
+
+    .passwordHolder {
+        /* display: inline-block;
+        overflow: auto; */
+        width: 90px;
+        height: 35px;
+        /* background-color: aqua; */
+
+    }
+
+    .signupBtn {
+        width: 100%;
+        height: 50px;
+        font-size: 18px;
+    }
+
+    .create {
+        font-size: 28px;
+    }
+
+    .already {
+        font-size: 16px;
+    }
+
+    .login {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .signupCon {
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 15px;
+        background-color: blue;
+    }
+
+    .signupholder {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        justify-content: flex-start;
+    }
+
+    .signupleft {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+        justify-content: center;
+        align-items: center;
+        background-color: none;
+    }
+
+    .signupright {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .signupleftinner,
+    .signuprightinner {
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        /* position: absolute; */
+        /* background-color: #02B928; */
+        /* background-color: none; */
+    }
+
+    .logo img {
+        width: 120px;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        
+    }
+    .logo{
+        position: relative;
+        right: 40px;
+        bottom: 20px;
+    }
+
+    .description {
+        text-align: center;
+    }
+
+    .groceria {
+        font-size: 22px;
+    }
+
+    .desc {
+        font-size: 13px;
+    }
+
+    .signupInputHolder {
+        width: 100%;
+        height: auto;
+    }
+
+    .inputholderInner {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .signLeft, 
+    .signRight {
+        width: 100%;
+        align-items: flex-start;
+    
+    }
+    .created{
+        position: relative;
+        top: 60px;
+    }
+
+    .signInput {
+        width: 100%;
+    }
+
+    .input-one,
+    .input-two,
+    .input-three,
+    .input-four {
+        width: 90%;
+        height: 40px;
+        /* margin-bottom: 15px; */
+    }
+
+    .passwordHolder {
+        width: 90%;
+        height: 40px;
+    }
+
+    .signupBtn {
+        width: 100%;
+        height: 55px;
+        font-size: 18px;
+    }
+    .createbox{
+        width: 100%;
+        height: 40%;
+        /* background-color: aqua; */
+       
+    }
+
+    .create {
+        font-size: 30px;
+    }
+
+    .already {
+        font-size: 18px;
+        position: relative;
+        top: 60px;
+    }
+    
+
+    .login {
+        font-size: 18px;
+    }
+}
+@media only screen and (max-width: 425px) {
+    .signupCon {
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 20px;
+        background-color: blue;
+    }
+    .createbox{
+        /* background-color: blueviolet; */
+        height: 40%;
+        width: 100%;
+        position: relative;
+        top: -80px;
+        text-align: center;
+        
+    }
+    /* .inputholder{
+        background-color: aqua;
+    } */
+
+    .signupholder {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        justify-content: flex-start;
+    }
+
+     .signupleft {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
+        /* background-color: pink; */
+
+        & img{
+           position: relative;
+           left: 90px;
+        }
+    } 
+
+    .signupright {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* .signupleftinner, */
+    /* .signuprightinner {
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+    } */
+
+    .logo img {
+        width: 140px;
+        height: auto;
+    }
+
+    .description {
+        display: none;
+    }
+
+    .groceria {
+        font-size: 24px;
+    }
+
+    .desc {
+        font-size: 14px;
+    } 
+
+    .signupInputHolder {
+        width: 100%;
+        height: auto;
+    }
+
+    .inputholderInner {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* background-color: #F27318; */
+        height: 100%;
+        width: 100%;
+        font-size: 1px;
+    }
+
+    .signLeft, 
+    .signRight {
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .signInput {
+        width: 100%;
+        font-size: 15px;
+    }
+
+    .input-one,
+    .input-two,
+    .input-three,
+    .input-four
+     {
+        width: 95%;
+        height: 29px;
+        /* margin-bottom: 1px; */
+    }
+
+    .passwordHolder {
+        width: 95%;
+        height: 29px;
+    }
+
+    .signupBtn {
+        width: 100%;
+        height: 60px;
+        font-size: 20px;
+        position: relative;
+        top: 40px;
+    }
+
+    .created {
+        font-size: 20px;
+        position: relative;
+        top: 50px;
+    }
+
+    .already {
+        width: 100%;
+        font-size: 18px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: relative;
+        top: 50px;
+    }
+
+    .login {
+        font-size: 18px;
+    }
+}
+@media only screen and (max-width: 768px){
+    .create{
+        font-size: 25px;
+    }
+
+}
+
