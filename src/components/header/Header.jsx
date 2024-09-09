@@ -15,7 +15,10 @@ const Header = () => {
           <li><NavLink to='/'>Products</NavLink></li>
           <li><NavLink to= '/store'>Store</NavLink></li>
           <li>About us</li>
+          <NavLink to= '/signup'>
           <button className='registerButton'>Register</button>
+             </NavLink>
+          
           <button className='Sign-In-Button'>Log in</button>
         </ul>
 
