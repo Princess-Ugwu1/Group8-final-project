@@ -15,7 +15,10 @@ const Header = () => {
           <li><NavLink to='/'className={({isActive}) =>  isActive ? "HeaderActive" : "HeaderNotActive"}>Products</NavLink></li>
           <li><NavLink to= '/store'className={({isActive}) =>  isActive ? "HeaderActive" : "HeaderNotActive"}>Store</NavLink></li>
           <li>About us</li>
+          <NavLink to= '/signup'>
           <button className='registerButton'>Register</button>
+             </NavLink>
+          
           <button className='Sign-In-Button'>Log in</button>
         </ul>
 
