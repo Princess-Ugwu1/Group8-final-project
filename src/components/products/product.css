@@ -1,7 +1,7 @@
 .ProductDescription{
     height: 20vh;
     width: 100%;
-    background-color: aqua;
+    /* background-color: aqua;`` */
     display: flex;
     justify-content: center;
     align-items: center;

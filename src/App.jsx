@@ -1,10 +1,7 @@
 import React from 'react'
 import {HashRouter, Route, Routes} from 'react-router-dom'
-
-import Header from './components/header/Header'
 import Layout from './layout/Layout'
 import Products from './components/products/Products'
-import Footer from './components/footer/Footer'
 import Store from './components/Stores/Store'
 import StoreItems from './components/Stores/StoreItems'
 import About from './components/aboutPage/About'
