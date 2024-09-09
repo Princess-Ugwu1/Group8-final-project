@@ -8,6 +8,7 @@ import Footer from './components/footer/Footer'
 import Store from './components/Stores/Store'
 import StoreItems from './components/Stores/StoreItems'
 import About from './components/aboutPage/About'
+import VendorDashBoard from './components/vendorPage/VendorDashBoard'
 
 
 const App = () => {
@@ -16,6 +17,7 @@ const App = () => {
   return (
  <HashRouter>
   <Routes>
+    <Route path='/dashBoard' element={<VendorDashBoard/>}/>
     <Route element = {<Layout/>}>
     <Route path='/' element={<Products/>}/>
     <Route path='/store' element={<Store/>}/>

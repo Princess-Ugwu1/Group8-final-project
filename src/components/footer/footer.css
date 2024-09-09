@@ -47,6 +47,7 @@
 
     & p{
         font-size: 20px;
+        font-family: montserrat;
     }
   }
 
@@ -64,6 +65,7 @@
 .footerSubNames{
     font-size: 25px;
     font-weight: 600;
+    font-family: montserrat;
 }
 
 

@@ -23,6 +23,7 @@
     /* align-items: center; */
     /* justify-content: center; */
     justify-content: flex-end;
+    
 
     & ul{
         display: flex;
@@ -54,4 +55,14 @@
     font-weight: 400;
     font-family: montserrat;
     color: white;
+}
+
+.HeaderActive{
+    color: #02B928;
+    text-decoration: none;
+}
+
+.HeaderNotActive{
+    color: black;
+    text-decoration: none;
 }

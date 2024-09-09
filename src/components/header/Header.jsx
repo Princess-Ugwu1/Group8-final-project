@@ -12,8 +12,8 @@ const Header = () => {
       <div className="headerNav">
         <ul>
           <li>Home</li>
-          <li><NavLink to='/'>Products</NavLink></li>
-          <li><NavLink to= '/store'>Store</NavLink></li>
+          <li><NavLink to='/'className={({isActive}) =>  isActive ? "HeaderActive" : "HeaderNotActive"}>Products</NavLink></li>
+          <li><NavLink to= '/store'className={({isActive}) =>  isActive ? "HeaderActive" : "HeaderNotActive"}>Store</NavLink></li>
           <li>About us</li>
           <button className='registerButton'>Register</button>
           <button className='Sign-In-Button'>Log in</button>
