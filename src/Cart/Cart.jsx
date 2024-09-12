@@ -16,7 +16,7 @@ const Cart = () => {
                                     <img src={newfruit} alt="" />
                                 </div>
                                 <div className='item-detail'>
-                                    <div className='item-list'>Fresh Banana</div>
+                                    <div style={{color: "#02B928"}} className='item-list'>Fresh Banana</div>
                                     <div className='item-list'><p className='des'>Lorem  accusamus dolore blanditiis ipsa voluptates cons Quidem!</p></div>
                                     <div className='item-list'>#5000</div>
                                     <div className='qty'>

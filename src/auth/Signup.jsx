@@ -6,8 +6,10 @@ import logoImg from "../assets/Group 10.png"
 // import fruit from "../assets/fruitman.png"
 import axios from 'axios'
 import { NavLink } from 'react-router-dom'
+// import { useMediaQuery } from 'react-responsive'
 
 const Signup = () => {
+
     // const nav = useNavigate();
     const [seePassword, seteSePassword] = useState(true)
     const lookPassword =()=>{
@@ -131,12 +133,12 @@ const Signup = () => {
     
 
       return (
-    <div className='signupCon'>
+    <div className='signupCon9'>
         <div className='signupholder'>
           <div className='signupleft'>
             <div className='signupleftinner'>
               <div className='logo'>
-                <img src={logoImg} alt="" />
+                <img className='image' src={logoImg} alt="" />
               </div>
               <div className='description'>
                 <p className='groceria'>Sign up with Groceria</p>
@@ -148,10 +150,10 @@ const Signup = () => {
             <div className='signuprightinner'>
               <div className='signupInputHolder'>
                 <div className='createbox'>
-                  <div className='create'><p className='created'>Create an account</p></div>
+                  <div className='create'><p className='created2'>Create an account</p></div>
                   <div className='already'>
-                    <p>Already have an account?</p>
-                   <NavLink to='/login'><p className='login'>Login</p></NavLink> 
+                    <p className='already1'>Already have an account?</p>
+                   <NavLink to='/login'><p className='login1'>Login</p></NavLink> 
                   </div>
                 </div>
                 <div className='inputholder'>
@@ -173,8 +175,8 @@ const Signup = () => {
                       </div>
                       <div className='signInput'>
                         <p>Password</p>
-                        <div className='passwordHolder'>
-                          <input className='input-four' type={seePassword?"password":"text"} onChange={handlePassword}/>
+                        <div className='passwordHolder2'>
+                          <input className='input-four2' type={seePassword?"password":"text"} onChange={handlePassword}/>
                           {
                     seePassword?<FaRegEye size={15}  onClick={lookPassword}/>:<FaRegEyeSlash  onClick={() => seteSePassword(true)}/>
                           }
@@ -182,8 +184,8 @@ const Signup = () => {
                       </div>
                     </div>
                   </div>
-                  <div className='signupBtn'>
-                    <p onChange={Signup}>Sign up</p>
+                  <div className='signupBtn1'>
+                    <p onClick={Signup}>Sign up</p>
                   </div>
                 </div>
               </div>

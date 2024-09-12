@@ -13,7 +13,7 @@ const Login = () => {
         seteSePassword(false)
     }
       return (
-    <div className='signupCon'>
+    <div className='signupCon9'>
         <div className='signupholder'>
            <div className='loginHolder'>
                <div className='login-writeup'>
@@ -31,10 +31,10 @@ const Login = () => {
                <div className='login-main'>
         <div style={{height:200}} className='loginInner'>
                   <p>Email</p>
-                  <input className='email-input' type="text" />
+                  <input className='email-input3' type="text" />
                   <p>Password</p>
-                  <div style={{height:40}} className='passwordHolder'>
-                          <input className='input-four' type={seePassword?"password":"text"} />
+                  <div style={{height:40}} className='passwordHolder3'>
+                          <input className='input-four3' type={seePassword?"password":"text"} />
                           {
                     seePassword?<FaRegEye size={30} onClick={lookPassword}/>:<FaRegEyeSlash  onClick={() => seteSePassword(true)}/>
                           }
@@ -43,7 +43,7 @@ const Login = () => {
                 <div className='loginbtnHolder'>
                   <NavLink to='/resetpassword'><div className='forget'>Forgot Password?</div></NavLink>
                   {/* <NavLink to='/'><div className='Loginbtn'>Login</div></NavLink> */}
-                  <div className='Loginbtn'><NavLink to='/'>Login</NavLink></div>
+                  <div className='Loginbtn1'><NavLink to='/'>Login</NavLink></div>
              </div>
               </div>
            </div>

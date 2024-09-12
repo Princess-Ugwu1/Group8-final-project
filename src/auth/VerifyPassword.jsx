@@ -36,7 +36,7 @@ const VerifyPassword = () => {
                 </div>
                 <div className='loginbtnHolder'>
                   {/* <div className='forget'><p>Forgot Password?</p></div> */}
-                  <div className='Loginbtn'><NavLink to='/login'>Verify</NavLink></div>
+                  <div className='Loginbtn12'><NavLink to='/login'>Verify</NavLink></div>
                   
              </div>
               </div>

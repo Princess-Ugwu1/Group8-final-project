@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Footer.css"
-import logo from "../../assets/logo.svg"
+// import logo from "../../assets/logo.svg"
 import { FaLocationDot } from "react-icons/fa6";
 
 const Footer = () =>{
@@ -8,7 +8,7 @@ const Footer = () =>{
         <div className="Footer-container">
             <div className="box">
                 <div className="box1">
-                   <img src={logo} alt="" />
+                   {/* <img src={logo} alt="" /> */}
                 </div>
                 <div className="box2">
                 <div className="peace">
