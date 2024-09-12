@@ -1,5 +1,5 @@
 import React from 'react'
-import './topProductCards.css'
+import './TopProductCards.css'
 // import './storeItems.css'
 
 const TopProductCards = () => {
