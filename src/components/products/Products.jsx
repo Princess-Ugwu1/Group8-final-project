@@ -13,11 +13,6 @@ const Products = () => {
         selection of fresh products</p>
         </div>
     </div>
-    <div className="searchBar">
-      <div className="input">
-      <input type="text" placeholder='search'/>
-      </div>
-    </div>
     <ProductCard/>
        </>
   )
