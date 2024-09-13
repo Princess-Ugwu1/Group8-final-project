@@ -1,7 +1,7 @@
 import React from 'react'
 import './storeCard.css'
 import { useNavigate } from 'react-router-dom'
-import storePix1 from '../../assets/Iyachidimma.png'
+import storePix1 from '../../assets/IyaChidimma.png'
 import storePix2 from '../../assets/MamaAlake.png'
 import storePix3 from '../../assets/BabaChuks.png'
 import storePix4 from '../../assets/MamaChichi.png'
@@ -13,7 +13,7 @@ const Storecard = () => {
     const storeCards = [
         { id: 'card1',
             img: storePix1,
-            
+
          },
         { id: 'card2',
             img: storePix2
