@@ -1,4 +1,4 @@
-.header{
+  /* .header{
     width: 100%;
     height: 10vh;
     background-color: #1E1E1E0D;
@@ -12,17 +12,15 @@
 .headerLogo{
     width:30%;
     height: 100%;
-    /* background=; */
-}
-
+     background=; 
+} 
+/* 
 .headerNav{
     width:60%;
     height: 100%;
-    /* background-color: red; */
     display: flex;
-    /* align-items: center; */
-    /* justify-content: center; */
     justify-content: flex-end;
+    
 
     & ul{
         display: flex;
@@ -32,8 +30,8 @@
         align-items: center;
         font-family: montserrat;
     }
-}
-
+} */
+/* 
 .registerButton{
     width:112px;
     height: 50px;
@@ -54,4 +52,148 @@
     font-weight: 400;
     font-family: montserrat;
     color: white;
+} */
+/* 
+.HeaderActive{
+    color: #02B928;
+    text-decoration: none;
+}
+
+.HeaderNotActive{
+    color: black;
+    text-decoration: none;
+}   */
+
+.header {
+    width: 100%;
+    height: 10vh;
+    background-color: #1E1E1E0D;
+    position: sticky;
+    z-index: 999999999;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Ensure content is centered vertically */
+    padding: 0 20px; /* Add padding for small screens */
+}
+
+.headerLogo {
+    width: 30%;
+    height: 100%;
+}
+
+.headerNav {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+
+    ul {
+        display: flex;
+        list-style: none;
+        font-size: 25px;
+        gap: 30px;
+        align-items: center;
+        font-family: montserrat;
+    }
+}
+
+.registerButton, .Sign-In-Button {
+    width: 112px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 25px;
+    font-weight: 400;
+    font-family: montserrat;
+}
+
+.registerButton {
+    border: 1px solid #02B928;
+}
+
+.Sign-In-Button {
+    background-color: #02B928;
+    color: white;
+}
+
+.HeaderActive {
+    color: #02B928;
+    text-decoration: none;
+}
+
+.HeaderNotActive {
+    color: black;
+    text-decoration: none;
+}
+
+/* Responsive design for tablets and small screens */
+@media only screen and (max-width: 1024px) {
+    .header {
+        justify-content: space-between; /* Spread content out */
+    }
+
+    .headerLogo {
+        width: 25%; /* Adjust logo width */
+    }
+
+    .headerNav {
+        width: 70%;
+    }
+
+    .headerNav ul {
+        font-size: 22px; /* Adjust font size */
+        gap: 20px; /* Reduce gap between items */
+    }
+
+    .registerButton, .Sign-In-Button {
+        font-size: 22px; /* Adjust button font size */
+    }
+}
+
+/* Responsive design for mobile screens (768px and below) */
+@media only screen and (max-width: 768px) {
+    .header {
+        flex-direction: column; /* Stack logo and nav vertically */
+        height: auto;
+    }
+
+    .headerLogo {
+        width: 100%;
+        text-align: center; /* Center the logo */
+        margin-bottom: 10px;
+    }
+
+    .headerNav {
+        width: 100%;
+        justify-content: center; /* Center the nav items */
+    }
+
+    .headerNav ul {
+        font-size: 20px; /* Reduce font size */
+        gap: 15px; /* Reduce gap */
+    }
+
+    .registerButton, .Sign-In-Button {
+        font-size: 20px; /* Adjust button font size */
+        width: 100px; /* Adjust button width */
+        height: 45px; /* Adjust button height */
+    }
+}
+
+/* Responsive design for extra small screens (480px and below) */
+@media only screen and (max-width: 480px) {
+    .header {
+        padding: 0 10px; /* Reduce padding */
+    }
+
+    .headerNav ul {
+        font-size: 18px; /* Further reduce font size */
+        gap: 10px; /* Reduce gap even more */
+    }
+
+    .registerButton, .Sign-In-Button {
+        font-size: 18px; /* Further reduce button font size */
+        width: 90px; /* Adjust button width */
+        height: 40px; /* Adjust button height */
+    }
 }

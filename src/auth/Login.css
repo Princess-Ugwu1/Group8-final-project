@@ -106,7 +106,10 @@
    font-weight: 400;
    display: flex;
    
-
+   & input{
+    text-indent: 10px;
+    font-size: 20px;
+   } 
    
 }
 .loginbtnHolder{

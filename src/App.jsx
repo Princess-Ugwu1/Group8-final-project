@@ -1,10 +1,7 @@
 import React from 'react'
 import {HashRouter, Route, Routes} from 'react-router-dom'
-
-import Header from './components/header/Header'
 import Layout from './layout/Layout'
 import Products from './components/products/Products'
-import Footer from './components/footer/Footer'
 import Store from './components/Stores/Store'
 import StoreItems from './components/Stores/StoreItems'
 import About from './components/aboutPage/About'
@@ -17,6 +14,7 @@ import Home from "./Cart/Cart"
 import Cart from './Cart/Cart'
 import Congrat from "./auth/Congrat"
 
+import VendorDashBoard from './components/vendorPage/VendorDashBoard'
 
 
 const App = () => {
@@ -31,6 +29,7 @@ const App = () => {
     <Route path='/verifypassword' element={<VerifyPassword/>}/>
     <Route path='/updatepassword' element={<UpdatePassword/>}/>
     <Route path='/congrat' element={<Congrat/>}/>
+    <Route path='/dashBoard' element={<VendorDashBoa
     <Route element = {<Layout/>}>
     <Route path='/' element={<Products/>}/>
     <Route path='/store' element={<Store/>}/>
