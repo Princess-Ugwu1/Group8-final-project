@@ -1,24 +1,40 @@
 .storeCardWrapper{
     width: 100%;
     height: 80%;
-    /* background-color: black; */
     display: flex;
-    align-items: flex-end;
-    gap: 20px;
+    justify-content: flex-end;
     /* overflow-x: auto; */
     /* align-items: center; */
 }
 
+.storeCardContainer{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+    gap: 60px;
+    scrollbar-width: none; 
+    -ms-overflow-style: none;
+}
+
+.storeCardContainer::-webkit-scrollbar {
+    display: none;
+}
+
 .storeCards{
-    width: 18%;
+    width: 25%;
     height: 70%; 
     /* background-color:#DFFFC0; */
     border-radius: 10px;
+    margin-right: 30px;
+    padding: 10px;
     display: flex;
     align-items: center;    
     flex-direction: column;
     justify-content: space-around;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    flex-shrink: 0;
 }
 
 #card1{
@@ -40,14 +56,36 @@
 
 
 .storePic{
-    width: 60%;
+    width: 50%;
     height: 50%;
     background-color: blue;
     border-radius: 50%;
+
+    & img {
+        width: 100%;
+        height: 100%;
+    }
 }
 
 .storeDescription{
     width:90%;
     height: 30%;
-    background-color: brown;
+    /* background-color: brown; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+    & p{
+        font-size: 25px;
+        font-weight: 500;
+        font-family: montserrat;
+    }
+
+    & span{
+        font-size:20px ;
+        font-weight: 500;
+        font-family: montserrat;
+    }
 }

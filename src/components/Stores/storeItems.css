@@ -16,16 +16,16 @@
 .storeItemsContainer{
     width:90%;
     height: max-content;
-    background-color: red;
+    /* background-color: red; */
     flex-wrap: wrap;
     display: flex;
-    gap: 50px;
+    gap: 20px;
     justify-content: center;
 }
 
 .storeItems{
-    width:25%;
-    height: 40vh;
+    width:30%;
+    height: 50vh;
     background-color: rgba(246, 245, 245, 1);
     display: flex;
     /* margin: 10px; */
