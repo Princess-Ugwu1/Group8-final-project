@@ -10,8 +10,8 @@ import Login from "./auth/Login"
 import ResetPassword from "./auth/ResetPassword"
 import VerifyPassword from "./auth/VerifyPassword"
 import UpdatePassword from "./auth/UpdatePassword"
-
 import VendorDashBoard from './components/vendorPage/VendorDashBoard'
+import LandingPage from './components/LandingPage'
 
 
 const App = () => {
@@ -20,6 +20,7 @@ const App = () => {
   return (
  <HashRouter>
   <Routes>
+    <Route path='/' element={<LandingPage />}/>
     <Route path='/signup' element={<Signup/>}/>
     <Route path='/login' element={<Login/>}/>
     <Route path='/resetpassword' element={<ResetPassword/>}/>
