@@ -3,56 +3,41 @@ import { FaRegEye, FaRegEyeSlash } from 'react-icons/fa6'
 // import { useNavigate } from 'react-router-dom'
 import "./Signup.css"
 import logoImg from "../assets/Group 10.png"
+import {toast , Toaster} from 'react-hot-toast'
 // import fruit from "../assets/fruitman.png"
 import axios from 'axios'
-import { NavLink } from 'react-router-dom'
-// import { useMediaQuery } from 'react-responsive'
+import { NavLink, useNavigate } from 'react-router-dom'
+import { useDispatch } from 'react-redux'
+import { userData } from '../Global/slice'
 
+// import useDis
+// import u
 const Signup = () => {
+const dispatch = useDispatch()
+const nav = useNavigate()
+  
 
     // const nav = useNavigate();
     const [seePassword, seteSePassword] = useState(true)
+    
     const lookPassword =()=>{
         seteSePassword(false)
     }
-    const [username, setUsernanme] = useState()
+    const [fullname, setfullname] = useState()
     const [email, setEmail] = useState()
     const [password, setPassword] = useState()
+    const [phoneNumber, setPhoneNumber] = useState()
+    // const [password, setPassword] = useState()
+
     // const [showPassword, setShowPassword] = useState(true)
-    const [passwordCheck, setPasswordCheck] = useState(false)
-    const [passwordErrorLow, setPasswordErrorLow] = useState("");
-    const [passwordErrorUpper, setPasswordErrorUpper] = useState(false);
-    const [passwordErrorNumber, setPasswordErrorNumber] = useState(false);
-    const [passwordErrorSymbol, setPasswordErrorSymbol] = useState(false);
-    const [emailErrorShow, setEmailErrorShow] = useState(false)
-    const [emailError, setEmailError] = useState()
-    const [loading, setLoading] = useState()
-
-    const containsLowercase = (input) => {
-        
-      return /[a-z]/.test(input);
-    };
-    
-    const containsUpperrcase = (input) => {
-      
-      return /[A-Z]/.test(input);
-    };
-  
-    const containsNumber = (input) => {
-      
-      return /\d/.test(input);
-    };
-  
-    const containsSymbol = (input) => {
-
-      return /[!@#$%^&*()_+{}\[\]:;<>,.?~\\/-]/.test(input);
-    };
-
-    const validateEmail = (input) => {
-  
-      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-      return emailRegex.test(input);
-    };
+    // const [passwordCheck, setPasswordCheck] = useState(false)
+    // const [passwordErrorLow, setPasswordErrorLow] = useState("");
+    // const [passwordErrorUpper, setPasswordErrorUpper] = useState(false);
+    // const [passwordErrorNumber, setPasswordErrorNumber] = useState(false);
+    // const [passwordErrorSymbol, setPasswordErrorSymbol] = useState(false);
+    // const [emailErrorShow, setEmailErrorShow] = useState(false)
+    // const [emailError, setEmailError] = useState()
+    const [loading, setLoading] = useState(false)
 
     const handleEmailChange=(e)=>{
       const newEmail = e.target.value;
@@ -60,46 +45,36 @@ const Signup = () => {
       if(newEmail.trim()===""){
           toast.error("Email is required");
           setEmailErrorShow(false)
-      }else if(!validateEmail(newEmail)){
-          setEmailErrorShow(true)
-          setEmailError("Invalid email format");
-      }else{
-          setEmailError("")
+      }else {
+        null
       }
     };
-
-    const handleSignUp = async () => {
-    
-      const url = "https://testapi-c8ay.onrender.com/sign-up"
-      console.log (url)
-      if(!fullName || !email || !password || !phoneNumber ){
-        toast.error("All fields are required and check for errors")
+  
+   const handleSubmit =()=>{
+    // e.preventDeafult()
+      if(!email || !password || !fullname || !phoneNumber){
+        toast.error("Please Fill all Details")
       }else{
-          setLoading(true)
-        try {
-          const userDetails ={
-            fullName : fullName,
-            email: email,
-            password: password,
-            phoneNumber: phoneNumber
-          }
-          const res = await axios.post(`${url}/register`, userDetails)
-          console.log(res)
-          setLoading(false)
-          alert(res?.data.message)
-          // nav("/login")
-          
-        } catch (error) {
-          console.log(error)
-          setLoading(false)
-          toast.error(error?.response.data.message)
-        }
+       
+        const url = "https://testapi-c8ay.onrender.com/api/v1/sign-up"
+        const newData = { email, phoneNumber, fullName:fullname, password}
+       axios.post(url, newData)
+       .then(res=>{
+        console.log(res)
+        nav('/login')
+        setLoading(true)
+       })
+       .catch((error)=>{
+        console.log(error)
+        toast.error(error.response.data)
+        setLoading(false)
+       })
       }
-    }
+   }
 
     const handlefullname=(e)=>{
       const newData = e.target.value
-      setUsernanme(newData)
+      setfullname(newData)
     }
 
     const handlePassword =(e)=>{
@@ -108,25 +83,18 @@ const Signup = () => {
 
       if(newData.trim()===""){
           toast.error("Password is required")
-          setPasswordCheck(false)
-      }if (newData.length>0){
-          setPasswordCheck(true)
-      }if(!containsLowercase(newData)){
-          setPasswordErrorLow(true)
       }else{
-          setPasswordErrorLow(false)
-      }if(!containsUpperrcase(newData)){
-          setPasswordErrorUpper(true)
+        null
+      }
+    }
+    const handelphoneNumber =(e)=>{
+      const newData  = e.target.value
+      setPhoneNumber(newData)
+
+      if(newData.trim()===""){
+          toast.error("PhoneNumber is required")
       }else{
-          setPasswordErrorUpper(false)
-      }if(!containsNumber(newData)){
-          setPasswordErrorNumber(true)
-      }else{
-          setPasswordErrorNumber(false)
-      }if(!containsSymbol(newData)){
-          setPasswordErrorSymbol(true)
-      }else{
-          setPasswordErrorSymbol(false)
+        null
       }
     }
 
@@ -165,7 +133,7 @@ const Signup = () => {
                       </div>
                       <div className='signInput'>
                         <p>Phone Number</p>
-                        <input className='input-two' type="text" />
+                        <input className='input-two' type="text" onChange={handelphoneNumber} />
                       </div>
                     </div>
                     <div className='signRight'>
@@ -185,11 +153,15 @@ const Signup = () => {
                     </div>
                   </div>
                   <div className='signupBtn1'>
-                    <p onClick={Signup}>Sign up</p>
+                    <p onClick={handleSubmit}>{
+                      loading ? "Loading...": "Signup"
+}
+</p>
                   </div>
                 </div>
               </div>
             </div>
+<Toaster/>
           </div>
         </div>
     </div>

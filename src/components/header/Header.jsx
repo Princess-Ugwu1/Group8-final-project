@@ -2,8 +2,14 @@ import React from 'react'
 import './header.css'
 import logo from '../../assets/logo.svg'
 import {NavLink} from 'react-router-dom'
+import { useSelector } from 'react-redux'
 
 const Header = () => {
+  const userData = useSelector((state)=> state.groceria.userData)
+  console.log(userData)
+  const data = Object.values(userData)
+
+  // const newdata = data.map((e)= )
   return (
     <div className='header'>
       <div className="headerLogo">
