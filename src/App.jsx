@@ -12,7 +12,9 @@ import VerifyPassword from "./auth/VerifyPassword"
 import UpdatePassword from "./auth/UpdatePassword"
 import VendorDashBoard from './components/vendorPage/VendorDashBoard'
 import LandingPage from './components/LandingPage'
-
+// import AboutForm from './Components/AboutForm/AboutUs'
+import AboutUs from './Components/AboutForm/AboutUs'
+import ContactUs from './components/ContactUs/ContactUs'
 
 const App = () => {
 
@@ -32,6 +34,8 @@ const App = () => {
     <Route path='/store' element={<Store/>}/>
     <Route path='/items' element={<StoreItems/>}/>
     <Route path='/about' element={<About/>}/>
+    <Route path='/AboutForm' element={<AboutUs/>}/>
+    <Route path='/ContactUs' element={<ContactUs/>}/>
     </Route>
   </Routes>
  </HashRouter>

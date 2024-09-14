@@ -1,14 +1,15 @@
 import "./HowTo.css"
-// import Group from "../../../public/Group 1.svg"
-const HowTo =() =>{
+import map from "../../../public/map.svg"
+
+const Howto =() =>{
     return(
         <div className='howtoparent'>
-           <div className="Book">How to shop on groceria</div> 
+            <p>How to shop on groceria</p>
             <div className='howtopic'>
-                <img src="./Group 1.svg" alt="" />
+            <img src="./map.svg" alt="" />
             </div>
         </div>
     )
-}
+};
 
-export default HowTo
+export default Howto
