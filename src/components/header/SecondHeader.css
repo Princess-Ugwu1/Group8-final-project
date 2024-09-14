@@ -1,0 +1,89 @@
+.SecondHeaderWrapper{
+    width:  100%;
+    height: 10vh;
+     background-color: #F6F5F5; 
+    position: sticky;
+    z-index: 999999999;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.secondHeaderContainer{
+    width: 90%;
+    height: 100%;
+    /* background-color: aliceblue; */
+    display: flex;
+}
+
+.SecondLogo{
+    width: 20%;
+    height: 100%;
+    /* background-color: red; */
+}
+
+.secondHeaderNav{
+    width: 80%;
+    height: 100%;
+    /* background-color: navy; */
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+    align-items: center;
+
+    & p{
+        font-size: 25px;
+
+    }
+}
+
+
+
+.cartIcon{
+    width: 41px;
+    height: 33.7px;
+}
+
+.searchBar{
+    width:35%;
+    height: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+
+    & input{
+        width: 314px;
+        height: 41px;
+        border-radius:10px 0px 0px 10px;
+        font-size: 15px;
+        font-family: montserrat;
+        font-weight: 400;
+        padding: 10px;
+        border: none;
+        outline: none;
+
+    }
+}
+.searchDiv{
+    width:72px;
+    height: 40px;
+    background-color: #F27318;
+    font-size: 15px;
+    font-weight: 400;
+    color: white;
+    font-family: montserrat;
+    border-radius:0px 10px 10px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile{
+    width:38px;
+    height: 38px;
+    background-color: brown;
+    border-radius: 50%;
+}
