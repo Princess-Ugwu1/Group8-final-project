@@ -15,6 +15,8 @@ import LandingPage from './components/LandingPage'
 // import AboutForm from './Components/AboutForm/AboutUs'
 import AboutUs from './Components/AboutForm/AboutUs'
 import ContactUs from './components/ContactUs/ContactUs'
+import SecondHeader from './components/header/SecondHeader'
+import UserProfile from './components/userProfile/UserProfile'
 
 const App = () => {
 
@@ -23,6 +25,8 @@ const App = () => {
  <HashRouter>
   <Routes>
     <Route path='/' element={<LandingPage />}/>
+  <Route path='/profile' element={<UserProfile/>}/>
+  <Route path='/header2' element={<SecondHeader/>}/>
     <Route path='/signup' element={<Signup/>}/>
     <Route path='/login' element={<Login/>}/>
     <Route path='/resetpassword' element={<ResetPassword/>}/>
