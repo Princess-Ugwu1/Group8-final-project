@@ -9,7 +9,7 @@ import Login from "./auth/Login"
 import ResetPassword from "./auth/ResetPassword"
 import VerifyPassword from "./auth/VerifyPassword"
 import UpdatePassword from "./auth/UpdatePassword"
-import Cart from './Cart/Cart'
+
 import Congrat from "./auth/Congrat"
 import VendorSignup from './auth/VendorSignup'
 import VendorLogin from './auth/VendorLogin'
@@ -20,8 +20,8 @@ import ContactUs from './components/ContactUs/ContactUs'
 import SecondHeader from './components/header/SecondHeader'
 import UserProfile from './components/userProfile/UserProfile'
 import LayoutTwo from './layout/LayoutTwo'
-import Cart from './components/Cart/Cart'
 import AboutUs from './components/AboutForm/AboutUs'
+import Cart from './components/Cart/Cart'
 
 
 const App = () => {
