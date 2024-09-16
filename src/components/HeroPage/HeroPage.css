@@ -1,0 +1,59 @@
+.heroParent{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
+    background-color: #DFFFC0;
+    background-image: url("../../../public/heropic.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 100%;
+    /* background-color: green; */
+}
+.herohold{
+    width: 100%;
+    /* height: 400px; */
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-weight: 500;
+    font-size: 65px;
+    color: #02B928;
+    /* background-color: yellow; */
+}
+.herohold span{
+    color: #015512;
+}
+.herohold p{
+    width: 30%;
+}
+.herohold button{
+    width: 15%;
+    height: 76px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+    color:#ffffff;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: green;
+}
+.herohold button:hover{
+    background-color: #03a824;
+}
+.herohold button:active{
+    background-color: green;
+}
+
+@media screen and (width < 750px) {
+    .herohold p{
+        width: 100%;
+    }
+    .herohold button{
+        width: 80%;
+    }
+}

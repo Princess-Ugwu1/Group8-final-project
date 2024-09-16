@@ -1,0 +1,38 @@
+.Contact-Container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* background-color: #0d110e; */
+}
+.main-container{
+    width: 100%;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 218px;
+    background-image: url("../../../public/cont.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-color: #02B928; */
+
+}
+.main-img{
+    max-width:100% ;
+    height: 70%;
+    object-fit:cover
+}
+@media screen and (1080px <=width <= 1240px){
+
+    .Contact-Container{
+       width: 100%;
+    }
+    .Contact-img{
+        width: 100%;
+        height: auto;
+    }
+    }
+    
+
