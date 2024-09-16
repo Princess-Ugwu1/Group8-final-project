@@ -25,6 +25,11 @@ const App = () => {
   return (
  <HashRouter>
   <Routes>
+  <Route path='/signup' element={<Signup/>}/>
+    <Route path='/login' element={<Login/>}/>
+    <Route path='/resetpassword' element={<ResetPassword/>}/>
+    <Route path='/verifypassword' element={<VerifyPassword/>}/>
+    <Route path='/updatepassword' element={<UpdatePassword/>}/>
     <Route path='/cart' element={<Cart/>}/>
    <Route path='/profile' element={<UserProfile/>}/>
     <Route element = {<Layout/>}>
@@ -32,12 +37,8 @@ const App = () => {
     <Route path='/contactUs' element={<ContactUs/>}/>
     <Route path='/AboutForm' element={<AboutUs/>}/>
   {/* <Route path='/contact' element={<Contact/>}/> */}
-  <Route path='/header2' element={<SecondHeader/>}/>
-    <Route path='/signup' element={<Signup/>}/>
-    <Route path='/login' element={<Login/>}/>
-    <Route path='/resetpassword' element={<ResetPassword/>}/>
-    <Route path='/verifypassword' element={<VerifyPassword/>}/>
-    <Route path='/updatepassword' element={<UpdatePassword/>}/>
+  {/* <Route path='/header2' element={<SecondHeader/>}/> */}
+
     </Route>
     {/* <Route path='/dashBoard' element={<VendorDashBoard/>}/> */}
     <Route element = {<LayoutTwo/>}>
