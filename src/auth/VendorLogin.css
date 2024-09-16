@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.VLogin-con{
+    width: 100%;
+    height: 100vh;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.VLogin-holder{
+    width: 70%;
+    height: 90%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.VLogin-inner{
+    width: 100%;
+    height: 85%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.Vgroceria{
+    width: 35%;
+    height: 10%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.VLogin-div{
+    width: 80%;
+    height: 90%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+.Vlogin-Log{
+    width: 100%;
+    height: 20%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.Vlogin-Input{
+    width: 70%;
+    height: 70%;
+    background-color: #ffffff;
+    font-family: Montserrat;
+    font-size: 25px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: space-around;
+
+    
+    
+}
+.Vlogin-top{
+    width: 80%;
+    height: 50%;
+    background-color: #ffffff;
+    font-family: Montserrat;
+    font-size: 40px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    
+}
+.Vlogin-down{
+    width: 80%;
+    height: 50%;
+    background-color: #ffffff;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 400;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    
+    
+}
+.Vregister{
+    color:#F27318;
+    cursor: pointer;
+}
+input{
+    width: 100%;
+    height: 12%;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 8px;
+    border: solid 0.6px black;
+}
+.Vlogin-pass{
+    width: 100%;
+    height: 12%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px;
+    border: solid 0.6px black;
+}
+.ven-inputLog{
+    width: 95%;
+    height: 100%;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+}
+.Vlogin-forget{
+    width: 100%;
+    height: 12%;
+    /* background-color: black; */
+    color: #F27318;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ .Vlogin-btn{
+    width: 100%;
+    height: 12%;
+    background-color: #02B928;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 250;
+    color: #ffffff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+} 
+.vlogin-vector{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.c-forget{
+    cursor: pointer;
+}

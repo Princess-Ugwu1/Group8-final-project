@@ -16,6 +16,8 @@ import UpdatePassword from "./auth/UpdatePassword"
 import Home from "./Cart/Cart"
 import Cart from './Cart/Cart'
 import Congrat from "./auth/Congrat"
+import VendorSignup from './auth/VendorSignup'
+import VendorLogin from './auth/VendorLogin'
 
 
 
@@ -31,6 +33,8 @@ const App = () => {
     <Route path='/verifypassword/:token' element={<VerifyPassword/>}/>
     <Route path='/updatepassword' element={<UpdatePassword/>}/>
     <Route path='/congrat' element={<Congrat/>}/>
+    <Route path='/vendorsign' element={<VendorSignup/>}/>
+    <Route path='/vendorlogin' element={<VendorLogin/>}/>
     <Route element = {<Layout/>}>
     <Route path='/' element={<Products/>}/>
     <Route path='/store' element={<Store/>}/>

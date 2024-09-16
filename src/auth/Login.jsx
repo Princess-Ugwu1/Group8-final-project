@@ -62,7 +62,7 @@ const Login = () => {
                     <div className='loginToAccount'><p className='youraccount'>Login to your account</p></div>
                     <div className='createAnAccount'>
                       <p>New on Groceria? </p>
-                      <p className='createText'>Create an account</p>
+                      <p className='createText'><NavLink to="/vendorsign">Create an account</NavLink></p>
                     </div>
                   </div>
                </div>
