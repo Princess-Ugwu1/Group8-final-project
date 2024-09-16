@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Cart.css"
-import newfruit from "../assets/banana.jpeg"
+// import newfruit from "../assets/banana.jpeg"
 import { FaRegTrashAlt } from "react-icons/fa"
 
 const Cart = () => {
@@ -13,7 +13,7 @@ const Cart = () => {
                         <div className='cart-left'>
                             <div className='pixholder'>
                                 <div className='item-pic'>
-                                    <img src={newfruit} alt="" />
+                                    {/* <img src={newfruit} alt="" /> */}
                                 </div>
                                 <div className='item-detail'>
                                     <div style={{color: "#02B928"}} className='item-list'>Fresh Banana</div>

@@ -3,8 +3,6 @@
     height: 80%;
     display: flex;
     justify-content: flex-end;
-    /* overflow-x: auto; */
-    /* align-items: center; */
 }
 
 .storeCardContainer{
@@ -89,3 +87,26 @@
         font-family: montserrat;
     }
 }
+
+@media screen and (min-width:320px)and (max-width:500px){
+    .storeCards{
+        width:180px;
+        height: 180px;
+    }
+
+    .storeCardContainer{
+        width:90%;
+        height: 50%;
+        gap: 10px;
+    }
+
+    .storeDescription{
+        & p{
+            font-size: 18px;
+        }
+
+        & span{
+            font-size: 12px;
+        }
+    }
+}  

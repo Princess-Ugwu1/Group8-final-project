@@ -2,12 +2,21 @@ import React from 'react'
 import './UserProfile.css'
 
 const UserProfile = () => {
-    const profileInput =[
-        {}
-    ]
+    
   return (
     <div className='userProfileWrapper'>
-        <div className="profileLeft"></div>
+        <div className="profileLeft">
+            <div className="profileLogo">
+                <img src="././Logo.svg" alt="" />
+            </div>
+            <div className="profileItem">
+                <div className="profilePixSide"></div>
+                <div className="profileDetailsContainer">
+                    <p>Princess Ugwu Onyinyechuwu</p>
+                    <span>welcome to your princessUgwu309@gmail.com</span>
+                </div>
+            </div>
+        </div>
         <div className="profileRight">
         <div className="RightInner">
             <div className="subTopic">Profile Details</div>
