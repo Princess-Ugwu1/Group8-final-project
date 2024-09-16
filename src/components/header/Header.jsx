@@ -8,7 +8,11 @@ import { AiOutlineClose } from "react-icons/ai";
 
 
 const Header = () => {
+  const nav = useNavigate()
+    const [burgerMenu, setBurgerMenu] = useState(false)
+  
   return (
+
     <div className='header'>
       <div className="headerLogo" onClick={()=>nav('/')}>
         <img src={"./Logo.svg"} alt="" />
