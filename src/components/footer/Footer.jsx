@@ -8,7 +8,7 @@ const Footer = () =>{
         <div className="Footer-container">
             <div className="box">
                 <div className="box1">
-                   {/* <img src={logo} alt="" /> */}
+                   <img src={'./Group 2.png'} alt="" />
                 </div>
                 <div className="box2">
                 <div className="peace">

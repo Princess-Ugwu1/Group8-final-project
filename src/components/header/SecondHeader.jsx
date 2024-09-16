@@ -1,25 +1,32 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './SecondHeader.css'
 import { BsCart } from "react-icons/bs";
-import { useNavigate } from 'react-router-dom';
+import { IoMenu } from "react-icons/io5";
+
+import { NavLink, useNavigate } from 'react-router-dom';
+import BuggerMenu from './BuggerMenu';
 // import './header.css'
 
 const SecondHeader = () => {
     const nav = useNavigate()
+    const [ burgerMenu, setBurgerMenu] = useState(false)
+
   return (
     <div className='SecondHeaderWrapper'>
         <div className="secondHeaderContainer">  
        
         <div className="SecondLogo"><img src={"./Logo.svg"} alt="" /></div>
             <div className="secondHeaderNav">
-                <p>Home</p>
-                <p>Product</p>
-                <div className="searchBar">
+                <p> Home</p>
+                <p className=''>  <NavLink to= '/store'className={({isActive}) =>  isActive ? "SecondHeaderActive" : "SecondHeaderNotActive"}>Product</NavLink></p>
+               <div className="searchBar">
                     <input type="text" placeholder='search for food items'/>
                     <div className="searchDiv">Search</div>
                 </div>
-                <p className='cartIcon'><BsCart /></p>
+                <div className='cartIcon' onClick={()=> nav('/cart')}><BsCart size="25px"/></div>
                 <div className='profile'onClick={()=>nav('/profile')}></div>
+                  <div className='headerMenu'><IoMenu size="40px" onClick={(()=>setBurgerMenu(true))}/></div>
+                {burgerMenu ? <BuggerMenu/> : null}
             </div>
         </div>
        

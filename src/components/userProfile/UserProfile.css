@@ -3,13 +3,16 @@
     height: 100vh;
     /* background-color: red; */
     display: flex;
-    justify-content: s
+  
 }
 
 .profileLeft{
     width: 30%;
     height: 100vh;
     background-color: #DFFFC0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .profileRight{
     width: 70%;
@@ -53,6 +56,7 @@
         height: 50px;
         padding: 10px;
         font-size: 20px;
+        outline: none;
     }
 
     & label{
@@ -60,4 +64,56 @@
         font-weight: 400;
         font-family: montserrat;
     }
+}
+
+.profileLogo{
+    width: 90%;
+    height: 10%;
+    /* background-color: blue; */
+    /* padding: 10px; */
+}
+
+.profileItem{
+    width:90%;
+    height: 20%;
+    /* background-color: brown; */
+    /* justify-content: center; */
+    align-items: center;
+    display: flex;
+    gap: 10px;
+}
+
+.profilePixSide{
+    width:95px;
+    height: 95px;
+    border-radius: 50%;
+    background-color: #02B928;
+}
+
+.profileDetailsContainer{
+    width:75%;
+    height:50%;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    & p{
+        font-size: 25px;
+        font-weight: 500;
+        font-family: montserrat;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow:ellipsis;
+    }
+
+     & span{                                                                      
+        font-size: 15px;
+        font-weight: 500;
+        font-family: montserrat;
+        color: #1E1E1ED6;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow:ellipsis;
+     }
 }

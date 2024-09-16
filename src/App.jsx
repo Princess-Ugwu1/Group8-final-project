@@ -17,6 +17,9 @@ import AboutUs from './Components/AboutForm/AboutUs'
 import ContactUs from './components/ContactUs/ContactUs'
 import SecondHeader from './components/header/SecondHeader'
 import UserProfile from './components/userProfile/UserProfile'
+import LayoutTwo from './layout/LayoutTwo'
+import Cart from './components/Cart/Cart'
+import Contact from './components/aboutPage/Contact'
 
 const App = () => {
 
@@ -26,20 +29,26 @@ const App = () => {
   <Routes>
     <Route path='/' element={<LandingPage />}/>
   <Route path='/profile' element={<UserProfile/>}/>
+    <Route element = {<Layout/>}>
+
+
+      
+    <Route path='/ContactUs' element={<ContactUs/>}/>
+    <Route path='/AboutForm' element={<AboutUs/>}/>
+  <Route path='/contact' element={<Contact/>}/>
   <Route path='/header2' element={<SecondHeader/>}/>
     <Route path='/signup' element={<Signup/>}/>
     <Route path='/login' element={<Login/>}/>
     <Route path='/resetpassword' element={<ResetPassword/>}/>
     <Route path='/verifypassword' element={<VerifyPassword/>}/>
     <Route path='/updatepassword' element={<UpdatePassword/>}/>
-    <Route path='/dashBoard' element={<VendorDashBoard/>}/>
-    <Route element = {<Layout/>}>
+    </Route>
+    {/* <Route path='/dashBoard' element={<VendorDashBoard/>}/> */}
+    <Route element = {<LayoutTwo/>}>
     <Route path='/' element={<Products/>}/>
     <Route path='/store' element={<Store/>}/>
     <Route path='/items' element={<StoreItems/>}/>
-    <Route path='/about' element={<About/>}/>
-    <Route path='/AboutForm' element={<AboutUs/>}/>
-    <Route path='/ContactUs' element={<ContactUs/>}/>
+    <Route path='/cart' element={<Cart/>}/>
     </Route>
   </Routes>
  </HashRouter>

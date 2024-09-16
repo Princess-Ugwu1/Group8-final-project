@@ -1,27 +1,33 @@
 import React from 'react'
-import './productCard.css'
+// import './storeItems.css'
 import yam from '../../assets/Yam.png'
 
 const ProductCard = () => {
-  const items = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
+
+  const items = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17]
   return (
-    <div className='productCardWrapper'>
-      <div className="productInner">
+    <div className='storeItemsWrapper'>
+      <div className="storeItemsContainer">
       {
         items.map(()=>(
-          <div className="productCards">
-          <div className="productImg">
-            <img src={yam} alt="" />
+          <div className="storeItems">
+          <div className="itemImg">
+            <img src= {yam
+            }alt="" />
           </div>
-          <div className="productDescription">
-            <p>Yams</p>
-          </div>
-        </div>
-        
+          <div className="itemsDetailsWrapper">
+          <div className="itemDetails">
+          <p>Yam</p>
+          <span>$4000.00</span>
+          <button className='addToCart'>Add to cart</button>
+      </div>
+      </div>
+      </div>
+      
         ))
       }
-      </div>
-     
+
+    </div>
     </div>
   )
 }

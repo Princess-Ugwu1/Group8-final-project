@@ -6,6 +6,14 @@ const StoreItems = () => {
 
   const items = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17]
   return (
+    <>
+    <div className='ProductDescription'>
+    <div className="ProductDescriptionInner">
+    <span>All Products</span>
+    <p>Start Shopping from the finest 
+    selection of fresh products</p>
+    </div>
+</div>
     <div className='storeItemsWrapper'>
       <div className="storeItemsContainer">
       {
@@ -24,11 +32,13 @@ const StoreItems = () => {
       </div>
       </div>
       
+      
         ))
       }
 
     </div>
     </div>
+    </>
   )
 }
 

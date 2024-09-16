@@ -1,18 +1,35 @@
 import React from 'react'
 import './header.css'
-// import logo from '../../assets/logo.svg'
 import {NavLink} from 'react-router-dom'
+import { useState } from 'react'
+import { IoMenu } from "react-icons/io5";
+import BuggerMenu from './BuggerMenu';
+import { AiOutlineClose } from "react-icons/ai";
+
 
 const Header = () => {
+  const [ burgerMenu, setBurgerMenu] = useState(false)
   return (
     <div className='header'>
       <div className="headerLogo">
         <img src={"./Logo.svg"} alt="" />
+        {
+          burgerMenu ? <BuggerMenu/> : null
+        }
       </div>
+
+      <div className='headerMenu' onClick={(()=>setBurgerMenu(!burgerMenu))}>
+        {
+          !burgerMenu ?
+        <IoMenu  size= "40px" />:
+      <AiOutlineClose size={30} />
+
+        }
+        </div>
       <div className="headerNav">
         <ul>
           <li>Home</li>
-          <li><NavLink to= '/store'className={({isActive}) =>  isActive ? "HeaderActive" : "HeaderNotActive"}>Store</NavLink></li>
+          <li><NavLink to= '/store' className={({isActive}) =>  isActive ? "HeaderActive" : "HeaderNotActive"}>Store</NavLink></li>
           <li>About us</li>
           <NavLink to= '/signup'>
           <button className='registerButton'>Register</button>
