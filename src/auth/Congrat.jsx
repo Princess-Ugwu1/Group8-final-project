@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Congrat.css"
-import groceriapix from "../assets/logo.svg"
+import groceriapix from "../assets/Group 10.png"
 import congratpicture from "../assets/congratss.png"
 
 const Congrat = () => {
