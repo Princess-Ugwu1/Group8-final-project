@@ -1,0 +1,41 @@
+.AboutUs-Container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50;
+    background-color: rgb(195, 202, 202);
+}
+.Objective{
+    width: 100%;
+     height: 100vh;
+     top: 218px;
+     display: flex;
+     justify-content: center;
+     background-color:#02B928;
+}
+.Objective img{
+    width: 100%;
+    height: 100%;
+}
+.AboutUs-Container{
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+}@media screen and (1080px <=width <= 1240px){
+
+.Objective{
+    height: auto;
+    top: 0;
+    padding: 10px;
+}
+.Objective img{
+    width: 100%;
+    height: 100%;
+}
+}
+
+    
+
+

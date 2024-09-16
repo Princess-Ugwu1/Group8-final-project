@@ -1,0 +1,29 @@
+.howtoparent{
+   width: 100%;
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding-top: 50px;
+   font-size: 55px;
+   font-weight: 600;
+   background-color: white;
+}
+.howtopic{
+   width: 90%;
+   padding-top: 20px;
+   /* background-color: darkcyan; */
+}
+.howtopic img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+@media screen and (width < 750px) {
+   .howtoparent{
+       min-height: max-content;
+       font-size: 30px;
+       padding-bottom: 50px;
+   }
+}

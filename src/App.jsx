@@ -10,11 +10,13 @@ import Login from "./auth/Login"
 import ResetPassword from "./auth/ResetPassword"
 import VerifyPassword from "./auth/VerifyPassword"
 import UpdatePassword from "./auth/UpdatePassword"
-
 import VendorDashBoard from './components/vendorPage/VendorDashBoard'
+import LandingPage from './components/LandingPage'
+// import AboutForm from './Components/AboutForm/AboutUs'
+import AboutUs from './Components/AboutForm/AboutUs'
+import ContactUs from './components/ContactUs/ContactUs'
 import SecondHeader from './components/header/SecondHeader'
 import UserProfile from './components/userProfile/UserProfile'
-
 
 const App = () => {
 
@@ -22,6 +24,7 @@ const App = () => {
   return (
  <HashRouter>
   <Routes>
+    <Route path='/' element={<LandingPage />}/>
   <Route path='/profile' element={<UserProfile/>}/>
   <Route path='/header2' element={<SecondHeader/>}/>
     <Route path='/signup' element={<Signup/>}/>
@@ -35,7 +38,8 @@ const App = () => {
     <Route path='/store' element={<Store/>}/>
     <Route path='/items' element={<StoreItems/>}/>
     <Route path='/about' element={<About/>}/>
-  
+    <Route path='/AboutForm' element={<AboutUs/>}/>
+    <Route path='/ContactUs' element={<ContactUs/>}/>
     </Route>
   </Routes>
  </HashRouter>

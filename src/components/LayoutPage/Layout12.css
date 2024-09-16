@@ -1,0 +1,96 @@
+.firstParent{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+.firstHold{
+  width: 90%;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  /* background-color: firebrick; */
+}
+.firstHold h1{
+  font-size: 55px;
+  font-weight: 600;
+  color: #02B928;
+}
+.stores{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+  /* background-color: yellow; */
+}
+.storehold{
+  width: 30%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  border-radius: 30px;
+  padding-top: 20px;
+  background-color: #DFFFC0;
+}
+.storehold p, .storehold2 p, .storehold3 p{
+  font-size: 25px;
+  color: #02B928;
+  font-weight: 500;
+}
+.storeimage{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  /* background-color: darkblue; */
+}
+.storeimage img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 50%;
+}
+.storehold2{
+  width: 30%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  border-radius: 30px;
+  padding-top: 20px;
+  background: #FFD6B8;
+}
+.storehold3{
+  width: 30%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  border-radius: 30px;
+  padding-top: 20px;
+  background-color: #DFFFC0;
+}
+
+@media screen and (width < 750px) {
+  .stores{
+      flex-direction: column;
+      gap: 20px;
+      padding-bottom: 40px;
+  }
+  .storehold, .storehold2, .storehold3{
+      width: 100%;
+  }
+  .firstHold{
+      padding-top: 20px;
+  }
+  .firstHold h1{
+      font-size: 35px;
+  }
+}
