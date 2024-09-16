@@ -1,6 +1,6 @@
 import React from 'react'
 import './header.css'
-import {NavLink} from 'react-router-dom'
+import {NavLink, useNavigate} from 'react-router-dom'
 import { useState } from 'react'
 import { IoMenu } from "react-icons/io5";
 import BuggerMenu from './BuggerMenu';
@@ -8,10 +8,11 @@ import { AiOutlineClose } from "react-icons/ai";
 
 
 const Header = () => {
+  const nav = useNavigate()
   const [ burgerMenu, setBurgerMenu] = useState(false)
   return (
     <div className='header'>
-      <div className="headerLogo">
+      <div className="headerLogo" onClick={()=>nav('/')}>
         <img src={"./Logo.svg"} alt="" />
         {
           burgerMenu ? <BuggerMenu/> : null

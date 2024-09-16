@@ -25,8 +25,8 @@ const App = () => {
   return (
  <HashRouter>
   <Routes>
- 
-
+    <Route path='/cart' element={<Cart/>}/>
+   <Route path='/profile' element={<UserProfile/>}/>
     <Route element = {<Layout/>}>
     <Route path='/' element={<LandingPage />}/>
     <Route path='/contactUs' element={<ContactUs/>}/>
@@ -44,8 +44,8 @@ const App = () => {
     <Route path='/product' element={<Products/>}/>
     <Route path='/store' element={<Store/>}/>
     <Route path='/items' element={<StoreItems/>}/>
-    <Route path='/cart' element={<Cart/>}/>
-    <Route path='/profile' element={<UserProfile/>}/>
+  
+
     </Route>
   </Routes>
  </HashRouter>
