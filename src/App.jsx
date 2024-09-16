@@ -9,14 +9,19 @@ import Login from "./auth/Login"
 import ResetPassword from "./auth/ResetPassword"
 import VerifyPassword from "./auth/VerifyPassword"
 import UpdatePassword from "./auth/UpdatePassword"
+
+import Congrat from "./auth/Congrat"
+import VendorSignup from './auth/VendorSignup'
+import VendorLogin from './auth/VendorLogin'
+
 import VendorDashBoard from './components/vendorPage/VendorDashBoard'
 import LandingPage from './components/LandingPage'
 import ContactUs from './components/ContactUs/ContactUs'
 import SecondHeader from './components/header/SecondHeader'
 import UserProfile from './components/userProfile/UserProfile'
 import LayoutTwo from './layout/LayoutTwo'
-import Cart from './components/Cart/Cart'
 import AboutUs from './components/AboutForm/AboutUs'
+import Cart from './components/Cart/Cart'
 
 
 const App = () => {
@@ -38,15 +43,14 @@ const App = () => {
     <Route path='/AboutForm' element={<AboutUs/>}/>
   {/* <Route path='/contact' element={<Contact/>}/> */}
   {/* <Route path='/header2' element={<SecondHeader/>}/> */}
-
     </Route>
     {/* <Route path='/dashBoard' element={<VendorDashBoard/>}/> */}
     <Route element = {<LayoutTwo/>}>
     <Route path='/product' element={<Products/>}/>
     <Route path='/store' element={<Store/>}/>
     <Route path='/items' element={<StoreItems/>}/>
+               
   
-
     </Route>
   </Routes>
  </HashRouter>
