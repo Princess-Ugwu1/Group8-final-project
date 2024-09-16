@@ -15,7 +15,7 @@ const SecondHeader = () => {
     <div className='SecondHeaderWrapper'>
         <div className="secondHeaderContainer">  
        
-        <div className="SecondLogo"><img src={"./Logo.svg"} alt="" /></div>
+        <div className="SecondLogo" onClick={()=>nav('/')}><img src={"./Logo.svg"} alt="" /></div>
             <div className="secondHeaderNav">
                 <p> Home</p>
                 <p className=''>  <NavLink to= '/store'className={({isActive}) =>  isActive ? "SecondHeaderActive" : "SecondHeaderNotActive"}>Product</NavLink></p>
