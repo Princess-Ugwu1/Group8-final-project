@@ -10,7 +10,6 @@ import Login from "./auth/Login"
 import ResetPassword from "./auth/ResetPassword"
 import VerifyPassword from "./auth/VerifyPassword"
 import UpdatePassword from "./auth/UpdatePassword"
-import Home from "./Cart/Cart"
 import Cart from './Cart/Cart'
 import Congrat from "./auth/Congrat"
 import VendorSignup from './auth/VendorSignup'
