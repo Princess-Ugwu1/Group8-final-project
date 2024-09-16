@@ -9,6 +9,11 @@ import Login from "./auth/Login"
 import ResetPassword from "./auth/ResetPassword"
 import VerifyPassword from "./auth/VerifyPassword"
 import UpdatePassword from "./auth/UpdatePassword"
+import Cart from './Cart/Cart'
+import Congrat from "./auth/Congrat"
+import VendorSignup from './auth/VendorSignup'
+import VendorLogin from './auth/VendorLogin'
+
 import VendorDashBoard from './components/vendorPage/VendorDashBoard'
 import LandingPage from './components/LandingPage'
 import ContactUs from './components/ContactUs/ContactUs'
@@ -36,7 +41,7 @@ const App = () => {
     <Route path='/signup' element={<Signup/>}/>
     <Route path='/login' element={<Login/>}/>
     <Route path='/resetpassword' element={<ResetPassword/>}/>
-    <Route path='/verifypassword' element={<VerifyPassword/>}/>
+    <Route path='/verifypassword/:token' element={<VerifyPassword/>}/>
     <Route path='/updatepassword' element={<UpdatePassword/>}/>
     </Route>
     {/* <Route path='/dashBoard' element={<VendorDashBoard/>}/> */}
@@ -44,8 +49,8 @@ const App = () => {
     <Route path='/product' element={<Products/>}/>
     <Route path='/store' element={<Store/>}/>
     <Route path='/items' element={<StoreItems/>}/>
+               
   
-
     </Route>
   </Routes>
  </HashRouter>
