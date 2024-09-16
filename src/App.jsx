@@ -16,7 +16,6 @@ import SecondHeader from './components/header/SecondHeader'
 import UserProfile from './components/userProfile/UserProfile'
 import LayoutTwo from './layout/LayoutTwo'
 import Cart from './components/Cart/Cart'
-import Contact from './components/aboutPage/Contact'
 import AboutUs from './components/AboutForm/AboutUs'
 
 
@@ -26,15 +25,13 @@ const App = () => {
   return (
  <HashRouter>
   <Routes>
-    <Route path='/' element={<LandingPage />}/>
-  <Route path='/profile' element={<UserProfile/>}/>
+ 
+
     <Route element = {<Layout/>}>
-
-
-      
-    <Route path='/ContactUs' element={<ContactUs/>}/>
+    <Route path='/' element={<LandingPage />}/>
+    <Route path='/contactUs' element={<ContactUs/>}/>
     <Route path='/AboutForm' element={<AboutUs/>}/>
-  <Route path='/contact' element={<Contact/>}/>
+  {/* <Route path='/contact' element={<Contact/>}/> */}
   <Route path='/header2' element={<SecondHeader/>}/>
     <Route path='/signup' element={<Signup/>}/>
     <Route path='/login' element={<Login/>}/>
@@ -44,10 +41,11 @@ const App = () => {
     </Route>
     {/* <Route path='/dashBoard' element={<VendorDashBoard/>}/> */}
     <Route element = {<LayoutTwo/>}>
-    <Route path='/' element={<Products/>}/>
+    <Route path='/product' element={<Products/>}/>
     <Route path='/store' element={<Store/>}/>
     <Route path='/items' element={<StoreItems/>}/>
     <Route path='/cart' element={<Cart/>}/>
+    <Route path='/profile' element={<UserProfile/>}/>
     </Route>
   </Routes>
  </HashRouter>
