@@ -7,7 +7,7 @@
     background-color: #02B928;
 }
   
-  .box{
+.box{
     width:80%;
     height:100%;
     display: flex;
@@ -19,6 +19,7 @@
     color: #ffffff;
   
   }
+  
   .box1{
     width: 22%;
     height:70%;
@@ -37,7 +38,7 @@
 
 
   .box2{
-    width: 22%;
+    width: 25%;
     height:70%;
     display: flex;
     flex-direction: column;
@@ -46,7 +47,8 @@
     /* background-color: red; */
 
     & p{
-        font-size: 20px;
+        font-size: 15px;
+        font-family: montserrat;
     }
   }
 
@@ -62,8 +64,9 @@
   }
 
 .footerSubNames{
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 600;
+    font-family: montserrat;
 }
 
 

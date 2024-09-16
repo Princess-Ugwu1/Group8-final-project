@@ -1,0 +1,40 @@
+.vendorsCardWrapper{
+    width: 100%;
+    height: 50%;
+    /* background-color: orange; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px   ;
+}
+
+.vendorsCards{
+    width:30%;
+    height: 45%;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.vendorCardLeft{
+    width: 60%;
+    height: 70%;
+    /* background-color: brown; */
+    font-size: 25px;
+    font-family: montserrat;
+}
+
+.vendorCardRight{
+    width: 30%;
+    height: 70%;
+    /* background-color: red; */
+    border-radius: 50%;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid red;
+}

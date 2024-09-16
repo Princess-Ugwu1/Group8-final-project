@@ -1,0 +1,63 @@
+.userProfileWrapper{
+    width: 100%;
+    height: 100vh;
+    /* background-color: red; */
+    display: flex;
+    justify-content: s
+}
+
+.profileLeft{
+    width: 30%;
+    height: 100vh;
+    background-color: #DFFFC0;
+}
+.profileRight{
+    width: 70%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.RightInner{
+    width:70%;
+    height: 80%;
+    /* background-color: brown; */
+}
+
+.subTopic{
+    width:100%;
+    height: 15%;
+    /* background-color: blueviolet; */
+    font-size: 50px;
+    font-weight: 400;
+    font-family: montserrat;
+}
+
+.profileForm{
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.ProfileInputDiv{
+    width:100%;
+    height: 13vh;
+    /* background-color: orange; */
+    display: flex;
+    flex-direction: column;
+
+    & input{
+        width: 709px;
+        height: 50px;
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    & label{
+        font-size:24px;
+        font-weight: 400;
+        font-family: montserrat;
+    }
+}
