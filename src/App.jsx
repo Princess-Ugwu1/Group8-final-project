@@ -4,7 +4,6 @@ import Layout from './layout/Layout'
 import Products from './components/products/Products'
 import Store from './components/Stores/Store'
 import StoreItems from './components/Stores/StoreItems'
-import About from './components/aboutPage/About'
 import Signup from './auth/Signup'
 import Login from "./auth/Login"
 import ResetPassword from "./auth/ResetPassword"
@@ -12,14 +11,15 @@ import VerifyPassword from "./auth/VerifyPassword"
 import UpdatePassword from "./auth/UpdatePassword"
 import VendorDashBoard from './components/vendorPage/VendorDashBoard'
 import LandingPage from './components/LandingPage'
-// import AboutForm from './Components/AboutForm/AboutUs'
-import AboutUs from './Components/AboutForm/AboutUs'
+ import AboutUs from './components/AboutForm/AboutUs'
 import ContactUs from './components/ContactUs/ContactUs'
 import SecondHeader from './components/header/SecondHeader'
 import UserProfile from './components/userProfile/UserProfile'
 import LayoutTwo from './layout/LayoutTwo'
 import Cart from './components/Cart/Cart'
 import Contact from './components/aboutPage/Contact'
+import AboutUs from './components/AboutForm/AboutUs'
+// import AboutUs from './Components/AboutForm/AboutUs'
 
 const App = () => {
 
