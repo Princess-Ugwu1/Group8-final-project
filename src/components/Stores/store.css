@@ -12,11 +12,17 @@
 .storeHeroWrapper{
     width:100%;
     height: 70vh;
-    background-image: url(../../assets/hero.png);
-    background-repeat: no-repeat;
+    background-color: #F27318;
+    /* background-image: url(../../assets/hero.png); */
+    /* background-repeat: no-repeat;
     object-fit:cover;
-    background-size: 100% 100%;
+    background-size: 100% 100%; */
     /* background-position: center ; */
+
+    & img{
+        width:100%;
+        height: 100%;
+    }
 }
 
 .storesOnGroceria{
@@ -43,11 +49,44 @@
 
 .topProducts{
     width: 100%;
-    height: max-contentx;
+    height: max-content;
     /* background-color: rgb(114, 95, 95); */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
+}
+
+@media screen and (min-width:320px) and (max-width:500px){
+    .storeHeroWrapper{
+        /* display: block; */
+        /* border :solid blue; */
+        width:100%;
+        height: 40vh;
+
+        & img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .storesDescription{
+        /* display: block; */
+        height: 10vh;
+        font-size: 25px;
+        /* border: solid red; */
+    }
+
+    .storeWrapper{
+        /* display: block; */
+        height: max-content;
+    }
+
+    .storesOnGroceria{
+        /* display: block; */
+        height: 50vh;
+        justify-content: flex-end;
+    }
+
 }
 
