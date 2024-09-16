@@ -11,7 +11,6 @@ import VerifyPassword from "./auth/VerifyPassword"
 import UpdatePassword from "./auth/UpdatePassword"
 import VendorDashBoard from './components/vendorPage/VendorDashBoard'
 import LandingPage from './components/LandingPage'
- import AboutUs from './components/AboutForm/AboutUs'
 import ContactUs from './components/ContactUs/ContactUs'
 import SecondHeader from './components/header/SecondHeader'
 import UserProfile from './components/userProfile/UserProfile'
@@ -19,7 +18,7 @@ import LayoutTwo from './layout/LayoutTwo'
 import Cart from './components/Cart/Cart'
 import Contact from './components/aboutPage/Contact'
 import AboutUs from './components/AboutForm/AboutUs'
-// import AboutUs from './Components/AboutForm/AboutUs'
+
 
 const App = () => {
 
