@@ -67,7 +67,7 @@ const Login = () => {
                   </div>
                </div>
                <div className='login-main'>
-        <div style={{height:200}} className='loginInner'>
+        <div style={{height:200}} className='loginInner1'>
                   <p>Email</p>
                   <input className='email-input3' type="text" onChange={handleemail}/>
                   <p>Password</p>
