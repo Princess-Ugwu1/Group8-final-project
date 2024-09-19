@@ -1,0 +1,14 @@
+.LayoutThree{
+    display: flex;
+    flex-direction: row;
+    /* background: red; */
+    height: 100vh;
+    width: 100%;
+}
+.HoldOutletAndHeader{
+    height: 100vh;
+    width: 90%;
+    /* background: blue; */
+    display: flex;
+    flex-direction: column;
+}

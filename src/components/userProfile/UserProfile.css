@@ -14,57 +14,7 @@
     flex-direction: column;
     align-items: center;
 }
-.profileRight{
-    width: 70%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.RightInner{
-    width:70%;
-    height: 80%;
-    /* background-color: brown; */
-}
-
-.subTopic{
-    width:100%;
-    height: 15%;
-    /* background-color: blueviolet; */
-    font-size: 50px;
-    font-weight: 400;
-    font-family: montserrat;
-}
-
-.profileForm{
-    height: 90%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-.ProfileInputDiv{
-    width:100%;
-    height: 13vh;
-    /* background-color: orange; */
-    display: flex;
-    flex-direction: column;
-
-    & input{
-        width: 709px;
-        height: 50px;
-        padding: 10px;
-        font-size: 20px;
-        outline: none;
-    }
-
-    & label{
-        font-size:24px;
-        font-weight: 400;
-        font-family: montserrat;
-    }
-}
 
 .profileLogo{
     width: 90%;
@@ -84,8 +34,8 @@
 }
 
 .profilePixSide{
-    width:95px;
-    height: 95px;
+    width:70px;
+    height: 70px;
     border-radius: 50%;
     background-color: #02B928;
 }
@@ -116,4 +66,69 @@
         white-space: nowrap;
         text-overflow:ellipsis;
      }
+}
+.profileRight{
+    width: 70%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.RightInner{
+    width:70%;
+    height: 80%;
+    /* background-color: brown; */
+}
+
+.subTopic{
+    width:100%;
+    height: 15%;
+    /* background-color: blueviolet; */
+    font-size: 50px;
+    font-weight: 400;
+    font-family: montserrat;
+}
+
+.profileForm{
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* justify-content: space-around; */
+}
+
+.ProfileInputDiv{
+    width:100%;
+    height: 13vh;
+    /* background-color: orange; */
+    display: flex;
+    flex-direction: column;
+
+    & input{
+        width: 500px;
+        height: 40px;
+        padding: 10px;
+        font-size: 16px;
+        outline: none;
+    }
+
+    & label{
+        font-size:16px;
+        font-weight: 400;
+        font-family: montserrat;
+    }
+}
+
+@media screen and (min-width:320px)  and (max-width:500px){
+    .userProfileWrapper{
+     /* width:30%; */
+     /* display: block; */
+     flex-direction: column;
+     border: solid cadetblue;
+
+    }
+
+
+    
 }

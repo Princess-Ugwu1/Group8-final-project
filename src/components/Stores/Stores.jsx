@@ -6,10 +6,12 @@ import { IoIosArrowForward } from "react-icons/io";
 
 
 const Store = () => {
+
+  const url =""
   return (
     <div className='storeWrapper'>
       <div className="storeHeroWrapper">
-        <img src={'./hero.png'} alt="" />
+        {/* <img src={'./hero.png'} alt="" /> */}
         <button>Start Shopping<IoIosArrowForward /></button>
       </div>
       <div className="storesOnGroceria">

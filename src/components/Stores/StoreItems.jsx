@@ -1,43 +1,59 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './storeItems.css'
 import yam from '../../assets/Yam.png'
-
+import { useParams } from 'react-router-dom'
+import axios from 'axios'
 const StoreItems = () => {
+  const { id } = useParams()
+const [allProduct, setAllProducts] = useState([])
+  const url = " https://groceria.onrender.com/api/v1/allstoreproducts"
 
-  const items = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17]
+  const getOneStoreProduct = async () => {
+    try {
+    const product =  await axios.get(`${url}/${id}`)
+    // console.log(product.data.data);
+    
+    setAllProducts(product?.data?.data)
+    } catch (err) {
+      console.log(err);
+
+    }
+  }
+useEffect(()=>{
+  getOneStoreProduct()
+})
   return (
     <>
-    <div className='ProductDescription'>
-    <div className="ProductDescriptionInner">
-    <span>All Products</span>
-    <p>Start Shopping from the finest 
-    selection of fresh products</p>
-    </div>
-</div>
-    <div className='storeItemsWrapper'>
-      <div className="storeItemsContainer">
-      {
-        items.map(()=>(
-          <div className="storeItems">
-          <div className="itemImg">
-            <img src= {yam
-            }alt="" />
-          </div>
-          <div className="itemsDetailsWrapper">
-          <div className="itemDetails">
-          <p>Yam</p>
-          <span>$4000.00</span>
-          <button className='addToCart'>Add to cart</button>
+      <div className='ProductDescription'>
+        <div className="ProductDescriptionInner">
+          <span>All Products</span>
+          <p>Start Shopping from the finest
+            selection of fresh products</p>
+        </div>
       </div>
-      </div>
-      </div>
-      
-      
-        ))
-      }
+      <div className='storeItemsWrapper'>
+        <div className="storeItemsContainer">
+          {
+            allProduct.map((item) => (
+              <div className="storeItems">
+                <div className="itemImg">
+                  <img src={item?.productImage} alt="" />
+                </div>
+                <div className="itemsDetailsWrapper">
+                  <div className="itemDetails">
+                    <p>{item?.productName}</p>
+                    <span> ₦{item?.productPrice}</span>
+                    <button className='addToCart'>Add to cart</button>
+                  </div>
+                </div>
+              </div>
 
-    </div>
-    </div>
+
+            ))
+          }
+
+        </div>
+      </div>
     </>
   )
 }

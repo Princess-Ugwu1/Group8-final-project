@@ -1,0 +1,127 @@
+.VendorUploadWrapper{
+    width:100%;
+    height: 100vh;
+    /* background-color: blue; */
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.uploadHolder{
+    width:85%;
+    height: 100%;
+    /* background-color: aqua; */
+}
+
+.descriptiveDiv{
+    width:100%;
+    height:15%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    & p{
+        font-family: Montserrat;
+font-size: 25px;
+font-weight: 600;
+line-height: 30.48px;
+text-align: left;
+color: #1E1E1EE3;
+
+    }
+
+    & span{
+        font-family: Montserrat;
+font-size: 25px;
+font-weight: 400;
+line-height: 30.48px;
+text-align: left;
+color: #1E1E1EE3;
+
+    }
+}
+
+.VendorUploadForm{
+    width: 90%;
+    height: 85%;
+    /* background-color: orange; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* justify-content: cente; */
+    align-items: center;
+}
+
+.UploadFormHolder{
+    width:100%;
+    height: 18%;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+
+    & label{
+        font-family: Montserrat;
+        font-size: 17px;
+        font-weight: 500;
+        line-height: 30.48px;
+        text-align: left;
+        
+    }
+
+    & input{
+        width: 500px;
+height: 40px;
+gap: 0px;
+border-radius: 3px;
+border: 0.7px 0px 0px 0px;
+opacity: 0px;
+font-size: 20px;
+
+    }
+}
+
+.UploadHolderDiv{
+    width:100%;
+    height: 35%;
+    background-color: #F6F5F5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & input{
+        width:90%;
+        height: 95% ;
+    }
+}
+
+.uploadButton{
+    width:200px;
+height: 45px;
+padding: 10px;
+gap: 10px;
+border-radius: 12px ;
+font-size: 18px;
+font-family: montserrat;
+background-color: #02B928;
+
+
+}
+
+.custom-file-upload {
+    display: flex;
+    /* padding:10px 10px 10px 10px; */
+    cursor: pointer;
+    background-color:#02B928;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    /* display: flex; */
+    width: 15%;
+    height: 3rem;
+    justify-content: center;
+    align-items: center;
+  }
