@@ -8,6 +8,11 @@ import Login from "./auth/Login"
 import ResetPassword from "./auth/ResetPassword"
 import VerifyPassword from "./auth/VerifyPassword"
 import UpdatePassword from "./auth/UpdatePassword"
+
+import Congrat from "./auth/Congrat"
+import VendorSignup from './auth/VendorSignup'
+import VendorLogin from './auth/VendorLogin'
+
 import VendorDashBoard from './components/vendorPage/VendorDashBoard'
 import LandingPage from './components/LandingPage'
 import ContactUs from './components/ContactUs/ContactUs'

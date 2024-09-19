@@ -1,4 +1,6 @@
 import React from 'react'
+
+
 import "./footer.css"
 // import logo from "../../assets/logo.svg"
 import { FaLocationDot } from "react-icons/fa6";

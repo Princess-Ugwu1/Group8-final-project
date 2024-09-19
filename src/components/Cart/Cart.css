@@ -11,7 +11,7 @@
 .cart-holder{
     width: 100%;
     height: 100%;
-    background-color: rgb(218, 213, 213);
+    background-color:#ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,12 +19,12 @@
 .cart-inner{
     width: 95%;
     height: 92%;
-    background-color:  rgb(218, 213, 213);
+    background-color: #ffffff;
 }
 .item-con{
     width: 100%;
     height: 85%;
-    background-color:  rgb(218, 213, 213);
+    background-color:  #ffffff;
 }
 .item-btns{
     width: 100%;
@@ -58,19 +58,24 @@
     /* background-color: deeppink; */
     display: flex;
     gap: 10px;
+    /* border: #02B928 solid 0.4px; */
+    
 }
 .item-pic{
-    width: 40%;
+    width: 26%;
     height: 100%;
     background-color: #DFFFC0;
     ;
     display: flex;
     justify-content: center;
     align-items: center;
+    /* border: #02B928 solid 0.4px; */
 
     & img{
         width: 190px;
         height: 100%;
+        border: #02B928 solid 0.1px;
+        border-radius: 10px;
     }
 }
 .item-detail{
@@ -84,29 +89,32 @@
     /* background-color: gold; */
     display: flex;
     align-items: center;
-    font-family: lato;
+    font-family: Montserrat;
 }
 .qty{
     width: 50%;
     height: 40%;
     /* background-color: tomato; */
     display: flex;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     align-items: center;
+    gap: 10px;
 }
 .add{
-    width: 40%;
-    height: 100%;
-    background-color:  #F3D79F;
+    width: 20%;
+    height: 70%;
+    background-color: #DFFFC0;
+    ;
     display: flex;
     justify-content: space-around;
     align-items: center;
     cursor: pointer;
 }
 .minus{
-    width: 40%;
-    height: 100%;
-    background-color: #F3D79F;
+    width: 20%;
+    height: 70%;
+    background-color: #DFFFC0;
+    ;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -121,6 +129,8 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    border: solid 0.2px black;
+    border-radius: 8px;
 }
 .des{
     font-size: 13px;
@@ -154,9 +164,10 @@
     cursor: pointer;
 }
 .Check-btn{
-    width: 50%;
+    width: 25%;
     height: 50%;
-    background-color: #02B928;
+    color: #02B928;
+    background-color: #ffffff;
     border-radius: 10px;
     font-size: 20px;
     font-weight: 500;
@@ -166,10 +177,12 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    font-family: Montserrat;
+    border: #02B928 solid 2px;
     
 }
 .Continue-btn{
-    width: 50%;
+    width: 25%;
     height: 50%;
     background-color: #02B928;
     border-radius: 10px;
@@ -182,6 +195,9 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    color: #ffffff;
+    transform: (1.02);
+    transition: 300ms ease-out;
     
 }
 .pricey{
