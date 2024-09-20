@@ -2,6 +2,8 @@ import React from 'react'
 import "./Congrat.css"
 import groceriapix from "../assets/Group 10.png"
 import congratpicture from "../assets/congratss.png"
+import { NavLink } from 'react-router-dom'
+
 
 const Congrat = () => {
   return (
@@ -9,7 +11,7 @@ const Congrat = () => {
             <div className='congrat-main'>
                 <div className='congrat-inner'>
                     <div className='logodiv'>
-                        <img src={groceriapix} alt="" />
+                        <img src={groceriapix} alt=""/>
                     </div>
                     <div className='div-congrat'>
                         <div className='congratulation'>
@@ -18,7 +20,7 @@ const Congrat = () => {
                         <div className='congratpix'><img className='pixmain' src={congratpicture} alt="" /></div>
                     </div>
                     <div className='congratBtn'>
-                        <p>Continue</p>
+                        <NavLink to="/login"><p>Continue</p></NavLink>
                     </div>
                 </div>
             </div>

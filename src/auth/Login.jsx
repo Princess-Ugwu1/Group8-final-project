@@ -42,7 +42,7 @@ const Login = () => {
           console.log(res)
           dispatch(userData(res.data.data))
           toast.success("Successful Signed Up")
-          nav(`/ ${res.data.data._id}`)
+          nav("/congrat")
 
         })
         .catch((error)=>{

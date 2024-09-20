@@ -25,6 +25,7 @@ import Cart from './components/Cart/Cart'
 import SignupVerify from './auth/SignupVerify'
 import ExpiredVerify from './auth/ExpiredVerify'
 import VerificationPage from './auth/Verify'
+import Checkout from './components/Cart/Checkout';
 
 
 const App = () => {
@@ -58,6 +59,7 @@ const App = () => {
     <Route path='/product' element={<Products/>}/>
     <Route path='/store' element={<Store/>}/>
     <Route path='/items' element={<StoreItems/>}/>
+    <Route path='/checkout' element={<Checkout/>}/>
                
   
     </Route>
