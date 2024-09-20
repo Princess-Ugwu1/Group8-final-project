@@ -27,6 +27,7 @@ import Store from './components/Stores/Stores'
 import LayoutThree from './layout/LayoutThree'
 import VendorUpload from './components/vendorPage/VendorUpload'
 import VendorCards from './components/vendorPage/VendorCards'
+import { Toaster } from 'react-hot-toast'
 
 
 const App = () => {
@@ -35,15 +36,7 @@ const App = () => {
   return (
  <HashRouter>
   <Routes>
-    <Route path='/cart' element={<Cart/>}/>
-   <Route path='/profile' element={<UserProfile/>}/>
-    <Route element = {<Layout/>}>
-    <Route path='/' element={<LandingPage />}/>
-    <Route path='/contactUs' element={<ContactUs/>}/>
-    <Route path='/AboutForm' element={<About/>}/>
-  {/* <Route path='/contact' element={<Contact/>}/> */}
-  <Route path='/header2' element={<SecondHeader/>}/>
-    <Route path='/signup' element={<Signup/>}/>
+  <Route path='/signup' element={<Signup/>}/>
     <Route path='/login' element={<Login/>}/>
     <Route path='/resetpassword' element={<ResetPassword/>}/>
     <Route path='/verifypassword/:token' element={<VerifyPassword/>}/>
@@ -54,12 +47,21 @@ const App = () => {
     <Route path='/expired' element={<ExpiredVerify/>}/>
     <Route path='/vendorsign' element={<VendorSignup/>}/>
     <Route path='/vendorlogin' element={<VendorLogin/>}/>
+    <Route path='/cart' element={<Cart/>}/>
+   <Route path='/profile' element={<UserProfile/>}/>
+    <Route element = {<Layout/>}>
+    <Route path='/' element={<LandingPage />}/>
+    <Route path='/contactUs' element={<ContactUs/>}/>
+    <Route path='/AboutForm' element={<About/>}/>
+  {/* <Route path='/contact' element={<Contact/>}/> */}
+  <Route path='/header2' element={<SecondHeader/>}/>
+   
     </Route>
     {/* <Route path='/dashBoard' element={<VendorDashBoard/>}/> */}
     <Route element = {<LayoutTwo/>}>
     <Route path='/product' element={<Products/>}/>
     <Route path='/store' element={<Store/>}/>
-    <Route path='/items' element={<StoreItems/>}/>
+    <Route path='/items/:id' element={<StoreItems/>}/>
     </Route>
         <Route element={<LayoutThree/>}>
             <Route path='/upload' element={<VendorUpload/>}/>
@@ -68,6 +70,7 @@ const App = () => {
   
     </Route>
   </Routes>
+  <Toaster position="top-right" reverseOrder={false}/>
  </HashRouter>
 
   )
