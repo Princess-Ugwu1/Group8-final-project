@@ -1,35 +1,37 @@
 import React from 'react'
-import {HashRouter, Route, Routes} from 'react-router-dom'
+import { HashRouter, Route, Routes } from 'react-router-dom'
 import Layout from './layout/Layout'
 import Products from './components/products/Products'
-import Store from './components/Stores/Store'
 import StoreItems from './components/Stores/StoreItems'
 import Signup from './auth/Signup'
 import Login from "./auth/Login"
 import ResetPassword from "./auth/ResetPassword"
 import VerifyPassword from "./auth/VerifyPassword"
 import UpdatePassword from "./auth/UpdatePassword"
-
 import Congrat from "./auth/Congrat"
 import VendorSignup from './auth/VendorSignup'
 import VendorLogin from './auth/VendorLogin'
-
 import VendorDashBoard from './components/vendorPage/VendorDashBoard'
 import LandingPage from './components/LandingPage'
 import ContactUs from './components/ContactUs/ContactUs'
 import SecondHeader from './components/header/SecondHeader'
 import UserProfile from './components/userProfile/UserProfile'
 import LayoutTwo from './layout/LayoutTwo'
-import AboutUs from './components/AboutForm/AboutUs'
 import Cart from './components/Cart/Cart'
 import SignupVerify from './auth/SignupVerify'
 import ExpiredVerify from './auth/ExpiredVerify'
 import VerificationPage from './auth/Verify'
+import About from './components/aboutPage/About'
+import Contact from './components/aboutPage/Contact'
+import Store from './components/Stores/Stores'
+import LayoutThree from './layout/LayoutThree'
+import VendorUpload from './components/vendorPage/VendorUpload'
+import VendorCards from './components/vendorPage/VendorCards'
 
 
 const App = () => {
 
-  
+
   return (
  <HashRouter>
   <Routes>
@@ -58,11 +60,15 @@ const App = () => {
     <Route path='/product' element={<Products/>}/>
     <Route path='/store' element={<Store/>}/>
     <Route path='/items' element={<StoreItems/>}/>
+        <Route element={<LayoutThree/>}>
+            <Route path='/upload' element={<VendorUpload/>}/>
+            <Route path='/vendorOrders' element={<VendorCards/>}/>
                
   
     </Route>
   </Routes>
  </HashRouter>
+
   )
 }
 

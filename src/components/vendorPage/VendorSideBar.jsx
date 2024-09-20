@@ -1,51 +1,49 @@
-// import React from 'react'
-// import './sideBar.css'
-
-// const VendorSideBar = () => {
-//     const list = 
-//     {
-//       id:1, name:"DashBoard" 
-//     }
-//   return (
-//     <div className="sideBar">
-//         {
-//             list.map(()=>(
-//                 <div className="listDiv"></div>
-//             ))
-//         }
-
-//     </div>
-//   )
-// }
-
-// export default VendorSideBar
-
-import React from 'react';
-import './sideBar.css';
-import { FaHome, FaUser, FaShoppingCart, FaCog, FaSignOutAlt } from 'react-icons/fa'; // Importing icons
+import React from "react";
+import "./sideBar.css";
+import { IoStorefrontSharp } from "react-icons/io5";
+import { CiMenuBurger } from "react-icons/ci";
+import { MdLogout } from "react-icons/md";
+import { NavLink } from "react-router-dom";
 
 const VendorSideBar = () => {
-  // Updated list with 5 items, each having an id, name, and icon
-  const list = [
-    { id: 1, name: "Dashboard", icon: <FaHome /> },
-    { id: 2, name: "Profile", icon: <FaUser /> },
-    { id: 3, name: "Orders", icon: <FaShoppingCart /> },
-    { id: 4, name: "Settings", icon: <FaCog /> },
-    { id: 5, name: "Logout", icon: <FaSignOutAlt /> }
-  ];
-
   return (
-    <div className="sideBar">
-      {
-        list.map((item) => (
-          <div className="listDiv" key={item.id}>
-            <span className="icon">{item.icon}</span> {/* Rendering the icon */}
-            <span className="text">{item.name}</span> {/* Rendering the name */}
-          </div>
-        ))
-      }
+    <div className="vendorSideBar">
+      <div className="vendorSideBarLogo">
+        <img src={"./Logo.svg"} alt="" />
+      </div>
+      <div className="vendorListWrapper">
+        <div className="vendorList">
+          <ul>
+            <li>
+              <NavLink
+                to="/upload"
+                className={({ isActive }) =>
+                  isActive ? "isActive" : "notActive"
+                }
+              >
+                <IoStorefrontSharp size={25} />
+                Add Product
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                className={({ isActive }) =>
+                  isActive ? "isActive" : "notActive"
+                }
+              >
+                <CiMenuBurger size={25} />
+                order
+              </NavLink>
+            </li>
+            <li>
+              <MdLogout size={25} />
+              Log out
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   );
-}
+};
 
 export default VendorSideBar;

@@ -3,7 +3,9 @@ import './vendorHeader.css'
 
 const VendorHeader = () => {
   return (
-    <div className='VendorHeader'></div>
+    <div className='VendorHeader'>
+      
+    </div>
   )
 }
 
