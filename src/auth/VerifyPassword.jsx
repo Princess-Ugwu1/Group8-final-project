@@ -22,7 +22,7 @@ const VerifyPassword = () => {
       if(!password){
         toast.error("Please Enter New Password")
       } else{
-        const url = "https://testapi-c8ay.onrender.com/api/v1/reset-password"
+        const url = "https://groceria.onrender.com/api/v1/reset-password"
         axios.post(url, {password}, token)
         .then(res=>{
           console.log(res)
