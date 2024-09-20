@@ -35,7 +35,7 @@ const Login = () => {
       // if(!email || !password){
       //   toast.error("Please Fill all Details")
       // }else{
-        const url = "https://testapi-c8ay.onrender.com/api/v1/log-in"
+        const url = "https://groceria.onrender.com/api/v1/log-in"
         const userdata = {email, password}
         axios.post(url, userdata)
         .then(res=>{
@@ -62,12 +62,12 @@ const Login = () => {
                     <div className='loginToAccount'><p className='youraccount'>Login to your account</p></div>
                     <div className='createAnAccount'>
                       <p>New on Groceria? </p>
-                      <p className='createText'><NavLink to="/vendorsign">Create an account</NavLink></p>
+                      <p className='createText'><NavLink to="/signup">Create an account</NavLink></p>
                     </div>
                   </div>
                </div>
                <div className='login-main'>
-        <div style={{height:200}} className='loginInner'>
+        <div style={{height:200}} className='loginInner1'>
                   <p>Email</p>
                   <input className='email-input3' type="text" onChange={handleemail}/>
                   <p>Password</p>

@@ -1,10 +1,8 @@
 import React, { useState } from 'react'
 import { FaRegEye, FaRegEyeSlash } from 'react-icons/fa6'
-// import { useNavigate } from 'react-router-dom'
 import "./Signup.css"
 import logoImg from "../assets/Group 10.png"
 import {toast , Toaster} from 'react-hot-toast'
-// import fruit from "../assets/fruitman.png"
 import axios from 'axios'
 import { NavLink, useNavigate } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
@@ -56,12 +54,12 @@ const nav = useNavigate()
         toast.error("Please Fill all Details")
       }else{
        
-        const url = "https://testapi-c8ay.onrender.com/api/v1/sign-up"
+        const url = "https://groceria.onrender.com/api/v1/sign-up"
         const newData = { email, phoneNumber, fullName:fullname, password}
        axios.post(url, newData)
        .then(res=>{
         console.log(res)
-        nav('/login')
+        nav('/signupverify')
         setLoading(true)
        })
        .catch((error)=>{

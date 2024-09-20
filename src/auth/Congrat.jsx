@@ -17,6 +17,9 @@ const Congrat = () => {
                         </div>
                         <div className='congratpix'><img className='pixmain' src={congratpicture} alt="" /></div>
                     </div>
+                    <div className='congratBtn'>
+                        <p>Continue</p>
+                    </div>
                 </div>
             </div>
     </div>
