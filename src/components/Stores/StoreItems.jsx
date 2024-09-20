@@ -7,7 +7,7 @@ const StoreItems = () => {
   const { id } = useParams()
 const [allProduct, setAllProducts] = useState([])
   const url = " https://groceria.onrender.com/api/v1/allstoreproducts"
-
+   const token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NmRjNjA1MWViN2QwZWFmYTY3MTUxOTAiLCJlbWFpbCI6ImpvaG5oYWxleDdAZ21haWwuY29tIiwiaWF0IjoxNzI2Nzc4NTE4LCJleHAiOjE3MjY4NjQ5MTh9.jd9G2Cy2m_V6xzTfClN2FBYV9KI0G57VFijKxjpscSY"
   const getOneStoreProduct = async () => {
     try {
     const product =  await axios.get(`${url}/${id}`)
@@ -18,6 +18,23 @@ const [allProduct, setAllProducts] = useState([])
       console.log(err);
 
     }
+  }
+
+  const addToCart = async (productId, quantity)=>{
+    try{
+      const response = await axios.post(`${url}/addtocart`, {
+        productId, quantity
+      },{
+        headers:{
+          "Authorization": `Bearer ${token}` 
+        }
+      })
+
+      console.log(response)
+  }catch (error){
+    
+  }
+    
   }
 useEffect(()=>{
   getOneStoreProduct()
@@ -34,16 +51,16 @@ useEffect(()=>{
       <div className='storeItemsWrapper'>
         <div className="storeItemsContainer">
           {
-            allProduct.map((item) => (
+            allProduct.map((items) => (
               <div className="storeItems">
                 <div className="itemImg">
-                  <img src={item?.productImage} alt="" />
+                  <img src={items?.productImage} alt="" />
                 </div>
                 <div className="itemsDetailsWrapper">
                   <div className="itemDetails">
-                    <p>{item?.productName}</p>
-                    <span> ₦{item?.productPrice}</span>
-                    <button className='addToCart'>Add to cart</button>
+                    <p>{items?.productName}</p>
+                    <span> ₦{items?.productPrice}</span>
+                    <button className='addToCart'onClick={()=>addToCart(items._id,1)}>Add to cart</button>
                   </div>
                 </div>
               </div>
