@@ -24,7 +24,7 @@ const ResetPassword = () => {
     if (!email) {
       toast.error("Please Enter Your Email");
     } else {
-      const url = "https://testapi-c8ay.onrender.com/api/v1/forgot-password";
+      const url = "https://groceria.onrender.com/api/v1/forgot-password";
       axios
         .post(url, { email })
         .then((res) => {

@@ -22,6 +22,9 @@ import UserProfile from './components/userProfile/UserProfile'
 import LayoutTwo from './layout/LayoutTwo'
 import AboutUs from './components/AboutForm/AboutUs'
 import Cart from './components/Cart/Cart'
+import SignupVerify from './auth/SignupVerify'
+import ExpiredVerify from './auth/ExpiredVerify'
+import VerificationPage from './auth/Verify'
 
 
 const App = () => {
@@ -43,6 +46,12 @@ const App = () => {
     <Route path='/resetpassword' element={<ResetPassword/>}/>
     <Route path='/verifypassword/:token' element={<VerifyPassword/>}/>
     <Route path='/updatepassword' element={<UpdatePassword/>}/>
+    <Route path='/signupverify' element={<SignupVerify/>}/>
+    <Route path='/verifySuccessful/:token' element={<VerificationPage/>}/>
+    <Route path='/congrat' element={<Congrat/>}/>
+    <Route path='/expired' element={<ExpiredVerify/>}/>
+    <Route path='/vendorsign' element={<VendorSignup/>}/>
+    <Route path='/vendorlogin' element={<VendorLogin/>}/>
     </Route>
     {/* <Route path='/dashBoard' element={<VendorDashBoard/>}/> */}
     <Route element = {<LayoutTwo/>}>
