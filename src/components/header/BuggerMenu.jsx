@@ -19,6 +19,13 @@ const BuggerMenu = () => {
                     </div>
                 </div>
             </div>
+                <div className='bugger-menu-main'>
+                  <div className='bugger-holder'>Home</div>
+                  <div className='bugger-holder'>Store</div>
+                  <div className='bugger-holder'>Products</div>
+                  <div className='bugger-holder'>About Us</div>
+                  <div className='bugger-holder'>Contact us</div>
+                </div>
 
     </div>
   )

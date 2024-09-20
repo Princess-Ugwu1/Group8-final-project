@@ -17,8 +17,10 @@ const SecondHeader = () => {
        
         <div className="SecondLogo" onClick={()=>nav('/')}><img src={"./Logo.svg"} alt="" /></div>
             <div className="secondHeaderNav">
-                <p> Home</p>
-                <p className=''>  <NavLink to= '/store'className={({isActive}) =>  isActive ? "SecondHeaderActive" : "SecondHeaderNotActive"}>Product</NavLink></p>
+                <p> <NavLink to= '/'className={({isActive}) =>  isActive ? "SecondHeaderActive" : "SecondHeaderNotActive"}>Home</NavLink></p>
+                <p className=''>  <NavLink to= '/store'className={({isActive}) =>  isActive ? "SecondHeaderActive" : "SecondHeaderNotActive"}>Store</NavLink></p>
+                {/* <p className=''>  <NavLink to= '/items/:id'className={({isActive}) =>  isActive ? "SecondHeaderActive" : "SecondHeaderNotActive"}>Store</NavLink></p> */}
+                <p className=''>  <NavLink to= '/product'className={({isActive}) =>  isActive ? "SecondHeaderActive" : "SecondHeaderNotActive"}>Product</NavLink></p>
                <div className="searchBar">
                     <input type="text" placeholder='search for food items'/>
                     <div className="searchDiv">Search</div>

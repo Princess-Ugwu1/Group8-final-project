@@ -70,3 +70,20 @@
     line-height: normal;
     }
   }    
+  .bugger-menu-main{
+    width: 100%;
+    height: 70%;
+    background-color: red;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+  }
+  .bugger-holder{
+    width: 100%;
+    height: 8%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
