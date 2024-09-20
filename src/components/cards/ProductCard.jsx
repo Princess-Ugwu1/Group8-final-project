@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import toast from "react-hot-toast";
 
 const ProductCard = () => {
   const [allProduct, setAllProducts] = useState([]); // Stores all products fetched from the API
@@ -16,6 +17,7 @@ const ProductCard = () => {
     try {
       const response = await axios.get(`${url}/allproducts`);
       const products = response?.data?.data;
+      toast.success("Added to cart")
       setAllProducts(products); // Store all fetched products
       setDisplayedProducts(products.slice(0, productsPerPage)); // Initially display the first 12 products
     } catch (err) {
