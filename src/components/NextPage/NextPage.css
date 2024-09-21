@@ -63,7 +63,7 @@
     /* background-color: rgb(255, 0, 234); */
     border: 1px solid rgb(10, 10, 10);
 }
-@media screen and (max-width:750px) {
+@media(width<=750px) {
 .NextPage-container{
  width:100%;
  height: max-content;
@@ -80,17 +80,15 @@
 }
 .boo1{
     width: 100%;
-    font-size: 14px;
+    font-size: 12px;
     
 }
 .boo2{
     width: 100%;
-    font-size: 14px;
+    font-size: 12px;
 }
 .boo3{
     width: 100%;
-    font-size: 14;
-
-    
+    font-size: 12;
 }
 }
