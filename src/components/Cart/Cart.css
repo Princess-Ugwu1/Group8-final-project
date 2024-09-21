@@ -439,3 +439,101 @@
         font-size: 14px;
     }
 }
+@media only screen and (max-width: 768px) {
+    .cart-inner {
+        width: 90%;
+        height: auto;
+    }
+
+    .item-inner {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .cart-left {
+        width: 100%;
+    }
+
+    .pixholder {
+        flex-direction: column;
+        width: 100%;
+        gap: 5px;
+    }
+
+    .item-pic img {
+        width: 150px;
+    }
+
+    .remove {
+        justify-content: flex-end;
+        padding-right: 10px;
+    }
+
+    .Check-btn, .Continue-btn {
+        width: 80%;
+        font-size: 18px;
+    }
+}
+
+/* Responsive Styles for Large Mobile Devices (425px) */
+@media only screen and (max-width: 425px) {
+    .cart-inner {
+        width: 100%;
+        height: auto;
+    }
+
+    .item-inner {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .pixholder {
+        width: 100%;
+        gap: 5px;
+    }
+
+    .item-pic img {
+        width: 130px;
+    }
+
+    .Check-btn, .Continue-btn {
+        width: 90%;
+        font-size: 16px;
+    }
+}
+
+/* Responsive Styles for Medium Mobile Devices (375px) */
+@media only screen and (max-width: 375px) {
+    .cart-inner {
+        width: 100%;
+    }
+
+    .item-pic img {
+        width: 120px;
+    }
+
+    .Check-btn, .Continue-btn {
+        width: 90%;
+        font-size: 14px;
+    }
+}
+
+/* Responsive Styles for Small Mobile Devices (320px) */
+@media only screen and (max-width: 320px) {
+    .cart-inner {
+        width: 100%;
+    }
+
+    .item-pic img {
+        width: 100px;
+    }
+
+    .Check-btn, .Continue-btn {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .pricey p {
+        font-size: 14px;
+    }
+}

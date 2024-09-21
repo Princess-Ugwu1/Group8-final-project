@@ -228,3 +228,53 @@ select{
     cursor: pointer;
     
 }
+
+@media only screen and (max-width: 768px) {
+    .check-con{
+     height: max-content;
+     margin-bottom: 10px;
+    }
+    .check-holder {
+        flex-direction: column;
+    }
+
+    .ship-info, .orders {
+        width: 100%;
+    }
+
+    .module2 {
+        width: 80%;
+    }
+
+    .check-btn {
+        width: 80%;
+    }
+
+    .module2 button {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .module2 h2 {
+        font-size: 28px;
+    }
+
+    .module2 h3 {
+        font-size: 12px;
+    }
+
+    .check-btn {
+        width: 90%;
+        font-size: 24px;
+    }
+
+    .info-input,
+    select {
+        font-size: 18px;
+    }
+
+    .return {
+        font-size: 18px;
+    }
+}
