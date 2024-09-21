@@ -12,17 +12,74 @@
 .storeHeroWrapper{
     width:100%;
     height: 70vh;
-    background-color: #F27318;
-    position: relative;
-    background-image: url(./public/StoreHeroPic.jpg);
-    background-repeat: no-repeat;
-    object-fit:cover;
-    background-size: 100% 100%; 
-     background-position: center ;
+    background-color:#FFD6B8;
+    display: flex;
+    justify-content: space-around;
+
+  
 
     & img{
         width:100%;
         height: 100%;
+    }
+}
+
+.storeHeroLeft{
+    width:30%;
+    height: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: flex-end;
+    /* align-items: center; */
+    flex-direction: column;
+    padding-bottom: 5%;
+    
+
+    & p{
+        font-family: Montserrat;
+font-size: 50px;
+font-weight: 700;
+line-height: 60.95px;
+text-align: left;
+color: #F27318;
+/* text-align: center; */
+    }
+}
+
+.heroButton{
+    width: 260px;
+    height: 76px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+    color:#ffffff;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #F27318;
+
+}
+
+.storeHeroRight{
+    width:50%;
+    height: 100%;
+    /* background-color: orange; */
+    display: flex;
+    justify-content: center;
+}
+
+.storeHeroRightImage{
+    width:60%;
+    height:100% ;
+    display: flex;
+    /* background-color: #fff; */
+
+    & img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 }
 
@@ -51,11 +108,12 @@
 .topProducts{
     width: 100%;
     height: max-content;
-    /* background-color: rgb(114, 95, 95); */
+    background-color: rgb(114, 95, 95);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
+    padding-bottom: 30px;
 }
 
 @media screen and (min-width:320px) and (max-width:500px){
@@ -80,7 +138,8 @@
 
     .storeWrapper{
         /* display: block; */
-        height: max-content;
+        height: 200vh;
+        /* background-color: red; */
     }
 
     .storesOnGroceria{
@@ -89,5 +148,14 @@
         justify-content: flex-end;
     }
 
-}
+    /* .topProducts{
+        /* height: max-content; */
+        /* background-color: blue; */
+        /* width:100%; */
+        /* flex-wrap: wrap; */
+        /* gap: 10px; */
+
+/* } */
+
+/*  */
 

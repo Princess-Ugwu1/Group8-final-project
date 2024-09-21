@@ -8,6 +8,7 @@ import BuggerMenu from './BuggerMenu';
 // import './header.css'
 
 const SecondHeader = () => {
+const [filteredData,setFilteredData]=useState()
     const nav = useNavigate()
     const [ burgerMenu, setBurgerMenu] = useState(false)
 
@@ -23,7 +24,7 @@ const SecondHeader = () => {
                 <p className=''>  <NavLink to= '/product'className={({isActive}) =>  isActive ? "SecondHeaderActive" : "SecondHeaderNotActive"}>Product</NavLink></p>
                <div className="searchBar">
                     <input type="text" placeholder='search for food items'/>
-                    <div className="searchDiv">Search</div>
+                    <div className="searchDiv"onClick={()=>search(productName)}>Search</div>
                 </div>
                 <div className='cartIcon' onClick={()=> nav('/cart')}><BsCart size="25px"/></div>
                 <div className='profile'onClick={()=>nav('/profile')}></div>

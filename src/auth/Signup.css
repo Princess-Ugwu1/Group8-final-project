@@ -423,12 +423,23 @@ color: #000000A8;
     }
 }
 
-@media only screen and (max-width: 375px) {
+
+@media screen and (max-width: 325px) {
     .signupCon9 {
         flex-direction: column;
         justify-content: flex-start;
         padding: 15px;
         /* background-color: blue; */
+        width: 100%;
+
+        .groceria{
+            font-size: 10px;
+        }
+
+        .desc{
+            font-size: 12px;
+        }
+
     }
 
     .signupholder {

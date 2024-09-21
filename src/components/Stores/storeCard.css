@@ -75,15 +75,16 @@
     justify-content: center;
     text-align: center;
     align-items: center;
+   
 
     & p{
-        font-size: 25px;
+        font-size: 22px;
         font-weight: 700;
         font-family: montserrat;
     }
 
     & span{
-        font-size:18px ;
+        font-size:12px ;
         font-weight: 500;
         font-family: montserrat;
     }
@@ -97,7 +98,7 @@
 
     .storeCardContainer{
         width:90%;
-        height: 50%;
+        height: 60%;
         gap: 10px;
     }
 
@@ -109,5 +110,12 @@
         & span{
             font-size: 12px;
         }
+    }
+
+    .storeCardWrapper{
+        /* background-color: aqua; */
+        justify-content: center;
+        align-items: center;
+        height: 40vh;
     }
 }  

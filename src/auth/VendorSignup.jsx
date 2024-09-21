@@ -53,7 +53,7 @@ const nav = useNavigate()
             
             const res = await axios.post(url, newData);
             console.log(res);
-            nav('/vendorlogin')
+            nav('/signupverify')
              setLoading(true)
             
         } catch (error) {
@@ -107,7 +107,7 @@ const nav = useNavigate()
     <div className='Vsign-con'>
         <div className='Vsign-holder'>
             <div className='Vlogo'>
-                <img src={Vlogo} alt="" />
+                <img src={Vlogo} alt="" onClick={()=>nav('/home')}/>
             </div>
             <div className='V-inputholder'>
                 <div className='div-create'>

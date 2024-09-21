@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import toast from "react-hot-toast";
+import {Oval} from 'react-loader-spinner'
 
 const ProductCard = () => {
   const [allProduct, setAllProducts] = useState([]); // Stores all products fetched from the API
@@ -10,7 +11,11 @@ const ProductCard = () => {
   const productsPerPage = 12; // Number of products to display per "page"
 
   const url = "https://groceria.onrender.com/api/v1/";
-  const token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NmRjNjA1MWViN2QwZWFmYTY3MTUxOTAiLCJlbWFpbCI6ImpvaG5oYWxleDdAZ21haWwuY29tIiwiaWF0IjoxNzI2Nzc4NTE4LCJleHAiOjE3MjY4NjQ5MTh9.jd9G2Cy2m_V6xzTfClN2FBYV9KI0G57VFijKxjpscSY"
+  const token = localStorage.getItem('userToken');
+
+console.log(token);
+
+
 
   const getAllProducts = async () => {
     setLoading(true);
@@ -44,6 +49,9 @@ const ProductCard = () => {
   };
 
   const addToCart = async (productId, quantity)=>{
+
+    
+
     try{
       const response = await axios.post(`${url}/addtocart`, {
         productId, quantity
@@ -57,10 +65,25 @@ const ProductCard = () => {
   }catch (error){
     
   }
-    
+   console.log(productId) 
   }
   return (
-    <div className="storeItemsWrapper">
+    <>
+      {
+        loading ? (
+          <div className="loading">{<Oval
+            visible={true}
+            height="120"
+            width="120"
+            color="rgba(2, 185, 40, 1)"
+            ariaLabel="oval-loading"
+            wrapperStyle={{}}
+            wrapperClass=""
+            />}</div>
+        )
+      :
+
+    (<div className="storeItemsWrapper">
       <div className="storeItemsContainer">
         {displayedProducts?.map((items, index) => (
           <div className="storeItems" key={index}>
@@ -84,8 +107,9 @@ const ProductCard = () => {
           {loading ? "Loading..." : "Load More"}
         </button>
       )}
-    </div>
-  );
+    </div>)}
+</>
+)
 };
 
 export default ProductCard;

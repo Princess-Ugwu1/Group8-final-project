@@ -23,11 +23,12 @@ import ExpiredVerify from './auth/ExpiredVerify'
 import VerificationPage from './auth/Verify'
 import About from './components/aboutPage/About'
 import Contact from './components/aboutPage/Contact'
-import Store from './components/Stores/Stores'
+// import Store from './components/Stores/Stores'
 import LayoutThree from './layout/LayoutThree'
 import VendorUpload from './components/vendorPage/VendorUpload'
 import VendorCards from './components/vendorPage/VendorCards'
 import { Toaster } from 'react-hot-toast'
+import Store from './components/Stores/Store'
 
 
 const App = () => {
@@ -51,9 +52,8 @@ const App = () => {
    <Route path='/profile' element={<UserProfile/>}/>
     <Route element = {<Layout/>}>
     <Route path='/' element={<LandingPage />}/>
-    <Route path='/contactUs' element={<ContactUs/>}/>
     <Route path='/AboutForm' element={<About/>}/>
-  {/* <Route path='/contact' element={<Contact/>}/> */}
+  <Route path='/contact' element={<Contact/>}/>
   <Route path='/header2' element={<SecondHeader/>}/>
    
     </Route>
