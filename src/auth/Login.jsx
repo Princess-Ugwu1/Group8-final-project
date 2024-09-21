@@ -5,9 +5,9 @@ import "./Login.css"
 import logoImg from "../assets/Group 10.png"
 // import fruit from "../assets/fruitman.png"
 import { NavLink, useNavigate } from 'react-router-dom'
-import {toast, Toaster} from 'react-hot-toast'
+import {LoaderIcon, toast, Toaster} from 'react-hot-toast'
 import axios from 'axios'
-import { userData } from '../Global/slice'
+import { userData, userId } from '../Global/slice'
 import { useDispatch } from 'react-redux'
 
 const Login = () => {
@@ -16,6 +16,7 @@ const Login = () => {
     const [email, setEmail]=useState()
     const [password, setPassword]=useState()
     const [seePassword, seteSePassword] = useState(true)
+    const [loading, setloading ] = useState(false)
     const lookPassword =()=>{
         seteSePassword(false)
     }
@@ -37,16 +38,21 @@ const Login = () => {
       // }else{
         const url = "https://groceria.onrender.com/api/v1/log-in"
         const userdata = {email, password}
+        setloading(true)
         axios.post(url, userdata)
         .then(res=>{
           console.log(res)
           dispatch(userData(res.data.data))
+          setloading(false)
+          dispatch(userId(res.data.data._id))
+          console.log(res.data.data._id)
           toast.success("Successful Signed Up")
-          nav("/congrat")
+          // nav("/congrat")
 
         })
         .catch((error)=>{
           console.log(error)
+          setloading(false)
         })
       // }
     }
@@ -81,7 +87,11 @@ const Login = () => {
                 <div className='loginbtnHolder'>
                   <NavLink to='/resetpassword'><div className='forget'>Forgot Password?</div></NavLink>
                   {/* <NavLink to='/'><div className='Loginbtn'>Login</div></NavLink> */}
-                  <div className='Loginbtn1' onClick={handlesubmit}>Login</div>
+                  <div className='Loginbtn1' onClick={handlesubmit}>
+                    {
+                      loading ? "Loading..." : "Login"
+                    }
+                  </div>
              </div>
               </div>
            </div>

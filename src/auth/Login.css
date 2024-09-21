@@ -190,7 +190,12 @@
     justify-content: center;
     cursor: pointer;
     border-radius: 8px;
+    transition: all 350ms ease-in-out;
 }
+.Loginbtn1:hover{
+    background-color: #F27318;
+}
+
 
 @media only screen and (max-width: 768px) {
     .signupCon {

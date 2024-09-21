@@ -28,7 +28,7 @@ import Store from "./components/Stores/Stores"
 import LayoutThree from "./layout/LayoutThree"
 import VendorUpload from "./components/vendorPage/VendorUpload"
 import VendorCards from './components/vendorPage/VendorCards'
-import AboutUs from "./components/AboutForm"
+// import AboutUs from "./components/AboutForm"
 
 const App = () => {
 
@@ -42,7 +42,7 @@ const App = () => {
     <Route element = {<Layout/>}>
     <Route path='/' element={<LandingPage />}/>
     <Route path='/contactUs' element={<ContactUs/>}/>
-    <Route path='/AboutForm' element={<AboutUs/>}/>
+    {/* <Route path='/AboutForm' element={<AboutUs/>}/> */}
   {/* <Route path='/contact' element={<Contact/>}/> */}
   <Route path='/header2' element={<SecondHeader/>}/>
     <Route path='/signup' element={<Signup/>}/>
@@ -50,7 +50,7 @@ const App = () => {
     <Route path='/resetpassword' element={<ResetPassword/>}/>
     <Route path='/verifypassword/:token' element={<VerifyPassword/>}/>
     <Route path='/updatepassword' element={<UpdatePassword/>}/>
-    <Route path='/signupverify' element={<SignupVerify/>}/>
+    <Route path='/signupverify/:id' element={<SignupVerify/>}/>
     <Route path='/verifySuccessful/:token' element={<VerificationPage/>}/>
     <Route path='/congrat' element={<Congrat/>}/>
     <Route path='/expired' element={<ExpiredVerify/>}/>
