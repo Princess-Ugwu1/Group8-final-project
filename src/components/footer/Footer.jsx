@@ -1,4 +1,5 @@
 import React from 'react'
+import {NavLink} from 'react-router-dom'
 
 
 import "./footer.css"
@@ -18,7 +19,7 @@ const Footer = () =>{
                     </div>
                 <p>Home </p>
                 <p>Stores</p>
-                <p>Register your store</p>
+                <p><NavLink to= '/vendorsign' className={({isActive}) =>  isActive ? "HeaderActive" : "HeaderNotActive"}>Register your store</NavLink></p>
                 </div>
                 <div className="box2">
                 <div className="peace"><span className='footerSubNames'>Information</span></div>

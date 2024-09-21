@@ -104,7 +104,7 @@ const nav = useNavigate()
           <div className='signupleft'>
             <div className='signupleftinner'>
               <div className='logo'>
-                <img className='image' src={logoImg} alt="" />
+                <img className='image' src={logoImg} alt="" onClick={()=>nav('/home')}/>
               </div>
               <div className='description'>
                 <p className='groceria'>Sign up with Groceria</p>
@@ -117,10 +117,7 @@ const nav = useNavigate()
               <div className='signupInputHolder'>
                 <div className='createbox'>
                   <div className='create'><p className='created2'>Create an account</p></div>
-                  <div className='already'>
-                    <p className='already1'>Already have an account?</p>
-                   <NavLink to='/login'><p className='login1'>Login</p></NavLink> 
-                  </div>
+                  
                 </div>
                 <div className='inputholder'>
                   <div className='inputholderInner'>
@@ -155,6 +152,10 @@ const nav = useNavigate()
                       loading ? "Loading...": "Signup"
 }
 </p>
+                    <div className='already'>
+                    <p className='already1'>Already have an account?</p>
+                   <NavLink to='/login'><p className='login1'>Login</p></NavLink> 
+                  </div>
                   </div>
                 </div>
               </div>

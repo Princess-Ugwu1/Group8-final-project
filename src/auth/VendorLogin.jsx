@@ -42,7 +42,7 @@ const VendorLogin = () => {
         console.log(res)
         dispatch(userData(res.data.data))
         toast.success("Successful Signed Up")
-        nav(`/ ${res.data.data._id}`)
+        nav(`/upload`)
 
       })
       .catch((error)=>{
@@ -56,7 +56,7 @@ const VendorLogin = () => {
           <div className='VLogin-holder'>
           <div className='VLogin-inner'>
             <div className='Vgroceria'>
-              <img src={Venlogo} alt="" />
+              <img src={Venlogo} alt="" onClick={()=>nav('/home')}/>
             </div>
             <div className='VLogin-div'>
               <div className='Vlogin-Log'>

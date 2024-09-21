@@ -3,7 +3,12 @@ import './storeItems.css';
 import yam from '../../assets/Yam.png';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
-import toast from 'react-hot-toast';
+// import toast from 'react-hot-toast';
+import {Oval} from 'react-loader-spinner';
+import { ToastContainer , toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
+  
+
 
 const StoreItems = () => {
   const { id } = useParams();
@@ -40,7 +45,7 @@ const StoreItems = () => {
         toast.success('Added to cart successfully!');
       }
     } catch (error) {
-      console.error(error); // Log error for debugging
+      console.log(error.data); // Log error for debugging
       toast.error('Failed to add to cart.');
     } finally {
       setAddingToCart(false);
@@ -55,6 +60,7 @@ const StoreItems = () => {
   return (
     <>
       <div className='ProductDescription'>
+        <ToastContainer/>
         <div className="ProductDescriptionInner">
           <span>All Products</span>
           <p>Start Shopping from the finest selection of fresh products</p>
@@ -62,8 +68,15 @@ const StoreItems = () => {
       </div>
 
       {loading ? ( // Show loading spinner while fetching data
-        <div className="loading">Loading products...</div>
-      ) : (
+        <div className="loading">{<Oval
+        visible={true}
+        height="120"
+        width="120"
+        color="rgba(2, 185, 40, 1)"
+        ariaLabel="oval-loading"
+        wrapperStyle={{}}
+        wrapperClass=""
+        />}</div>) : (
         <div className='storeItemsWrapper'>
           <div className="storeItemsContainer">
             {allProduct.map((item) => (
@@ -77,10 +90,10 @@ const StoreItems = () => {
                     <span>₦{item?.productPrice}</span>
                     <button 
                       className='addToCart' 
-                      onClick={() => addToCart(item._id, 1)}
-                      disabled={addingToCart} // Disable button when adding to cart
+                      onClick={() => addToCart(item?._id, 1)}
+                      // disabled={addingToCart} // Disable button when adding to cart
                     >
-                      {addingToCart ? 'Adding...' : 'Add to cart'} 
+                      Add to Cart 
                     </button>
                   </div>
                 </div>

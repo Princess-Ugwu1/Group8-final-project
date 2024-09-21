@@ -56,7 +56,7 @@ const Login = () => {
         <div className="loginHolder">
           <div className="login-writeup">
             <div className="login-logo">
-              <img src={logoImg} alt="" />
+              <img src={logoImg} alt="" onClick={()=>nav('/home')}/>
             </div>
             <div className="login-detail">
               <div className="loginToAccount">

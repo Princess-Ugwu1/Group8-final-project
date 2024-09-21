@@ -1,8 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './VendorUpload.css'
 import { IoIosImages } from "react-icons/io";
 
 const VendorUpload = () => {
+    const [productImage, setProductImage]=useState()
+    const [picture, setPicture]=useState(null)
+  
+    const url = "https://groceria.onrender.com/api/v1/";
+    const token = localStorage.getItem('userToken');
+
+
+    const uploadImage=()=>{
+
+
+
+    }
+
   return (
     <div className='VendorUploadWrapper'>
         <div className="uploadHolder">
