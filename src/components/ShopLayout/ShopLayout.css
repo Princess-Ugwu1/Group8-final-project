@@ -47,14 +47,16 @@
     background-color: green;
 }
 
-@media screen and (width < 750px) {
+@media(width <= 768px) {
     .lastparent{
-        padding-top: 50px;
+        padding-top: 30px;
     }
     .lasthold h1{
         width: 100%;
+        font-size: 15px;
     }
     .lasthold button{
-        width: 100%;
+        width: 30%;
+        padding: 15px 10px;
     }
 }

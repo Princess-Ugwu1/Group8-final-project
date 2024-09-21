@@ -11,21 +11,21 @@ const Layout12 = () => {
               <div className='stores'>
                   <div className='storehold'>
                       <div className='storeimage'>
-                          <img src="./pp1.svg" alt="" />
+                          <img src="https://res.cloudinary.com/dg2gcfyud/image/upload/v1726230953/ljhhxqky9hpcqzrmwvcx.jpg" alt="" />
                       </div>
-                      <p>Iya chidinma store</p>
+                      <p>Mama chidinma store</p>
                   </div>
                   <div className='storehold2'>
                       <div className='storeimage'>
-                          <img src="./pp2.svg" alt="" />
+                          <img src="https://res.cloudinary.com/dg2gcfyud/image/upload/v1726231612/zmubgzapfbzues84gbbb.jpg" alt="" />
                       </div>
-                      <p>Iya chidinma store</p>
+                      <p>Iya Alake store</p>
                   </div>
                   <div className='storehold3'>
                       <div className='storeimage'>
-                          <img src="./pp4.svg" alt="" />
+                          <img src="https://res.cloudinary.com/dg2gcfyud/image/upload/v1726813015/WhatsApp_Image_2024-09-13_at_12.57.49_PM_u7h8l7.jpg" alt="" />
                       </div>
-                      <p>Iya chidinma store</p>
+                      <p>Baba Chukks store</p>
                   </div>
               </div>
           </div>

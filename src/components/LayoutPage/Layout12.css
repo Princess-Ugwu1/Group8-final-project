@@ -78,7 +78,7 @@
   background-color: #DFFFC0;
 }
 
-@media screen and (width < 750px) {
+@media(width <= 750px) {
   .stores{
       flex-direction: column;
       gap: 20px;
@@ -91,6 +91,6 @@
       padding-top: 20px;
   }
   .firstHold h1{
-      font-size: 35px;
+      font-size: 20px;
   }
 }
