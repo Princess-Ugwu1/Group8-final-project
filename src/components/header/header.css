@@ -79,210 +79,6 @@
 .headerLogo {
     width: 30%;
     height: 100%;
-    /* background-color: #02B928;
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    */
 
 }
 
@@ -296,7 +92,7 @@
     ul {
         display: flex;
         list-style: none;
-        font-size: 25px;
+        font-size: 20px;
         gap: 30px;
         align-items: center;
         font-family: montserrat;
@@ -331,74 +127,30 @@
     text-decoration: none;
 }
 
-/* Responsive design for tablets and small screens */
-@media only screen and (max-width: 1024px) {
-    .header {
-        justify-content: space-between; /* Spread content out */
-    }
-
-    .headerLogo {
-        width: 25%; /* Adjust logo width */
-    }
-
-    .headerNav {
-        width: 70%;
-    }
-
-    .headerNav ul {
-        font-size: 22px; /* Adjust font size */
-        gap: 20px; /* Reduce gap between items */
-    }
-
-    .registerButton, .Sign-In-Button {
-        font-size: 22px; /* Adjust button font size */
-    }
+.headerMenu{
+    width:50px;
+    height: 50px;
+    display: none;
+    /* background-color: aqua; */
 }
+@media screen and (max-width:500px){
+    .header{
+        justify-content: space-between;
 
-/* Responsive design for mobile screens (768px and below) */
-@media only screen and (max-width: 768px) {
-    .header {
-        flex-direction: column; /* Stack logo and nav vertically */
-        height: auto;
     }
+    .headerLogo{
+        width: 40%;
 
-    .headerLogo {
-        width: 100%;
-        text-align: center; /* Center the logo */
-        margin-bottom: 10px;
+        & img{
+            width: 100%;
+            height: 100%;
+        }
     }
-
-    .headerNav {
-        width: 100%;
-        justify-content: center; /* Center the nav items */
+    .headerNav{
+        display: none;
     }
-
-    .headerNav ul {
-        font-size: 20px; /* Reduce font size */
-        gap: 15px; /* Reduce gap */
+    .headerMenu{
+        display: block;
     }
-
-    .registerButton, .Sign-In-Button {
-        font-size: 20px; /* Adjust button font size */
-        width: 100px; /* Adjust button width */
-        height: 45px; /* Adjust button height */
-    }
-}
-
-/* Responsive design for extra small screens (480px and below) */
-@media only screen and (max-width: 480px) {
-    .header {
-        padding: 0 10px; /* Reduce padding */
-    }
-
-    .headerNav ul {
-        font-size: 18px; /* Further reduce font size */
-        gap: 10px; /* Reduce gap even more */
-    }
-
-    .registerButton, .Sign-In-Button {
-        font-size: 18px; /* Further reduce button font size */
-        width: 90px; /* Adjust button width */
-        height: 40px; /* Adjust button height */
-    }
+    
 }

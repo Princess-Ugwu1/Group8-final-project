@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.Vsign-con{
+    width: 100%;
+    height: 100vh;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Vsign-holder{
+    width: 70%;
+    height: 90%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.Vlogo{
+    width: 35%;
+    height: 10%;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.V-inputholder{
+    width: 100%;
+    height: 90%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.div-create{
+    width: 100%;
+    height: 20%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.Vinput-inner{
+    width: 70%;
+    height: 80%;
+    background-color: #ffffff;
+    font-family: Montserrat;
+    font-size: 25px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.top{
+    width: 80%;
+    height: 50%;
+    background-color: #ffffff;
+    font-family: Montserrat;
+    font-size: 40px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1E1E1E;
+    ;
+
+}
+.down{
+    width: 80%;
+    height: 50%;
+    background-color: #ffffff;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 400;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    color: #000000;
+    ;
+}
+.Vlog{
+    color:#F27318;
+    cursor: pointer;
+}
+input{
+    width: 100%;
+    height: 12%;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 8px;
+    border: solid 0.6px black;
+}
+.passdiv{
+    width: 100%;
+    height: 12%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px;
+    border: solid 0.6px black;
+}
+.ven-input{
+    width: 95%;
+    height: 100%;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+}
+.venBtn{
+    width: 100%;
+    height: 12%;
+    background-color: #02B928;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 250;
+    color: #ffffff;
+    text-align: center;
+    cursor: pointer;
+    
+}
+.vsignbtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

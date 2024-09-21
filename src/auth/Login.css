@@ -6,7 +6,7 @@
 .signupCon{
     width: 100%;
     height: 100vh;
-    background-color: blue;
+    background-color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,11 +38,13 @@
     align-items: center;
     flex-direction: column;
 }
-.login-main{
+/* .login-main{
     width: 100%;
     height: 60%;
-    /* background-color: rgb(95, 61, 67); */
-}
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+} */
 .login-logo{
     width: 60%;
     height: 20%;
@@ -97,7 +99,7 @@
    color: #F27318;
    cursor: pointer;
 }
-.loginInner{
+.loginInner1{
    width: 100%;
    height: 10%;
    /* background-color: aqua; */
@@ -105,6 +107,9 @@
    font-size: 25px;
    font-weight: 400;
    display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   
    
    & input{
     text-indent: 10px;
@@ -120,24 +125,40 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
+    top: 10px !important;
 }
 
-.email-input{
+.email-input3{
    width: 100%;
    height: 20%;
    border-radius: 8px;
-   border: solid 0.6px #000000A3
+   border: solid 0.6px #000000A3;
+   padding: 5px;
+   /* outline: none; */
+   
 }
-.input-password{
+.input-password3{
    width: 100%;
    height: 50%;
    border: none;
    outline: none;
 }
-.passwordHolder{
+.passwordHolder3{
     width: 100%;
     height: 20%;
-    border: solid 0.6px #000000A3
+    border: solid 0.6px #000000A3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    border-radius: 8px;
+}
+.input-four3{
+    width: 90%;
+    height: 100%;
+    border: none;
+    outline: none;
 }
 .forget{
     height: 20%;
@@ -156,7 +177,7 @@
     }
     
 }
-.Loginbtn{
+.Loginbtn1{
     width: 100%;
     height: 60%;
     background-color: #02B928;
@@ -168,8 +189,9 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    border-radius: 8px;
 }
-/* Styles for 768px (tablets) */
+
 @media only screen and (max-width: 768px) {
     .signupCon {
         padding: 20px;
@@ -186,30 +208,45 @@
 
     .login-logo img {
         width: 90%;
+        position: relative;
+        bottom: 20px;
     }
 
     .loginToAccount {
         font-size: 32px;
+        position: relative;
+        bottom: 10px;
     }
 
     .createAnAccount {
         font-size: 18px;
     }
 
-    .email-input, 
-    .passwordHolder {
+    .email-input3, 
+    .passwordHolder3 {
         width: 100%;
-        height: 50px;
+        height: 40px;
+        border-radius: 8px;
+        border: solid 0.4px black;
     }
 
-    .Loginbtn {
+    .Loginbtn1 {
         width: 100%;
         height: 50px;
         font-size: 18px;
+        border-radius: 8px;
+        position: relative;
+        top: 10px;
     }
     .youraccount{
         font-size: 22px;
 
+    }
+    .loginInner1{
+        gap: 20px;
+    }
+    .login-main{
+        gap: 20px;
     }
 
 }
@@ -236,6 +273,8 @@
 
     .loginToAccount {
         font-size: 28px;
+        position: relative;
+        top: 15px;
     }
 
     .createAnAccount {
@@ -248,22 +287,33 @@
         font-size: 5px;
     }
 
-    .email-input, 
-    .passwordHolder {
+    .email-input3, 
+    .passwordHolder3 {
         width: 100%;
-        height: 45px;
+        height: 40px;
+        border-radius: 8px;
+        border: solid 0.4px black;
     }
 
-    .Loginbtn {
+    .Loginbtn1 {
         width: 100%;
-        height: 45px;
+        height: 40px;
         font-size: 16px;
+        position: relative;
+        top: 10px;
+        border-radius: 8px;
     }
     .youraccount{
         font-size: 18px;
         position: relative;
         bottom: 20px;
 
+    }
+    .loginInner1{
+        gap: 20px;
+    }
+    .login-main{
+        gap: 20px;
     }
 }
 
@@ -293,25 +343,44 @@
 
     .loginToAccount {
         font-size: 24px;
+        position: relative;
+        top: 25px;
     }
 
     .createAnAccount {
         font-size: 15px;
     }
 
-    .email-input, 
-    .passwordHolder {
+     
+    .passwordHolder3 {
+        width: 100%;
+        height: 30px;
+        border-radius: 8px;
+        border: solid 0.4px black;
+    }
+    .email-input3 {
         width: 100%;
         height: 40px;
+        border-radius: 8px;
+        border: solid 0.4px black;
     }
 
-    .Loginbtn {
+    .Loginbtn1 {
         width: 100%;
         height: 40px;
         font-size: 14px;
+        position: relative;
+        top: 10px;
+        border-radius: 8px;
     }
     .createText{
         font-size: 15px;
+    }
+    .loginInner1{
+        gap: 20px;
+    }
+    .login-main{
+        gap: 20px;
     }
 }
 
@@ -341,16 +410,189 @@
     .createAnAccount {
         font-size: 14px;
     }
+    .createText{
+        font-size: 14px !important;
+    }
 
-    .email-input, 
-    .passwordHolder {
+     
+    .passwordHolder3 {
         width: 100%;
         height: 15px;
     }
 
-    .Loginbtn {
+    .email-input3 
+     {
+        width: 100%;
+        height: 35px;
+        border-radius: 8px;
+        border: solid 0.4px black;
+    }
+
+    .Loginbtn1 {
         width: 100%;
         height: 35px;
         font-size: 12px;
+        border-radius: 8px;
+        position: relative;
+        top: 10px;
+    }
+    .forget{
+        font-size: 16px !important;
+    }
+    .login-main{
+        /* background-color: pink; */
+        height: 300px !important;
+    }
+    
+
+}
+@media only screen and (min-width: 2560px) {
+    .signupCon {
+        padding: 50px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .loginHolder {
+        width: 30%;
+        height: 70%;
+        gap: 30px;
+        /* background-color: aqua; */
+    }
+
+    .login-logo img {
+        width: 80%;
+    }
+
+    .loginToAccount {
+        font-size: 60px;
+    }
+
+    .createAnAccount {
+        font-size: 42px;
+    }
+    .createText{
+        font-size: 42px !important;
+    }
+
+     
+    .passwordHolder3 {
+        width: 90%;
+        height: 100px !important;
+        font-size: 24px;
+        border-radius: 10px;
+        border: solid 1px black;
+    }
+    .email-input3 {
+        width: 90%;
+        height: 100px;
+        font-size: 24px;
+        border-radius: 10px;
+        border: solid 1px black;
+    }
+
+    .Loginbtn1 {
+        width: 90%;
+        height: 100px;
+        font-size: 26px;
+        border-radius: 10px;
+    }
+
+    .forget {
+        font-size: 40px !important;
+    }
+
+    .youraccount {
+        font-size: 65px;
+    }
+    .login-main{
+        /* background-color: aqua; */
+        justify-content: space-around;
+    }
+    .loginInner1{
+        /* background-color: blueviolet; */
+        /* display: flex; */
+        justify-content: space-around;
+        height: 400px !important;
+        font-size: 40px;
+        position: relative;
+        left: 50px;
+
+    }
+    .loginbtnHolder{
+        /* background-color: rgb(97, 80, 92); */
+        position: relative;
+        bottom: 80px;
     }
 }
+@media only screen and (min-width: 1440px) and (max-width: 2559px) {
+    .signupCon {
+        padding: 40px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .loginHolder {
+        width: 35%;
+        height: 75%;
+        gap: 25px;
+    }
+
+    .login-logo img {
+        width: 50%;
+    }
+
+    .loginToAccount {
+        font-size: 50px;
+    }
+
+    .createAnAccount {
+        font-size: 25px;
+    }
+    .createText{
+        font-size: 25px !important;
+    }
+    
+    .passwordHolder3 {
+        width: 100%;
+        height: 60px !important;
+        font-size: 22px;
+        border-radius: 8px;
+        border: solid 0.8px black;
+    }
+    .email-input3 {
+        width: 100%;
+        height: 60px ;
+        font-size: 22px;
+        border-radius: 8px;
+        border: solid 0.8px black;
+    }
+
+    .Loginbtn1 {
+        width: 100%;
+        height: 60px;
+        font-size: 24px;
+        border-radius: 8px;
+    }
+
+    .forget {
+        font-size: 20px;
+    }
+
+    .youraccount {
+        font-size: 40px;
+    }
+    .loginInner1{
+        /* background-color: aqua; */
+        gap: 20px;
+        height: 300px !important;
+    }
+    .login-main{
+        /* background-color: pink; */
+        justify-content: space-around;
+    }
+  
+}
+

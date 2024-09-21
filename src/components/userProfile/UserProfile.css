@@ -3,13 +3,69 @@
     height: 100vh;
     /* background-color: red; */
     display: flex;
-    justify-content: s
+  
 }
 
 .profileLeft{
     width: 30%;
     height: 100vh;
     background-color: #DFFFC0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.profileLogo{
+    width: 90%;
+    height: 10%;
+    /* background-color: blue; */
+    /* padding: 10px; */
+}
+
+.profileItem{
+    width:90%;
+    height: 20%;
+    /* background-color: brown; */
+    /* justify-content: center; */
+    align-items: center;
+    display: flex;
+    gap: 10px;
+}
+
+.profilePixSide{
+    width:70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #02B928;
+}
+
+.profileDetailsContainer{
+    width:75%;
+    height:50%;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    & p{
+        font-size: 25px;
+        font-weight: 500;
+        font-family: montserrat;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow:ellipsis;
+    }
+
+     & span{                                                                      
+        font-size: 15px;
+        font-weight: 500;
+        font-family: montserrat;
+        color: #1E1E1ED6;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow:ellipsis;
+     }
 }
 .profileRight{
     width: 70%;
@@ -38,7 +94,8 @@
     height: 90%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    gap: 20px;
+    /* justify-content: space-around; */
 }
 
 .ProfileInputDiv{
@@ -49,15 +106,29 @@
     flex-direction: column;
 
     & input{
-        width: 709px;
-        height: 50px;
+        width: 500px;
+        height: 40px;
         padding: 10px;
-        font-size: 20px;
+        font-size: 16px;
+        outline: none;
     }
 
     & label{
-        font-size:24px;
+        font-size:16px;
         font-weight: 400;
         font-family: montserrat;
     }
+}
+
+@media screen and (min-width:320px)  and (max-width:500px){
+    .userProfileWrapper{
+     /* width:30%; */
+     /* display: block; */
+     flex-direction: column;
+     border: solid cadetblue;
+
+    }
+
+
+    
 }

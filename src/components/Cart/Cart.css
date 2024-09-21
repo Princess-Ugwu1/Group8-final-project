@@ -3,53 +3,71 @@
     padding: 0;
     box-sizing: border-box;
 }
-.cart-con{
+/* .cart-con{
     width: 100%;
     height: 100vh;
     background-color: blueviolet;
-}
+} */
 .cart-holder{
     width: 100%;
-    height: 100%;
-    background-color: rgb(218, 213, 213);
+    height: 100vh;
+    /* background-color:#f50a0a; */
+    /* background-color: aqua; */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .cart-inner{
     width: 95%;
-    height: 92%;
-    background-color:  rgb(218, 213, 213);
+    height: 80%;
+    /* background: #000; */
+    background-color: #ffffff; 
+    /* overflow-y: scroll; */
+    /* background-color: aqua; */
 }
 .item-con{
     width: 100%;
-    height: 85%;
-    background-color:  rgb(218, 213, 213);
-}
-.item-btns{
-    width: 100%;
-    height: 15%;
-    /* background-color: brown; */
+    max-height: auto;
+    /* min-height: 80%; */
+    height: 80%;
+    overflow-y: scroll;
+    background-color:  #ffffff;
+    display: flex;
+    flex-direction: column;
+    /* background-color: rgb(75, 60, 63); */
+    /* background-color: rgb(216, 26, 64); */
+    overflow-y:scroll ;
+    gap: 10px;
+    
 }
 .item-inner{
     width: 100%;
-    height: 25%;
+    min-height: 300px;
+    height: 300px;
     /* background-color: yellow; */
     display: flex;
     align-items: center;
     justify-content: center;
 }
+/* hr {
+    margin: 5px 0;
+  } */
+.item-btns{
+    width: 100%;
+    height: 20%;
+    /* background-color: brown; */
+}
 .cart-left{
     width: 80%;
-    height: 100%;
-    /* background-color: aquamarine; */
+    height: 90%;
+    /* background-color: aquamarine;  */
 }
 .remove{
     width: 20%;
     height: 100%;
     /* background-color: blueviolet; */
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
 }
 .pixholder{
@@ -58,24 +76,32 @@
     /* background-color: deeppink; */
     display: flex;
     gap: 10px;
+    /* border: #02B928 solid 0.4px; */
+    
 }
 .item-pic{
-    width: 40%;
+    width: 50%;
     height: 100%;
-    background-color: #DFFFC0;
-    ;
+    /* background-color: #DFFFC0; */
     display: flex;
     justify-content: center;
     align-items: center;
+    /* border: #02B928 solid 0.1px; */
+    border-radius: 10px;
+    border: #02B928 solid 0.5px;
 
     & img{
         width: 190px;
         height: 100%;
+       
     }
 }
 .item-detail{
     width: 60%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     /* background-color: rgb(95, 48, 224); */
 }
 .item-list{
@@ -84,29 +110,44 @@
     /* background-color: gold; */
     display: flex;
     align-items: center;
-    font-family: lato;
+    font-family: Montserrat;
+    /* font-family: Montserrat; */
+    font-size: 30px;
+    font-weight: 600;
+    
+    
 }
 .qty{
     width: 50%;
     height: 40%;
     /* background-color: tomato; */
     display: flex;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     align-items: center;
+    gap: 10px;
 }
 .add{
-    width: 40%;
-    height: 100%;
-    background-color:  #F3D79F;
+    width: 20%;
+    height: 45%;
+    background-color: #DFFFC0;
+    ;
     display: flex;
     justify-content: space-around;
     align-items: center;
     cursor: pointer;
 }
+.item-worth{
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 600;
+    
+    
+}
 .minus{
-    width: 40%;
-    height: 100%;
-    background-color: #F3D79F;
+    width: 20%;
+    height: 45%;
+    background-color: #DFFFC0;
+    ;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -121,9 +162,16 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    border: solid 0.2px black;
+    border-radius: 8px;
 }
 .des{
-    font-size: 13px;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: 400;
+    /* background-color: purple; */
+    line-height: 1.5;
+
 }
 .sub{
     width: 100%;
@@ -154,9 +202,10 @@
     cursor: pointer;
 }
 .Check-btn{
-    width: 50%;
+    width: 25%;
     height: 50%;
-    background-color: #02B928;
+    color: #02B928;
+    background-color: #ffffff;
     border-radius: 10px;
     font-size: 20px;
     font-weight: 500;
@@ -166,10 +215,12 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    font-family: Montserrat;
+    border: #02B928 solid 2px;
     
 }
 .Continue-btn{
-    width: 50%;
+    width: 25%;
     height: 50%;
     background-color: #02B928;
     border-radius: 10px;
@@ -182,6 +233,9 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    color: #ffffff;
+    transform: (1.02);
+    transition: 300ms ease-out;
     
 }
 .pricey{
