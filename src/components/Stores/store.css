@@ -108,7 +108,7 @@ color: #F27318;
 .topProducts{
     width: 100%;
     height: max-content;
-    background-color: rgb(114, 95, 95);
+    /* background-color: rgb(114, 95, 95); */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
