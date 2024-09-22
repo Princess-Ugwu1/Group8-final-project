@@ -17,7 +17,7 @@ const Header = () => {
       <div className="headerLogo" onClick={()=>nav('/')}>
         <img src={"./Logo.svg"} alt="" />
         {
-          burgerMenu ? <BuggerMenu/> : null
+          burgerMenu ? <BuggerMenu setBurgerMenu={setBurgerMenu}/> : null
         }
       </div>
 

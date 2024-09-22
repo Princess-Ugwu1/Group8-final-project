@@ -9,7 +9,7 @@ export const HeroPage = () => {
     <div className='heroParent'>
         <div className='herohold'>  
             <h1>Make healthy life with fresh groceries</h1>
-            <button>Start Shopping <IoIosArrowForward /></button>
+            <button onClick={()=>nav('/store')}>Start Shopping <IoIosArrowForward /></button>
         </div>
         <div className='hero_img'>
         </div>

@@ -3,8 +3,13 @@ import './VendorUpload.css'
 import { IoIosImages } from "react-icons/io";
 
 const VendorUpload = () => {
-    const [productImage, setProductImage]=useState()
-    const [picture, setPicture]=useState(null)
+    // const [productImage, setProductImage]=useState()
+    // const [picture, setPicture]=useState(null)
+    const [productName, setProductName] = useState('')
+    const [productPrice, setProductPrice] = useState('')
+    const [productDescription, setProductDescription] = useState('')
+    const [productImage, setProducImage] = useState(null)
+    
   
     const url = "https://groceria.onrender.com/api/v1/";
     const token = localStorage.getItem('userToken');

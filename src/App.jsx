@@ -44,7 +44,7 @@ const App = () => {
     {/* <Route path='/' element={<LandingPage />}/> */}
   {/* <Route path='/header2' element={<SecondHeader/>}/> */}
     <Route path='/signup' element={<Signup/>}/>
-    <Route path='/login' element={<Login/>}/>
+    <Route path='/login' element={<Login/>}></Route>
     <Route path='/resetpassword' element={<ResetPassword/>}/>
     <Route path='/verifypassword/:token' element={<VerifyPassword/>}/>
     <Route path='/updatepassword' element={<UpdatePassword/>}/>
