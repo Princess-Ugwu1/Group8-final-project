@@ -53,13 +53,14 @@ const nav = useNavigate()
       if(!email || !password || !fullname || !phoneNumber){
         toast.error("Please Fill all Details")
       }else{
-       
+         setLoading(true)
         const url = "https://groceria.onrender.com/api/v1/sign-up"
         const newData = { email, phoneNumber, fullName:fullname, password}
        axios.post(url, newData)
        .then(res=>{
         console.log(res)
-        nav('/signupverify')
+        // setLoading(false)
+        nav(`/signupverify/ ${res.data.data._id}`)
         setLoading(true)
        })
        .catch((error)=>{
@@ -147,16 +148,13 @@ const nav = useNavigate()
                       </div>
                     </div>
                   </div>
-                  <div className='signupBtn1'>
-                    <p onClick={handleSubmit}>{
-                      loading ? "Loading...": "Signup"
+                  <button className='signupBtn1' onClick={handleSubmit}>
+                    <p >{
+                      loading ?  "Loading..." :"Signup"
 }
 </p>
-                    <div className='already'>
-                    <p className='already1'>Already have an account?</p>
-                   <NavLink to='/login'><p className='login1'>Login</p></NavLink> 
-                  </div>
-                  </div>
+                  </button>
+
                 </div>
               </div>
             </div>

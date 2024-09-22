@@ -2,6 +2,7 @@ import React from 'react'
 import "./Congrat.css"
 import groceriapix from "../assets/Group 10.png"
 import congratpicture from "../assets/congratss.png"
+import { NavLink } from 'react-router-dom'
 import { useNavigate } from 'react-router-dom'
 
 const Congrat = () => {
@@ -20,7 +21,7 @@ const Congrat = () => {
                         <div className='congratpix'><img className='pixmain' src={congratpicture} alt="" /></div>
                     </div>
                     <div className='congratBtn'>
-                        <p>Continue</p>
+                        <NavLink to="/login"><p>Continue</p></NavLink>
                     </div>
                 </div>
             </div>

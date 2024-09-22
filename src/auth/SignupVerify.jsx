@@ -1,9 +1,53 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import "./SignupVerify.css"
 import svlogo from "../assets/Group 10.png"
 import svenlope from "../assets/envelope.jpg"
+import { useNavigate, useParams } from 'react-router-dom'
+import axios from 'axios'
 
 const SignupVerify = () => {
+    const {id }= useParams()
+    
+    // const userid= id  
+    // const userId = Object.values(id)
+    const userid2 = id.toString()
+    console.log(userid2)
+    // useEffect(() => {
+    //     const fetchUser = async () => {
+    //       try {
+    //         const response = await axios.get(`https://your-backend-api.com/api/users/${id}`);
+            
+    //         if (!response.ok) {
+    //           throw new Error('User not found');
+    //         }
+    
+    //         const userData = await response.json();
+    //         console.log(userData);
+    //         // setLoading(false);
+    //       } catch (error) {
+    //         console.log(error.message);
+    //         // setLoading(false);
+    //       }
+    //     };
+    
+    //     fetchUser();
+    //   }, [id]);
+    
+   const Nav = useNavigate()
+    const getone = ()=>{
+        // setUserid(id)
+        const url = `https://groceria.onrender.com/api/v1/getone/${userid2}`
+        axios.get(url)
+        .then(res=>{
+            console.log(res)
+        })
+        .catch((error)=>{
+            console.log(error)
+        })
+    }
+    useEffect(()=>{
+        getone()
+    },[id])
   return (
     <div className='SV-container'>
          <div className='SV-holder'>
@@ -16,7 +60,12 @@ const SignupVerify = () => {
                 </div>
                 <div className='SV-text'>
                     <div className='text-1'>
+
                         <p>Check your mailbox!</p>
+                        <h3> 
+                            if  Verification is Successful 
+                        </h3>
+                        <button onClick={()=> Nav("/login")}>LogIn</button>
                     </div>
                     <div className='text-2'>
                         <p>We sent you a link to verify email.</p>

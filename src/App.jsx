@@ -21,6 +21,7 @@ import Cart from './components/Cart/Cart'
 import SignupVerify from './auth/SignupVerify'
 import ExpiredVerify from './auth/ExpiredVerify'
 import VerificationPage from './auth/Verify'
+import Checkout from "./components/Cart/Checkout"
 import About from './components/aboutPage/About'
 import Contact from './components/aboutPage/Contact'
 // import Store from './components/Stores/Stores'
@@ -37,12 +38,21 @@ const App = () => {
   return (
  <HashRouter>
   <Routes>
-  <Route path='/signup' element={<Signup/>}/>
+    <Route path='/cart' element={<Cart/>}/>
+    <Route path='/checkout' element={<Checkout/>}/>
+   <Route path='/profile' element={<UserProfile/>}/>
+    <Route element = {<Layout/>}>
+    <Route path='/' element={<LandingPage />}/>
+    <Route path='/contactUs' element={<ContactUs/>}/>
+    {/* <Route path='/AboutForm' element={<AboutUs/>}/> */}
+  {/* <Route path='/contact' element={<Contact/>}/> */}
+  <Route path='/header2' element={<SecondHeader/>}/>
+    <Route path='/signup' element={<Signup/>}/>
     <Route path='/login' element={<Login/>}/>
     <Route path='/resetpassword' element={<ResetPassword/>}/>
     <Route path='/verifypassword/:token' element={<VerifyPassword/>}/>
     <Route path='/updatepassword' element={<UpdatePassword/>}/>
-    <Route path='/signupverify' element={<SignupVerify/>}/>
+    <Route path='/signupverify/:id' element={<SignupVerify/>}/>
     <Route path='/verifySuccessful/:token' element={<VerificationPage/>}/>
     <Route path='/congrat' element={<Congrat/>}/>
     <Route path='/expired' element={<ExpiredVerify/>}/>
@@ -55,19 +65,15 @@ const App = () => {
     <Route path='/AboutForm' element={<About/>}/>
   <Route path='/contact' element={<Contact/>}/>
   <Route path='/header2' element={<SecondHeader/>}/>
-   
     </Route>
     {/* <Route path='/dashBoard' element={<VendorDashBoard/>}/> */}
     <Route element = {<LayoutTwo/>}>
     <Route path='/product' element={<Products/>}/>
     <Route path='/store' element={<Store/>}/>
-    <Route path='/items/:id' element={<StoreItems/>}/>
-    </Route>
-        <Route element={<LayoutThree/>}>
-            <Route path='/upload' element={<VendorUpload/>}/>
-            <Route path='/vendorOrders' element={<VendorCards/>}/>
-               
-  
+    <Route path='/items' element={<StoreItems/>}/>
+    <Route element={<LayoutThree/>}>
+      <Route path='/upload' element={<VendorUpload/>}/>
+      <Route path='/vendorOrders' element={<VendorCards/>}/>
     </Route>
   </Routes>
   <Toaster position="top-right" reverseOrder={false}/>

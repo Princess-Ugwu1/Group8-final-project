@@ -150,7 +150,7 @@ color: #000000A8;
     display: flex;
 }
 .signupBtn1{
-    width: 92%;
+    width: 85%;
     height: 60px;
     background-color: #02B928;
     border-radius: 10px;
@@ -162,7 +162,13 @@ color: #000000A8;
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    transition: all 350ms ease-in-out;
+    border: none;
+   
 
+}
+.signupBtn1:hover{
+    background-color: #F27318;
 }
 .signLeft{
     width: 50%;

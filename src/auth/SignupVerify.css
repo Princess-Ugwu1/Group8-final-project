@@ -67,12 +67,28 @@
     font-family: Montserrat;
     font-size: 30px;
     font-weight: 600;
+    flex-direction: column;
+    gap: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    
+
+    & button{
+        width: 40%;
+        height: 30%;
+        border: none;
+        outline: none;
+        background: greenyellow;
+        font-size: 16px;
+    }
+    & h3{
+        font-size: 17px;
+    }
 }
 .text-2{
     width: 70%;
+    margin-top: 10px;
     height: 50%;
     background-color:  #ffffff(141, 137, 136);
     font-family: Montserrat;
