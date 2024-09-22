@@ -117,6 +117,6 @@
       flex-direction: row;
       justify-content: space-around;
       align-items: center;
-      height: max-content;
+      /* height: max-content; */
     }
   }

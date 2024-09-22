@@ -16,6 +16,7 @@ const Login = () => {
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
   const [seePassword, seteSePassword] = useState(true);
+  const [loading,setLoading] = useState(false)
   const lookPassword = () => {
     seteSePassword(false);
   };
@@ -52,30 +53,59 @@ const Login = () => {
 //       setPassword(newdata)
 //     }
 
-    const handlesubmit = () => {
-      // if(!email || !password){
-      //   toast.error("Please Fill all Details")
-      // }else{
-        const url = "https://groceria.onrender.com/api/v1/log-in"
-        const userdata = {email, password}
-        setloading(true)
-        axios.post(url, userdata)
-        .then(res=>{
-          console.log(res)
-          dispatch(userData(res.data.data))
-          setloading(false)
-          dispatch(userId(res.data.data._id))
-          console.log(res.data.data._id)
-          toast.success("Successful Signed Up")
-          // nav("/congrat")
+    // const handlesubmit = () => {
+    //   // if(!email || !password){
+    //   //   toast.error("Please Fill all Details")
+    //   // }else{
+    //     const url = "https://groceria.onrender.com/api/v1/log-in"
+    //     const userdata = {email, password}
+    //     setLoading(true)
+    //     axios.post(url, userdata)
+    //     .then(res=>{
+    //       console.log(res)
+    //       dispatch(userData(res.data.data))
+    //       setLoading(false)
+    //       console.log(res.data.data._id)
+    //       toast.success("Successful Signed Up")
+    //       // nav("/store")
 
+    //     })
+    //     .catch((error)=>{
+    //       console.log(error)
+    //       setLoading(false)
+    //     })
+    //   // }
+    // }
+const handlesubmit =()=>{
+  setLoading(true)
+ if(!email || !password){
+      toast.error("Please Fill all Details")
+     }else{
+         const url = "https://groceria.onrender.com/api/v1/log-in"
+        axios.post(url,{email,password})
+        .then((res)=>{
+          dispatch(userId(res.data.data._id))
+          console.log(res?.data?.token)
+          localStorage.setItem("userToken",res?.data?.token)
+          // dispatch(userData(res.data.data))
+
+
+          toast.success(res.data.message)
+          setLoading(false)
+          setTimeout(()=>{
+            nav("/store")
+          },2000)
+          
         })
-        .catch((error)=>{
-          console.log(error)
-          setloading(false)
+        .catch((err)=>{
+         console.log(err);
+          
+          toast.error(err?.response?.data?.errors)
+          setLoading(false)
         })
-      // }
-    }
+     }
+}
+    
       return (
     <div className='signupCon9'>
         <div className='signupholder'>
@@ -115,51 +145,11 @@ const Login = () => {
              </div>
 
               </div>
-              <div className="createAnAccount">
-                <p>New on Groceria? </p>
-                <p className="createText">
-                  <NavLink to="/signup">Create an account</NavLink>
-                </p>
               </div>
-            </div>
-          </div>
-          <div className="login-main">
-            <div style={{ height: 200 }} className="loginInner1">
-              <p>Email</p>
-              <input
-                className="email-input3"
-                type="text"
-                onChange={handleemail}
-              />
-              <p>Password</p>
-              <div style={{ height: 40 }} className="passwordHolder3">
-                <input
-                  className="input-four3"
-                  type={seePassword ? "password" : "text"}
-                  onChange={handlepassword}
-                />
-                {seePassword ? (
-                  <FaRegEye size={30} onClick={lookPassword} />
-                ) : (
-                  <FaRegEyeSlash onClick={() => seteSePassword(true)} />
-                )}
               </div>
-            </div>
-            <div className="loginbtnHolder">
-              <NavLink to="/resetpassword">
-                <div className="forget">Forgot Password?</div>
-              </NavLink>
-              {/* <NavLink to='/'><div className='Loginbtn'>Login</div></NavLink> */}
-              <div className="Loginbtn1" onClick={handlesubmit}>
-                Login
               </div>
-            </div>
-          </div>
-        </div>
-        <Toaster />
-      </div>
-    </div>
-  );
+    
+  )
 };
 
 export default Login;

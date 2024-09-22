@@ -1,7 +1,9 @@
 
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import toast from "react-hot-toast";
+// import toast from "react-hot-toast";
+import 'react-toastify/dist/ReactToastify.css';
+import { toast,ToastContainer } from "react-toastify";
 import {Oval} from 'react-loader-spinner'
 
 const ProductCard = () => {
@@ -14,7 +16,7 @@ const ProductCard = () => {
   const url = "https://groceria.onrender.com/api/v1/";
   const token = localStorage.getItem('userToken');
 
-console.log(token);
+// console.log(token);
 
 
 
@@ -28,7 +30,7 @@ console.log(token);
       setAllProducts(products); // Store all fetched products
       setDisplayedProducts(products.slice(0, productsPerPage)); // Initially display the first 12 products
     } catch (err) {
-      console.error(err);
+      console.log(err)
     } finally {
       setLoading(false);
     }
@@ -50,7 +52,7 @@ console.log(token);
     ]);
     setCurrentPage(nextPage); // Increment the page number
   };
-  const token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NmVlYmNmZDE4ZDhiNzA3NmZlNzBkZDMiLCJlbWFpbCI6ImpvbGFldG9waWE4MUBnbWFpbC5jb20iLCJpYXQiOjE3MjY5NDc5MTMsImV4cCI6MTcyNjk1ODcxM30.xZ6Dqz36ALALWi-pBGwzRw6VZKF0sQ-osJFPFy0GLoA"
+  // const token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NmVlYmNmZDE4ZDhiNzA3NmZlNzBkZDMiLCJlbWFpbCI6ImpvbGFldG9waWE4MUBnbWFpbC5jb20iLCJpYXQiOjE3MjY5NDc5MTMsImV4cCI6MTcyNjk1ODcxM30.xZ6Dqz36ALALWi-pBGwzRw6VZKF0sQ-osJFPFy0GLoA"
 
   const addTocart = async ( productId) => {
     // event.preventDefault();
@@ -118,6 +120,7 @@ console.log(token);
       :
 
     (<div className="storeItemsWrapper">
+      <ToastContainer style={{zIndex:"999999999999999999"}}/>
       <div className="storeItemsContainer">
         {displayedProducts?.map((items, index) => (
           <div className="storeItems" key={index}>
@@ -128,13 +131,13 @@ console.log(token);
               <div className="itemDetails">
                 <p>{items?.productName}</p>
                 <span>₦{items?.productPrice}</span>
-                <button className='addToCart' onClick={()=> addTocart( items?._id)} >Add to cart</button>
+                <button className='addToCart' onClick={()=> addToCart( items?._id)} >Add to cart</button>
               </div>
             </div>
           </div>
         ))}
       </div>
-      <Toaster/>
+
 
       {/* Show Load More button if there are more products to display */}
       {displayedProducts.length < allProduct.length && (

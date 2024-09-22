@@ -38,15 +38,11 @@ const App = () => {
   return (
  <HashRouter>
   <Routes>
-    <Route path='/cart' element={<Cart/>}/>
+   
     <Route path='/checkout' element={<Checkout/>}/>
    <Route path='/profile' element={<UserProfile/>}/>
-    <Route element = {<Layout/>}>
-    <Route path='/' element={<LandingPage />}/>
-    <Route path='/contactUs' element={<ContactUs/>}/>
-    {/* <Route path='/AboutForm' element={<AboutUs/>}/> */}
-  {/* <Route path='/contact' element={<Contact/>}/> */}
-  <Route path='/header2' element={<SecondHeader/>}/>
+    {/* <Route path='/' element={<LandingPage />}/> */}
+  {/* <Route path='/header2' element={<SecondHeader/>}/> */}
     <Route path='/signup' element={<Signup/>}/>
     <Route path='/login' element={<Login/>}/>
     <Route path='/resetpassword' element={<ResetPassword/>}/>
@@ -60,23 +56,24 @@ const App = () => {
     <Route path='/vendorlogin' element={<VendorLogin/>}/>
     <Route path='/cart' element={<Cart/>}/>
    <Route path='/profile' element={<UserProfile/>}/>
-    <Route element = {<Layout/>}>
+    <Route element={<Layout/>}>
     <Route path='/' element={<LandingPage />}/>
     <Route path='/AboutForm' element={<About/>}/>
   <Route path='/contact' element={<Contact/>}/>
-  <Route path='/header2' element={<SecondHeader/>}/>
     </Route>
     {/* <Route path='/dashBoard' element={<VendorDashBoard/>}/> */}
     <Route element = {<LayoutTwo/>}>
     <Route path='/product' element={<Products/>}/>
     <Route path='/store' element={<Store/>}/>
-    <Route path='/items' element={<StoreItems/>}/>
+    <Route path='/items/:id' element={<StoreItems/>}/>
+    </Route>
     <Route element={<LayoutThree/>}>
       <Route path='/upload' element={<VendorUpload/>}/>
       <Route path='/vendorOrders' element={<VendorCards/>}/>
     </Route>
+    
   </Routes>
-  <Toaster position="top-right" reverseOrder={false}/>
+  {/* <Toaster position="top-right" reverseOrder={false}/> */}
  </HashRouter>
 
   )

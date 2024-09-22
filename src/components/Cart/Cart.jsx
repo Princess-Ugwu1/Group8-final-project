@@ -184,7 +184,7 @@ useEffect(()=>{
               </div>
             </div>
             <div className='buttons'>
-              <div className='Check-btn'>Check out</div>
+              <div className='Check-btn' onClick={()=>nav('/checkout')}>Check out</div>
               <div className='Continue-btn'onClick={()=>nav('/store')}>Continue Shopping</div>
             </div>
           </div>
