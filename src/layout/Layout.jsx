@@ -7,18 +7,17 @@ import VendorDashBoard from '../components/vendorPage/VendorDashBoard'
 const Layout = () => {
   
   return (
-    <>
-    {
-      <>
+    <div>
+ 
        <Header/>
        <Outlet/>
        <Footer/>
-       </>
-    }
+       </div>
+   
    
     
     
-    </>
+    
 
   )
 }

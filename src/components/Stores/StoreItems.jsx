@@ -19,7 +19,7 @@ const StoreItems = () => {
   const token = localStorage.getItem('userToken');
 
   const getOneStoreProduct = async () => {
-    setLoading(true); // Start loading
+    setLoading(true); 
     try {
       const product = await axios.get(`${url}/allstoreproducts/${id}`);
       setAllProducts(product?.data?.data);
@@ -27,7 +27,7 @@ const StoreItems = () => {
       console.log(err);
       toast.error('Failed to fetch products.');
     } finally {
-      setLoading(false); // End loading
+      setLoading(false); 
     }
   };
 
@@ -39,13 +39,13 @@ const StoreItems = () => {
         { productId, quantity }, 
         { headers: { "Authorization": `Bearer ${token}` } }
       );
-      
-      console.log(response); // Log response for debugging
+    
+      console.log(response); 
       if (response) {
         toast.success('Added to cart successfully!');
       }
     } catch (error) {
-      console.log(error.data); // Log error for debugging
+      console.log(error.data); 
       toast.error('Failed to add to cart.');
     } finally {
       setAddingToCart(false);
@@ -60,14 +60,14 @@ const StoreItems = () => {
   return (
     <>
       <div className='ProductDescription'>
-        <ToastContainer/>
+        <ToastContainer style={{zIndex:"999999999999999999"}}/>
         <div className="ProductDescriptionInner">
           <span>All Products</span>
           <p>Start Shopping from the finest selection of fresh products</p>
         </div>
       </div>
 
-      {loading ? ( // Show loading spinner while fetching data
+      {loading ? ( 
         <div className="loading">{<Oval
         visible={true}
         height="120"
@@ -105,5 +105,4 @@ const StoreItems = () => {
     </>
   );
 };
-
 export default StoreItems;

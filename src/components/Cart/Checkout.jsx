@@ -28,7 +28,8 @@ const Checkout = () => {
 
     const [customerPhoneNumber, setcustomerPhoneNumber]=useState("")
     const [customerAddress, setcustomerAddress]=useState("")
-    const token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NmVlYmNmZDE4ZDhiNzA3NmZlNzBkZDMiLCJlbWFpbCI6ImpvbGFldG9waWE4MUBnbWFpbC5jb20iLCJpYXQiOjE3MjY5NDc5MTMsImV4cCI6MTcyNjk1ODcxM30.xZ6Dqz36ALALWi-pBGwzRw6VZKF0sQ-osJFPFy0GLoA"
+    const token=localStorage.getItem("userToken")
+    // const token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NmVlYmNmZDE4ZDhiNzA3NmZlNzBkZDMiLCJlbWFpbCI6ImpvbGFldG9waWE4MUBnbWFpbC5jb20iLCJpYXQiOjE3MjY5NDc5MTMsImV4cCI6MTcyNjk1ODcxM30.xZ6Dqz36ALALWi-pBGwzRw6VZKF0sQ-osJFPFy0GLoA"
    const nav = useNavigate()
     const handlechangefir= (e)=>{
       const newData  = e.target.value
@@ -83,7 +84,7 @@ const fetchDataWithDynamicHeaders = async () => {
 };
 useEffect(()=>{
   fetchDataWithDynamicHeaders()
-})
+},[])
 // const totall = total + 400
 
 const [total, setTotal]=useState(0)
