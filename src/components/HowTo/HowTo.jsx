@@ -1,5 +1,6 @@
-import "./Howto.css"
-import pot from "../../../public/pot.svg"
+import '../HowTo/HowTo.css'
+
+
 
 export const Howto =() =>{
     return(

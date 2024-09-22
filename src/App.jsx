@@ -12,7 +12,7 @@ import Congrat from "./auth/Congrat"
 import VendorSignup from './auth/VendorSignup'
 import VendorLogin from './auth/VendorLogin'
 import VendorDashBoard from './components/vendorPage/VendorDashBoard'
-import LandingPage from './components/LandingPage'
+import LandingPage from './components/HowTo/LandingPage'
 import ContactUs from './components/ContactUs/ContactUs'
 import SecondHeader from './components/header/SecondHeader'
 import UserProfile from './components/userProfile/UserProfile'
