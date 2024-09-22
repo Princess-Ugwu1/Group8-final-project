@@ -1,5 +1,5 @@
 import React from 'react'
-import '../header/bugermenu.css'
+// import '../header/bugermenu.css'
 import VendorSideBar from './VendorSideBar'
 const SideBugger = () => {
   return (
