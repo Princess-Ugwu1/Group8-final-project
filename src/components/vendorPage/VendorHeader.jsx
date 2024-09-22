@@ -24,7 +24,7 @@
 
 
 import React, { useState } from 'react';
-import './vendorHeader.css';
+// import './vendorHeader.css';
 import SideBugger from './sideBugger';
 
 const VendorHeader = () => {
@@ -32,12 +32,12 @@ const VendorHeader = () => {
 
   return (
     <div className="VendorHeader">
-      <div className="MenuHolder" onClick={() => setShowSide(!showSide)}>
+      {/* <div className="MenuHolder" onClick={() => setShowSide(!showSide)}>
         <p>Menu</p>
       </div>
       <div className={`sideBar ${showSide ? 'show' : ''}`}>
         <SideBugger />
-      </div>
+      </div> */}
     </div>
   );
 };
