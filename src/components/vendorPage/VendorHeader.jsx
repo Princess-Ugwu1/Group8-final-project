@@ -25,10 +25,10 @@
 
 import React, { useState } from 'react';
 // import './vendorHeader.css';
-import SideBugger from './sideBugger';
+// import SideBugger from './sideBugger';
 
 const VendorHeader = () => {
-  const [showSide, setShowSide] = useState(false);
+  // const [showSide, setShowSide] = useState(false);
 
   return (
     <div className="VendorHeader">
