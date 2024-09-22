@@ -23,7 +23,7 @@
     flex-direction: column;
     gap: 20px;
     padding: 10px;
-}@media screen and (1080px <=width <= 1240px){
+}@media(width < 1240px){
 
 .Objective{
     height: auto;

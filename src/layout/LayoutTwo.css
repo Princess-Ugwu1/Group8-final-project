@@ -1,0 +1,29 @@
+
+/* Layout.css */
+html, body {
+    height: 100%; /* Make sure the body and html take up the full viewport height */
+    margin: 0;
+  }
+  
+  .layoutContainer {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Full height of the viewport */
+  }
+  
+  .contentWrapper {
+    flex-grow: 1; /* Allows content to expand and push footer down if necessary */
+    padding: 20px; /* Optional: Adds padding around the content */
+    overflow: auto; /* Prevents content overflow */
+  }
+  
+  footer {
+    background-color: #f1f1f1; /* Customize the footer styles */
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+  }
+  
+  

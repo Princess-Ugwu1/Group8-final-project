@@ -14,30 +14,22 @@ const VendorSideBar = () => {
       <div className="vendorListWrapper">
         <div className="vendorList">
           <ul>
-            <li>
-              <NavLink
-                to="/upload"
-                className={({ isActive }) =>
-                  isActive ? "isActive" : "notActive"
-                }
-              >
+            <li><NavLink to= '/upload' className={({isActive}) =>  isActive ? "SideActive" : "SideNotActive"}>
                 <IoStorefrontSharp size={25} />
                 Add Product
-              </NavLink>
+                </NavLink>
             </li>
             <li>
-              <NavLink
-                className={({ isActive }) =>
-                  isActive ? "isActive" : "notActive"
-                }
-              >
+            <NavLink to= '/vendorOrders' className={({isActive}) =>  isActive ? "SideActive" : "SideNotActive"}>
                 <CiMenuBurger size={25} />
                 order
-              </NavLink>
+                </NavLink>
             </li>
             <li>
+            <NavLink to= '/' className={({isActive}) =>  isActive ? "SideActive" : "SideNotActive"}>
               <MdLogout size={25} />
               Log out
+              </NavLink>
             </li>
           </ul>
         </div>

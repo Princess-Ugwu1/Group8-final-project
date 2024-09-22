@@ -54,6 +54,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+   
 }
 .Vlogin-Input{
     width: 70%;
@@ -156,4 +157,5 @@ input{
 }
 .c-forget{
     cursor: pointer;
+    text-decoration: none;
 }

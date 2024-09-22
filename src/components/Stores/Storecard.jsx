@@ -19,7 +19,7 @@ const Storecard = () => {
                             </div>
                             <div className="storeDescription">
                                 <p>{card?.data?.businessName}</p>
-                                {/* <span>{card?.data?.description?.slice(0, 20)}</span> */}
+                                <span>{card?.data?.description}</span>
                             </div>
                         </div>
                     ))

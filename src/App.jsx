@@ -22,13 +22,15 @@ import SignupVerify from './auth/SignupVerify'
 import ExpiredVerify from './auth/ExpiredVerify'
 import VerificationPage from './auth/Verify'
 import Checkout from "./components/Cart/Checkout"
-import About from "./components/aboutPage/About"
-import Contact from "./components/aboutPage/Contact"
-import Store from "./components/Stores/Stores"
-import LayoutThree from "./layout/LayoutThree"
-import VendorUpload from "./components/vendorPage/VendorUpload"
+import About from './components/aboutPage/About'
+import Contact from './components/aboutPage/Contact'
+// import Store from './components/Stores/Stores'
+import LayoutThree from './layout/LayoutThree'
+import VendorUpload from './components/vendorPage/VendorUpload'
 import VendorCards from './components/vendorPage/VendorCards'
-// import AboutUs from "./components/AboutForm"
+import { Toaster } from 'react-hot-toast'
+import Store from './components/Stores/Store'
+
 
 const App = () => {
 
@@ -56,22 +58,25 @@ const App = () => {
     <Route path='/expired' element={<ExpiredVerify/>}/>
     <Route path='/vendorsign' element={<VendorSignup/>}/>
     <Route path='/vendorlogin' element={<VendorLogin/>}/>
+    <Route path='/cart' element={<Cart/>}/>
+   <Route path='/profile' element={<UserProfile/>}/>
+    <Route element = {<Layout/>}>
+    <Route path='/' element={<LandingPage />}/>
+    <Route path='/AboutForm' element={<About/>}/>
+  <Route path='/contact' element={<Contact/>}/>
+  <Route path='/header2' element={<SecondHeader/>}/>
     </Route>
     {/* <Route path='/dashBoard' element={<VendorDashBoard/>}/> */}
     <Route element = {<LayoutTwo/>}>
     <Route path='/product' element={<Products/>}/>
     <Route path='/store' element={<Store/>}/>
     <Route path='/items' element={<StoreItems/>}/>
-    
     <Route element={<LayoutThree/>}>
       <Route path='/upload' element={<VendorUpload/>}/>
       <Route path='/vendorOrders' element={<VendorCards/>}/>
-      </Route>
-
-               
-  
     </Route>
   </Routes>
+  <Toaster position="top-right" reverseOrder={false}/>
  </HashRouter>
 
   )
