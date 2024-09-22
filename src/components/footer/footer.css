@@ -111,7 +111,7 @@
     }
     .box{
       width:100%;
-      background-color: aqua;
+      /* background-color: aqua; */
       /* gap: 10px; */
       display: flex;
       flex-direction: row;
