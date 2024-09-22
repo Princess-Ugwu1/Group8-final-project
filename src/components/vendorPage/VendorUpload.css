@@ -10,6 +10,9 @@
 .uploadHolder{
     width:85%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     /* background-color: aqua; */
 }
 
@@ -126,5 +129,39 @@ border: none;
     width: 15%;
     height: 3rem;
     justify-content: center;
-    align-items: center;
+    align-items: center;
   }
+
+  @media screen and (min-width:320px)  and (max-width:500px){
+    .descriptiveDiv{
+        & p{
+            font-size: 22px;
+            font-weight: 700;
+        }
+
+        & span{
+            font-size: 15px;
+        }
+    }
+
+  .UploadFormHolder{
+    width:100%;
+    /* overflow-x: hidden; */
+    height: 18%;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+
+    & input{
+        height: auto;
+        width:100%
+    }
+  }
+
+  .custom-file-upload {
+    width:50%
+  }
+
+    }
+  

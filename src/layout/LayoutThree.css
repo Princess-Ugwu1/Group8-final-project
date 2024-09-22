@@ -1,9 +1,11 @@
 .LayoutThree{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     /* background: red; */
     height: 100vh;
     width: 100%;
+    align-items: center;
+    /* justify-content: center; */
 }
 .HoldOutletAndHeader{
     height: 100vh;
@@ -11,4 +13,18 @@
     /* background: blue; */
     display: flex;
     flex-direction: column;
+    gap: 10px;
+}
+
+.sideBar{
+    height: 100vh;
+    width: 30%;
+    background-color: antiquewhite;
+    display: flex;
+} 
+
+@media (min-width: 320px) and (max-width: 768px){
+    .sideBar{
+        display: none;
+    }
 }
