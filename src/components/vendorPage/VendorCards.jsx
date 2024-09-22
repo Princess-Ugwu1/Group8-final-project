@@ -2,10 +2,13 @@ import React from 'react'
 import './vendorCards.css'
 
 const VendorCards = () => {
+  const orderedProducts = [1,2,3,4,5,6]
   return (
     <div className='VendorsOrderCards'>
       <div className="ordersHolder">
-        <div className="orderCardWrapper">
+        {
+          orderedProducts.map(()=>(
+            <div className="orderCardWrapper">
           <div className="orderCardWrapperImg"></div>
             <div className="orderDescriptiveDiv">
               <p>ProductName</p>
@@ -13,6 +16,9 @@ const VendorCards = () => {
               <button className='orderButton'>ordered</button>
             </div>
         </div>
+          ))
+        }
+        
       </div>
     </div>
   )

@@ -8,7 +8,9 @@ import VendorHeader from '../components/vendorPage/VendorHeader'
 const LayoutThree = () => {
   return (
     <div className='LayoutThree'>
+      <div className="sideBar">
   <VendorSideBar/>
+  </div>
     <div className="HoldOutletAndHeader">
     <VendorHeader/>
     <Outlet/>
