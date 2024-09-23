@@ -30,6 +30,7 @@ import VendorUpload from './components/vendorPage/VendorUpload'
 import VendorCards from './components/vendorPage/VendorCards'
 import { Toaster } from 'react-hot-toast'
 import Store from './components/Stores/Store'
+import Homepage from './components/homepage/Homepage'
 
 
 const App = () => {
@@ -60,6 +61,8 @@ const App = () => {
     <Route path='/' element={<LandingPage />}/>
     <Route path='/AboutForm' element={<About/>}/>
   <Route path='/contact' element={<Contact/>}/>
+  <Route path='home' element={<Homepage/>}/>
+
     </Route>
     {/* <Route path='/dashBoard' element={<VendorDashBoard/>}/> */}
     <Route element = {<LayoutTwo/>}>
