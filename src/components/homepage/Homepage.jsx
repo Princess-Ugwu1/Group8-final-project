@@ -1,5 +1,5 @@
 import React from 'react'
-import './homepage.css'
+import './homePage.css'
 import { IoIosArrowForward } from "react-icons/io";
 import HomeStoresCard from './HomeStoresCard';
 import Aim from './Aim';
