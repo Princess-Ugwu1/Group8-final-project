@@ -66,3 +66,34 @@
     font-size: 20px;
     color: #02B928;
 }
+
+@media screen and (min-width:300px) and (max-width:500px) {
+    .contactImgWrapper{
+        height: 50vh;
+        gap: 10px;
+    }
+
+    .contactCardsWrapper{
+        flex-direction: column;
+        height: 60vh;
+        /* gap: 10px; */
+        justify-content: space-around;
+       /* display: block; */
+    }
+
+    .contactCards{
+        width: 200px;
+        height: 130px;
+    }
+
+    .reactIcon{
+        font-size: 30px;
+    }
+    
+    .ItemText{
+        font-size: 16px;
+    }
+
+    
+    
+}

@@ -1,0 +1,164 @@
+.HomePage{
+    width:100%;
+    height: max-content;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+}
+
+.HomeHeroPage{
+    width:100%;
+    height: 80vh;
+    background-color:#DFFFC0 ;
+    display: flex;
+    /* flex-direction: column; */
+}
+
+.HomeHeroPageLeft{
+    width:40%;
+    height: 100%;
+    /* border: solid crimson; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.HomeTextHolder{
+    width:75%;
+    height: 60%;
+    /* border: solid red; */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 20px;
+
+    & p{
+        font-family: Montserrat;
+        font-size: 48px;
+        font-weight: 500;
+        line-height: 50.24px;
+        text-align: left;
+        color: #02B928;
+
+    }
+
+    & span{
+        font-family: Montserrat;
+font-size: 60px;
+font-weight: 700;
+line-height: 60.24px;
+text-align: left;
+
+    }
+}
+
+.HomeHeroPageRight{
+    width:60%;
+    height: 100%;
+    /* border: solid crimson; */
+    justify-content: center;
+    display: flex;
+}
+
+.homeButton{  width: 260px;
+    height: 76px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    gap: 10px;
+    cursor: pointer;
+    color:#ffffff;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #02B928;
+    border: none;
+    
+}
+
+.homeStores{
+    width:100%;
+    height: 80vh;
+    /* background-color: aquamarine; */
+}
+
+.homeStoreTopic{
+    width:100%;
+    height:20% ;
+    /* background-color: azure; */
+    font-family: Montserrat;
+    display: flex;
+font-size: 55px;
+font-weight: 600;
+/* line-height: 67.05px; */
+/* text-align: center; */
+align-items: flex-end;
+justify-content: center;
+color: #02B928;
+
+}
+
+.AimWrapper{
+    width:100%;
+    height: 60vh;
+    background-color: #DFFFC0;
+}
+
+.aimTopic{
+    width:100%;
+    height: 20%;
+    background-color: #DFFFC0;
+    font-family: Montserrat;
+    font-size: 55px;
+    font-weight: 600;
+    line-height: 67.05px;
+    text-align: center;
+}
+
+.lastdivWrapper{
+    width:100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.lastDivText{
+    width:50%;
+    height: 80%;
+    /* border: solid pink; */
+    display: flex;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 67.05px;
+    text-align: center;
+    font-family: montserrat;
+    flex-direction: column;
+    gap:10px;
+    align-items: center;
+    color: #02B928;
+}
+
+.shopnow{
+    width:150px ;
+height:60px;
+padding: 10px;
+gap: 10px;
+border-radius: 10px;
+/* opacity: 0px; */
+background-color: #02B928;
+font-family: Montserrat;
+font-size: 20px;
+font-weight: 250;
+line-height: 24.38px;
+border: none;
+text-align: center;
+color: white;
+
+
+
+}
+

@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import './SecondHeader.css'
 import { BsCart } from "react-icons/bs";
 import { IoMenu } from "react-icons/io5";
-
+import { CgProfile } from "react-icons/cg";
 import { NavLink, useNavigate } from 'react-router-dom';
 import BuggerMenu from './BuggerMenu';
 // import './header.css'
@@ -26,8 +26,10 @@ const [filteredData,setFilteredData]=useState()
                     <input type="text" placeholder='search for food items'/>
                     <div className="searchDiv"onClick={()=>search(productName)}>Search</div>
                 </div>
-                <div className='cartIcon' onClick={()=> nav('/cart')}><BsCart size="25px"/></div>
-                <div className='profile'onClick={()=>nav('/profile')}></div>
+                <div className='cartIcon' onClick={()=> nav('/cart')}><BsCart size="30px"/></div>
+                <div className='profile'onClick={()=>nav('/profile')}>
+                <CgProfile size={30}/>
+                </div>
                   <div className='headerMenu'><IoMenu size="40px" onClick={(()=>setBurgerMenu(true))}/></div>
                 {burgerMenu ? <BuggerMenu/> : null}
             </div>

@@ -7,10 +7,10 @@ import VendorCards from './VendorCards'
 const VendorDashBoard = () => {
   return (
     <div className='VendorDashBoardWrapper'>
-        {/* <VendorSideBar/> */}
+        <VendorSideBar/>
         <div className="vendorSideTwo">
-        {/* <VendorHeader/> */}
-        {/* <VendorCards/> */}
+        <VendorHeader/>
+        <VendorCards/>
         </div>
     </div>
   )

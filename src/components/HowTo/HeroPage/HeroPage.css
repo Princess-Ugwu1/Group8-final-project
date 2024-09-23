@@ -3,15 +3,18 @@
     height: 100vh;
     display: flex;
     color:#02B928 ;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     align-items: center;
-    padding-inline: 30px;
+    /* padding-inline: 30px; */
     background-color: #DFFFC0;
 
 }
 
 .herohold{
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-end; */
 
 & h1{
     font-size: 50px;
@@ -27,27 +30,28 @@
      background-image: url("https://res.cloudinary.com/dg2gcfyud/image/upload/v1726849045/smiling-young-gardener-afro-american-guy-wearing-gardening-hat-holding-vegetable-basket-with-pumpkin-isolated-blue-wall-removebg-preview_qarawa.png");
     width: 50%;
     height: 100%;
-    background-position: center;
+    /* background-position: center; */
     background-repeat: no-repeat;
     background-size: contain;
 }
 .herohold span{
-    color: #015512;
+    /* color: #015512; */
 }
 
 .herohold button{
-    /* width: 80%; */
-    padding: 30px 40px; 
-    font-size: 30px;
-    background: green;
-    border: none;
-    margin-top: 10px;
+    width: 260px;
+    height: 76px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
-    font-weight: 800;
-    border-radius: 5px;
+    gap: 10px;
+    cursor: pointer;
+    color:#ffffff;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #03a824;
+    border: none;
   
 }
 .herohold button:hover{
@@ -57,10 +61,37 @@
     background-color: green;
 }
 
-@media (width <= 768px) {
-    .herohold button {
-        padding: 10px 20px;
-        font-size: 20px;
+@media screen and (min-width:320px) and (max-width:500px){
+    .heroParent{
+        height:40vh;
+        width: 100%;
+        padding-inline: 0;
+
+
+    }
+
+    .herohold{
+        width: 40%;
+        height: 100%;
+        border: solid black;
+        justify-content: center;
+       
+        
+        /* align-items: center; */
+
+        & h1{
+            font-size: 20px;
+            margin-bottom:0 ;
+            line-height: 20.54px
+        }
+
+        & button{
+            width:125px;
+            height: 20px;
+            font-size: 14px;
+            font-weight: 700;
+            
+        }
     }
     
 }

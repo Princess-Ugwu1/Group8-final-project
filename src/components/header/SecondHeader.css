@@ -100,8 +100,9 @@
 .profile{
     width:38px;
     height: 38px;
-    background-color: brown;
+    /* background-color: brown; */
     border-radius: 50%;
+    /* border: 1px solid black; */
 }
 @media screen  and (max-width:500px){
     .secondHeaderContainer{
