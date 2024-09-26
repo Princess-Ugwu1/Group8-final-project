@@ -85,8 +85,8 @@ const RemoveItem = async (productId) => {
 
 const clearCart = async () => {
     const token = localStorage.getItem('userToken');
-    
-    try {
+  
+        try {
       const response = await axios.delete(`${url}/clearcart`,  {
         headers: {
           "Authorization": `Bearers ${token}`
@@ -97,6 +97,7 @@ const clearCart = async () => {
       if (response.status === 200) {
         toast.success('Cart cleared successfully!');
         setCartItems([]);
+        window.reload()
       }
     } catch (error) {
       console.error('Error clearing cart:', error);

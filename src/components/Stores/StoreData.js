@@ -55,7 +55,7 @@ export const StoreData = [
             "updatedAt": "2024-09-14T12:38:26.265Z",
             "__v": 17,
             "isVerified": "true",
-            "profileImage": "https://res.cloudinary.com/dg2gcfyud/image/upload/v1726231612/zmubgzapfbzues84gbbb.jpg"
+            "profileImage": "https://res.cloudinary.com/dg2gcfyud/image/upload/v1727276767/medium-shot-women-posing-market_gwbqwb.jpg "
         },
         "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NmRjZWM3Mjg5YWM1MDExYjYxNzYwMmIiLCJlbWFpbCI6ImpheS5nZW1kb21haW5zMkBnbWFpbC5jb20iLCJpYXQiOjE3MjYzMTc3ODQsImV4cCI6MTcyNjMyODU4NH0.SPSPlj7fUc2Clij4X5nyUqnkkp2FdJs1k5YGpgvrJLk"
     },
@@ -78,7 +78,7 @@ export const StoreData = [
             "updatedAt": "2024-09-13T12:35:53.189Z",
             "__v": 5,
             "isVerified": "true",
-            "profileImage": "https://res.cloudinary.com/dg2gcfyud/image/upload/v1726230953/ljhhxqky9hpcqzrmwvcx.jpg"
+            "profileImage": "https://res.cloudinary.com/dg2gcfyud/image/upload/v1727296819/IMG-20240925-WA0032_kwgdk4.jpg "
         },
         "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NmUxYzdjODlkZDNmMjg5OWNkMzM2ODAiLCJlbWFpbCI6ImNlbGVzdGluYW44NkBnbWFpbC5jb20iLCJpYXQiOjE3MjYzMTc4OTUsImV4cCI6MTcyNjMyODY5NX0.QAu6v7q304qT43UdYFCjDkv_rFJBpHv8zorU33i89w0"
     },

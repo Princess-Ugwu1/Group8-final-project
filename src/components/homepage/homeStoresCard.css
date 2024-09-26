@@ -10,8 +10,11 @@
     height: 100%;
     display: flex;
     align-items: center;
+    gap: 50px;
     justify-content: center;
+    /* justify-content: space-around; */
     /* background-color: blue; */
+
     /* overflow-x: scroll;
     gap: 60px;
     scrollbar-width: none; 
@@ -23,11 +26,11 @@
 }
 
 .HomestoreCards{
-    width: 25%;
-    height: 70%; 
+    width: 22%;
+    height: 60%; 
     /* background-color:#DFFFC0; */
     border-radius: 10px;
-    margin-right: 30px;
+    /* margin-right: 30px; */
     padding: 10px;
     display: flex;
     align-items: center;    
@@ -93,31 +96,31 @@
 }
 
 @media screen and (min-width:320px)and (max-width:500px){
-    .storeCards{
+    .HomestoreCards{
         width:180px;
         height: 180px;
     }
 
-    .storeCardContainer{
+    .HomestoreCardContainer{
         width:90%;
-        height: 60%;
-        gap: 10px;
+        height: 100%;
+         gap: 10px;
+         display: block;
+         flex-direction: column;
+    /* flex-direction: c; */
+        /* gap: 60px; */
+        scrollbar-width: none;
+        background-color: #FFD6B8; 
+        -ms-overflow-style: none; 
+         
     }
 
-    .storeDescription{
-        & p{
-            font-size: 18px;
-        }
 
-        & span{
-            font-size: 12px;
-        }
-    }
-
-    .storeCardWrapper{
+    .HomestoreCardWrapper{
         /* background-color: aqua; */
         justify-content: center;
         align-items: center;
         height: 40vh;
+        
     }
 }  

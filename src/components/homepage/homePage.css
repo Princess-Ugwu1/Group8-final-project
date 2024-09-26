@@ -10,6 +10,8 @@
     width:100%;
     height: 80vh;
     background-color:#DFFFC0 ;
+    gap: 10px;
+    justify-content: center;
     display: flex;
     /* flex-direction: column; */
 }
@@ -79,8 +81,8 @@ text-align: left;
 
 .homeStores{
     width:100%;
-    height: 80vh;
-    /* background-color: aquamarine; */
+    height: 95vh;
+    /* background-color: red; */
 }
 
 .homeStoreTopic{
@@ -102,13 +104,18 @@ color: #02B928;
 .AimWrapper{
     width:100%;
     height: 60vh;
-    background-color: #DFFFC0;
+    background-color:  #DFFFC0;
+    ;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
 }
 
 .aimTopic{
     width:100%;
     height: 20%;
-    background-color: #DFFFC0;
+    /* background-color: brown; */
     font-family: Montserrat;
     font-size: 55px;
     font-weight: 600;
@@ -122,6 +129,7 @@ color: #02B928;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #DFFFC0;
 
 
 }
@@ -139,6 +147,7 @@ color: #02B928;
     flex-direction: column;
     gap:10px;
     align-items: center;
+    
     color: #02B928;
 }
 
@@ -148,7 +157,7 @@ height:60px;
 padding: 10px;
 gap: 10px;
 border-radius: 10px;
-/* opacity: 0px; */
+
 background-color: #02B928;
 font-family: Montserrat;
 font-size: 20px;
@@ -157,8 +166,124 @@ line-height: 24.38px;
 border: none;
 text-align: center;
 color: white;
-
-
-
 }
 
+.howToUse{
+    width:100%;
+    height: 80vh;
+    /* background-color: green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & img{
+        width:100%;
+        height: 80%;
+    }
+}
+
+@media screen and (min-width:320px) and (max-width:500px) {
+.HomeHeroPage{
+    height: 50vh;
+}
+
+
+    .HomeHeroPageLeft{
+    /* border: solid red; 
+    width:45%;
+    height: 100%;
+    font-size: 20px;
+}
+
+.HomeTextHolder{
+    width:100%;
+    height: 100%;
+    /* border: solid red; */
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+
+    & p{
+        font-family: Montserrat;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 30.24px;
+        text-align: center;
+        color: #02B928;
+    }
+
+    
+    & span{
+        font-family: Montserrat;
+font-size: 32px;
+font-weight: 700;
+line-height: 30.24px;
+
+
+    }
+
+    & .homeButton{
+        width:125px;
+        height: 40px;
+        font-size: 12px;
+      
+    }
+}
+
+.homeStores{
+    display: none;
+}
+
+
+    
+}
+
+.AimWrapper{
+    height: 80%;
+}
+
+.aimTopic{
+    width:100%;
+    height: 20%;
+    /* background-color: brown; */
+    font-family: Montserrat;
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 67.05px;
+    text-align: center;
+} 
+
+
+
+.lastDivText{
+    width:80%;
+    height: 80%;
+    /* border: solid pink; */
+    display: flex;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 67.05px;
+    text-align: center;
+    font-family: montserrat;
+    flex-direction: column;
+    gap:10px;
+    align-items: center;
+    
+    color: #02B928;
+} 
+
+
+ .howToUse{
+    width:100%;
+    height: 45vh;
+    /* background-color: green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+
+    & img{
+        width:100%;
+        height: 80%;
+    }
+} 

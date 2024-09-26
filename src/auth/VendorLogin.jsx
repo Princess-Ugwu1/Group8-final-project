@@ -6,7 +6,7 @@ import Venlogo from "../assets/Group 10.png"
 import { NavLink, useNavigate } from 'react-router-dom'
 import {toast, Toaster} from 'react-hot-toast'
 import axios from 'axios'
-import { userData } from '../Global/slice'
+import { setuserData } from '../Global/slice'
 import { useDispatch } from 'react-redux'
 
 const VendorLogin = () => {
@@ -40,7 +40,7 @@ const VendorLogin = () => {
       // Check if the response status is OK (200) or as expected
       if (response.status === 200) {
         // Dispatch user data and save token to local storage
-        dispatch(userData(response.data.data));
+        dispatch(setuserData(response.data.data));
         localStorage.setItem('token', response.data.token);
         
         // Display success message

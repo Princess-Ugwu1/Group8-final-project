@@ -26,7 +26,7 @@ const ProductCard = () => {
       const response = await axios.get(`${url}/allproducts`);
       const products = response?.data?.data;
 
-      toast.success("Added to cart")
+      // toast.success("Added to cart")
       setAllProducts(products); // Store all fetched products
       setDisplayedProducts(products.slice(0, productsPerPage)); // Initially display the first 12 products
     } catch (err) {
@@ -77,7 +77,7 @@ const ProductCard = () => {
       );
   
       console.log(response);
-      toast.success("Successfully Added to Cart")
+    
       // setInput('');
     } catch (err) {
       console.log(err);
@@ -98,8 +98,9 @@ const ProductCard = () => {
       })
 
       console.log(response)
+      toast.success("Successfully Added to Cart")
   }catch (error){
-    
+    console.log(error)
   }
    console.log(productId) 
   }
@@ -131,7 +132,7 @@ const ProductCard = () => {
               <div className="itemDetails">
                 <p>{items?.productName}</p>
                 <span>₦{items?.productPrice}</span>
-                <button className='addToCart' onClick={()=> addToCart( items?._id)} >Add to cart</button>
+                <button className='addToCart' onClick={()=> addToCart( items?._id, 1)} >Add to cart</button>
               </div>
             </div>
           </div>

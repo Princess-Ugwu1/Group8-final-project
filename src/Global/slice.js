@@ -7,14 +7,14 @@ export const Slice=createSlice({
         id:""
     },
     reducers:{
-        userData:(state,{payload})=>{
+        setuserData:(state,{payload})=>{
            
-            const users = state.userData.findIndex(e => e.email === payload.email )
-            if (users){
-                alert("User already in redux")
-            }   else{
+            // const users = state.userData.findIndex(e => e.email === payload.email )
+            // if (users){
+            //     alert("User already in redux")
+            // }   else{
                 state.userData = payload 
-            }
+            // }
         },
         clearUser:(state)=>{
             state.userData={}
@@ -27,6 +27,6 @@ export const Slice=createSlice({
     }
 })
 
-export const {userData, clearUser, userId}=Slice.actions;
+export const {setuserData, clearUser, userId}=Slice.actions;
 
 export default Slice.reducer;
