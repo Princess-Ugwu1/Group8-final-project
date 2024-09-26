@@ -112,7 +112,7 @@ const handlesubmit =()=>{
         <div className='signupholder'>
            <div className='loginHolder'>
                <div className='login-writeup'>
-                  <div className='login-logo'>
+                  <div className='login-logo' onClick={()=>nav('/')}>
                     <img src={logoImg} alt="" />
                   </div>
                   <div className='login-detail'>

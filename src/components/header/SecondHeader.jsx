@@ -72,10 +72,10 @@ const SecondHeader = () => {
             <BsCart size="30px" />
           </div>
           <div className="cartLength">{orders?.length}</div>
-
+{/* 
           <div className='profile' onClick={() => nav('/profile')}>
             <CgProfile size={30} />
-          </div>
+          </div> */}
 
           {/* Menu Toggle Icon */}
           <div className='headerMenu' onClick={toggleMenu}>

@@ -31,13 +31,18 @@ import VendorCards from './components/vendorPage/VendorCards'
 import { Toaster } from 'react-hot-toast'
 import Store from './components/Stores/Store'
 import Homepage from './components/homepage/Homepage'
+import ScrollToTop from './components/ScrollToTop'
+
 
 
 const App = () => {
+ 
 
 
   return (
+    
  <HashRouter>
+   <ScrollToTop/>
   <Routes>
    
     <Route path='/checkout' element={<Checkout/>}/>
@@ -79,7 +84,11 @@ const App = () => {
   {/* <Toaster position="top-right" reverseOrder={false}/> */}
  </HashRouter>
 
+ 
+
   )
 }
+
+
 
 export default App

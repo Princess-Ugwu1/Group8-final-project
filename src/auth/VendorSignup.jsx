@@ -107,7 +107,7 @@ const nav = useNavigate()
     <div className='Vsign-con'>
         <div className='Vsign-holder'>
             <div className='Vlogo'>
-                <img src={Vlogo} alt="" onClick={()=>nav('/home')}/>
+                <img src={Vlogo} alt="" onClick={()=>nav('/')}/>
             </div>
             <div className='V-inputholder'>
                 <div className='div-create'>

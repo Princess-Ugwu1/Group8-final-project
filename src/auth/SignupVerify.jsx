@@ -51,7 +51,7 @@ const SignupVerify = () => {
   return (
     <div className='SV-container'>
          <div className='SV-holder'>
-            <div className='SV-logo'>
+            <div className='SV-logo'onClick={()=>Nav('/')}>
                 <img src={svlogo} alt="" />
             </div>
             <div className='SV-writeup'>

@@ -4,7 +4,7 @@ import './homeStoresCard.css'
 const HomeStoresCard = () => {
     const HomeCard = [  {
         id: 'card1',
-        name: "Iya chidinma store",
+        name: "Koko mart",
         img: "https://res.cloudinary.com/dg2gcfyud/image/upload/v1726231371/ouhyyc9heisnkj58aflw.jpg", // Replace with your image URL
       },
      {

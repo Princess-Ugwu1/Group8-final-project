@@ -104,7 +104,7 @@ const nav = useNavigate()
         <div className='signupholder'>
           <div className='signupleft'>
             <div className='signupleftinner'>
-              <div className='logo'>
+              <div className='logo'onClick={()=>nav('/')}>
                 <img className='image' src={logoImg} alt="" onClick={()=>nav('/home')}/>
               </div>
               <div className='description'>
