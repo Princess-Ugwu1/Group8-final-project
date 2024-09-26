@@ -19,7 +19,7 @@ const Footer = () =>{
                     </div>
                 <p>Home </p>
                 <p>Stores</p>
-                <p><NavLink to= '/vendorsign' className={({isActive}) =>  isActive ? "HeaderActive" : "HeaderNotActive"}>Register your store</NavLink></p>
+                <p><NavLink to= '/vendorsign' className={({isActive}) =>  isActive ? "FooterActive" : "FooterNotActive"}>Register your store</NavLink></p>
                 </div>
                 <div className="box2">
                 <div className="peace"><span className='footerSubNames'>Information</span></div>

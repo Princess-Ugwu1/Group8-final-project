@@ -9,7 +9,7 @@ const HomeStoresCard = () => {
       },
      {
         id: 'card2',
-        name: "Iya chidinma store",
+        name: "Iya Chidinma Store",
         img: "https://res.cloudinary.com/dg2gcfyud/image/upload/v1726231612/zmubgzapfbzues84gbbb.jpg", // Replace with your image URL
       },
     {

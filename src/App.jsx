@@ -58,10 +58,10 @@ const App = () => {
     <Route path='/cart' element={<Cart/>}/>
    <Route path='/profile' element={<UserProfile/>}/>
     <Route element={<Layout/>}>
-    <Route path='/' element={<LandingPage />}/>
+    {/* <Route path='/' element={<LandingPage />}/> */}
     <Route path='/AboutForm' element={<About/>}/>
   <Route path='/contact' element={<Contact/>}/>
-  <Route path='home' element={<Homepage/>}/>
+  <Route path='/' element={<Homepage/>}/>
 
     </Route>
     {/* <Route path='/dashBoard' element={<VendorDashBoard/>}/> */}

@@ -285,7 +285,7 @@ import { FaArrowLeft } from "react-icons/fa";
 import bana from "../../assets/banana.jpeg"
 import { useDispatch, useSelector } from 'react-redux';
 import axios from 'axios';
-import { userData } from '../../Global/slice';
+// import { userData } from '../../Global/slice';
 import sucess from '../../assets/sucess.gif'
 import { useNavigate } from 'react-router-dom';
 import { Toaster, toast } from 'react-hot-toast';
@@ -404,7 +404,7 @@ useEffect(()=>{
 
 // Function to handle the addition of another amount (e.g., 400)
 const addAmount = () => {
-  const additionalAmount = 400; // Amount to add (could come from user input or another API)
+  const additionalAmount = 1050; // Amount to add (could come from user input or another API)
   
   if (total !== null) {
     const newTotal = total + additionalAmount; // Add the cleaned price and the additional amount
@@ -425,7 +425,7 @@ const handlePayment = () => {
     const handler = window.Korapay.initialize({
       key: "pk_test_7DkCiJqfkFUVajY9cxjbwBTBmMDMuNFqZUESWFh9", // Add your Korapay public key here
       reference:`ref_${Math.floor(Math.random() * 1000000)}`, // Generate unique reference
-      amount: total + 400, // Payment amount in kobo (5000 kobo = 50 NGN)
+      amount: total + 1050, // Payment amount in kobo (5000 kobo = 50 NGN)
       currency: 'NGN',
       customer: {
         name: 'John Doe',
@@ -549,7 +549,7 @@ const handlePayment = () => {
       )}</p>
                     </div>
                     <div className='checktotal'><p>Shipping</p>
-                    <p>#400</p>
+                    <p>#1050</p>
                     </div>
                     <div className='checktotal'>
                         <p>Total</p>

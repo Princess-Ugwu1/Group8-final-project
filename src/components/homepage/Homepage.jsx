@@ -17,7 +17,7 @@ const Homepage = () => {
                 </div>
             </div>
             <div className="HomeHeroPageRight">
-                <img src="https://res.cloudinary.com/dg2gcfyud/image/upload/v1726849045/smiling-young-gardener-afro-american-guy-wearing-gardening-hat-holding-vegetable-basket-with-pumpkin-isolated-blue-wall-removebg-preview_qarawa.png" alt="" />
+                <img src="https://res.cloudinary.com/dg2gcfyud/image/upload/v1727285745/WhatsApp_Image_2024-09-25_at_6.33.56_PM-removebg-preview_yse0qt.png" alt="" />
             </div>
         </div>
 
@@ -26,8 +26,13 @@ const Homepage = () => {
             <HomeStoresCard/>
         </div>
         <div className="AimWrapper">
-            <div className="aimTopic">What you will get</div>
-            <Aim/>
+            <div className="aimTopic">
+                What you will get
+               </div>
+           <Aim/>
+        </div>
+        <div className="howToUse">
+            <img src="https://res.cloudinary.com/dg2gcfyud/image/upload/v1726827294/Grp1_rnjy1k.svg" alt="" />
         </div>
         <div className="lastdivWrapper">
                 <div className="lastDivText">Shop the Finest Groceries

@@ -19,7 +19,7 @@ const Store = () => {
         </div>
         <div className="storeHeroRight">
           <div className="storeHeroRightImage">
-          <img src="https://res.cloudinary.com/dg2gcfyud/image/upload/v1726983733/beautiful-woman-holding-bag-vegetables__1__1-removebg-preview_yebaub.png" alt="" />
+          <img src="https://res.cloudinary.com/dg2gcfyud/image/upload/v1727281759/WhatsApp_Image_2024-09-25_at_9.43.24_AM-removebg-preview_z4xmdv.png" alt="" />
           </div>
           
         </div>

@@ -1,0 +1,26 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .headerMenu {
+    cursor: pointer;
+  }
+  
+  .bugger-menu-main {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px;
+    background: white;
+    z-index: 1000;
+  }
+  
+  .bugger-holder {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+  }
+  

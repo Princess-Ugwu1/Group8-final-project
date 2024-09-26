@@ -1,0 +1,80 @@
+.aimDivWrapper{
+    width:100%;
+    height: 100%;
+    /* background-color: rgb(37, 132, 216); */
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 30px;
+}
+
+.aimDescription{
+    width:25%;
+    height: 90%;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+}
+
+.iconDiv{
+    height: 15%;
+    width: 100%;
+    /* background-color: aqua; */
+}
+
+.aimSubTopicDiv{
+    height: 20%;
+    width: 100%;
+    /* background-color: bisque; */
+
+    & p{
+        font-family: Montserrat;
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 36.57px;
+        text-align: left;
+        
+    }
+}
+
+.aimContents{
+    height: 65%;
+    width: 100%;
+    /* background-color: rgb(177, 13, 13); */
+
+    & span{
+        font-family: Montserrat;
+font-size: 20px;
+font-weight: 400;
+line-height: 24.38px;
+text-align: left;
+
+    }
+}
+
+@media screen and (min-width:320px) and (max-width:500px){
+    .aimDivWrapper{
+        flex-direction: column; 
+        /* justify-content: center; */
+        align-items: center;
+        padding: 10px;
+    }
+     
+
+    .aimDescription{
+        /* background-color: teal; */
+        width:80%
+    }
+    
+    .aimSubTopicDiv{
+        & p{
+            font-size: 25px;
+        }
+    }
+
+    .aimContents{
+        & span{
+            font-size: 18px;
+        }
+    }
+}

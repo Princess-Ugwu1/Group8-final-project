@@ -1,12 +1,13 @@
-/* .topCardsWrapper{
+.topCardsWrapper{
     width:90%;
     height: max-content;
-    background-color: bisque;
+    /* background-color: bisque; */
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     gap: 10px;
-} */
+}
 
 .topCards{
     width:394px;
@@ -76,6 +77,17 @@
     height: 300px;
     /* background-color: red; */
    } 
+
+   .topCardsWrapper{
+    width:100%;
+    height: max-content;
+    /* background-color: bisque; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
 
    .topcardImg{
     width:100%;

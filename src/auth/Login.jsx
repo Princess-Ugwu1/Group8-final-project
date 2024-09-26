@@ -7,7 +7,7 @@ import logoImg from "../assets/Group 10.png";
 import { NavLink, useNavigate } from 'react-router-dom'
 import {LoaderIcon, toast, Toaster} from 'react-hot-toast'
 import axios from 'axios'
-import { userData, userId } from '../Global/slice'
+import { setuserData  , userId } from '../Global/slice'
 import { useDispatch } from 'react-redux'
 
 
@@ -85,7 +85,8 @@ const handlesubmit =()=>{
         axios.post(url,{email,password})
         .then((res)=>{
           dispatch(userId(res.data.data._id))
-          console.log(res?.data?.token)
+          dispatch(setuserData(res.data.data))
+          console.log(res?.data)
           localStorage.setItem("userToken",res?.data?.token)
           // dispatch(userData(res.data.data))
 

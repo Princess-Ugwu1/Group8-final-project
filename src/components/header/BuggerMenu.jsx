@@ -5,18 +5,19 @@ import { NavLink, useNavigate } from 'react-router-dom';
 
 
 const BuggerMenu = ({setBurgerMenu}) => {
-  const nav=useNavigate();
+  const nav =useNavigate();
 
   const closeMenu =()=>{
     setBurgerMenu(false)
   }
-  const handleNavigate = (path)=>{
+  const handleNavigate = (path)=> {
     nav(path);
     closeMenu()
     console.log(path);
     
   }
-  console.log(useNavigate,"this is not happening");
+  // const handleNavigate=useNavigate();
+  // console.log(useNavigate,"this is not happening");
   
   return (
     <div className='BuggerMenu'>
@@ -38,15 +39,13 @@ const BuggerMenu = ({setBurgerMenu}) => {
                   <NavLink to= '/vendorsign' className={({isActive}) =>  isActive ? "HeaderActive bugger-holder" : "HeaderNotActive bugger-holder"}> Sign Up as Vendor</NavLink>
                   <NavLink to= '/vendorlogin' className={({isActive}) =>  isActive ? "HeaderActive bugger-holder" : "HeaderNotActive bugger-holder"}> Login Up as Vendor</NavLink> */}
 
-                  <div className='bugger-holder' onClick={()=>handleNavigate('/login')}>Register</div>
-                  <div className='bugger-holder' onClick={()=>handleNavigate('/signup')}>Sign up</div>
-                  <div className='bugger-holder' onClick={()=>handleNavigate('/store')}>Store</div>
+                 
+                  <div className='bugger-holder' onClick={()=>handleNavigate('/')}>Home</div>
                   <div className='bugger-holder' onClick={()=>handleNavigate('/product')}>Products</div>
+                  <div className='bugger-holder' onClick={()=>handleNavigate('/store')}>Store</div>
                   <div className='bugger-holder' onClick={()=>handleNavigate('/aboutForm')}>About us</div>
                   <div className='bugger-holder' onClick={()=>handleNavigate('/contact')}>Contact us</div>
-                  <div className='bugger-holder' onClick={()=>handleNavigate('/profile')}>profile</div>
-                  <div className='bugger-holder' onClick={()=>handleNavigate('/vendorsign')}>Sign up as vendor</div>
-                  <div className='bugger-holder' onClick={()=>handleNavigate('/vendorlogin')}>Log in as Vendor</div>
+                  
 
                 </div>
 

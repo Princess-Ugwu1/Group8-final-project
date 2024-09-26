@@ -76,13 +76,19 @@
     width: 10px;
     height: 10px;
   }
+  
+
+.FooterNotActive{
+  color: white;
+}
+
 
   @media screen and (min-width:320px) and (max-width:500px){
 
     .Footer-container{
       display: flex;
       height: max-content;
-      background-color: yellowgreen;
+      /* background-color: yellowgreen; */
       flex-direction: column;
       justify-content: space-around;
       padding: 20px;
