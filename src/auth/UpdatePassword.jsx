@@ -6,7 +6,7 @@ import logoImg from "../assets/Group 10.png"
 // import fruit from "../assets/fruitman.png"
 
 const UpdatePassword = () => {
-    // const nav = useNavigate();
+    const nav = useNavigate();
     const [seePassword, seteSePassword] = useState(true)
     const lookPassword =()=>{
         seteSePassword(false)
@@ -16,7 +16,7 @@ const UpdatePassword = () => {
         <div className='signupholder'>
            <div className='loginHolder'>
                <div className='login-writeup'>
-                  <div className='login-logo'>
+                  <div className='login-logo'onClick={()=>nav('/')}>
                     <img src={logoImg} alt="" />
                   </div>
                   <div className='login-detail'>

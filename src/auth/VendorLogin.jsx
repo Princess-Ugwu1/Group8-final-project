@@ -65,7 +65,7 @@ const VendorLogin = () => {
           <div className='VLogin-holder'>
           <div className='VLogin-inner'>
             <div className='Vgroceria'>
-              <img src={Venlogo} alt="" onClick={()=>nav('/home')}/>
+              <img src={Venlogo} alt="" onClick={()=>nav('/')}/>
             </div>
             <div className='VLogin-div'>
               <div className='Vlogin-Log'>

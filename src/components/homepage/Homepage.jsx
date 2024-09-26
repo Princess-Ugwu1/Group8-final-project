@@ -3,8 +3,10 @@ import './homePage.css'
 import { IoIosArrowForward } from "react-icons/io";
 import HomeStoresCard from './HomeStoresCard';
 import Aim from './Aim';
+import { useNavigate } from 'react-router-dom';
 
 const Homepage = () => {
+    const nav = useNavigate()
   return (
     <div className='HomePage'>
         <div className="HomeHeroPage">
@@ -12,12 +14,12 @@ const Homepage = () => {
                 <div className="HomeTextHolder">
                     <p>Make healthy
                         life with <span>fresh</span>   groceries</p>
-                        <button className='homeButton'>Start Shopping<IoIosArrowForward /></button>
+                        <button className='homeButton' onClick={()=>nav('/store')}>Start Shopping<IoIosArrowForward /></button>
                       
                 </div>
             </div>
             <div className="HomeHeroPageRight">
-                <img src="https://res.cloudinary.com/dg2gcfyud/image/upload/v1727285745/WhatsApp_Image_2024-09-25_at_6.33.56_PM-removebg-preview_yse0qt.png" alt="" />
+                <img src="https://res.cloudinary.com/dg2gcfyud/image/upload/a_hflip/c_crop,ar_1:1/v1727327444/file_ks6equ.png" alt="" />
             </div>
         </div>
 
@@ -38,7 +40,7 @@ const Homepage = () => {
                 <div className="lastDivText">Shop the Finest Groceries
                 Online: Convenience, Quality
                  and Variety at Your Fingertips!
-                 <button className='homeButton'>shop now <IoIosArrowForward /></button>
+                 <button className='homeButton' onClick={()=>nav('/store')}>shop now <IoIosArrowForward /></button>
                  </div>
                  
         </div>

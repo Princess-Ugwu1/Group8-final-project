@@ -14,7 +14,7 @@ const Store = () => {
     <div className='storeWrapper'>
       <div className="storeHeroWrapper">
         <div className="storeHeroLeft">
-          <p>Eat Healthy & Eat wealthy</p>
+          <p>Eat Healthy & Stay Healthy</p>
           <button className='heroButton'onClick={()=>nav('/product')}>Start Shopping<IoIosArrowForward /></button>
         </div>
         <div className="storeHeroRight">
